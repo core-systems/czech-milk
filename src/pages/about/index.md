@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About our values3
+title: About our values
 ---
 ![test](/img/ztraty-cirkulace-2017.png)
 
