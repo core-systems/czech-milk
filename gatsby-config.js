@@ -1,5 +1,7 @@
 const languages = require('./src/data/languages');
 
+console.log('languages', languages)
+
 module.exports = {
   siteMetadata: {
     title: 'Czech Milk',

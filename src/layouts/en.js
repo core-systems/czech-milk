@@ -22,7 +22,13 @@ export const pageQuery = graphql`
         languages {
           defaultLangKey
           langs
-        }      
+          langKeys
+          languages {
+            key
+            label
+            default
+          }
+        }
       }
     }
   }

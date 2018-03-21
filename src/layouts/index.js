@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/Header'
 import Helmet from 'react-helmet'
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
 import { IntlProvider } from 'react-intl'
 import 'intl'
-//import './index.css'
 
 import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
@@ -16,7 +16,10 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-console.log(langs, defaultLangKey, langsMenu)
+
+console.log('data.site.siteMetadata', data.site.siteMetadata)
+console.log('langsMenu', langsMenu)
+
   return (
     <IntlProvider
       locale={langKey}
@@ -30,8 +33,8 @@ console.log(langs, defaultLangKey, langsMenu)
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <Header langs={langsMenu} />
-        <Navbar />
+        <Navbar langs={langsMenu} />
+        <Hero />
         <div
           style={{
             margin: '0 auto',
@@ -42,6 +45,7 @@ console.log(langs, defaultLangKey, langsMenu)
         >
           {children()}
         </div>
+        <Footer />
       </div>
     </IntlProvider>
   );
@@ -60,6 +64,12 @@ export const pageQuery = graphql`
         languages {
           defaultLangKey
           langs
+          langKeys
+          languages {
+            key
+            label
+            default
+          }
         }
       }
     }
