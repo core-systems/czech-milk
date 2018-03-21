@@ -6,13 +6,58 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: meta
+    label: Meta
+    delete: false
+    files:
+      - name: langs
+        label: Languages
+        file: "src/data/languages.yml"
+        extension: "yml"
+        fields:
+          - name: langs
+            label: Languages
+            label_singular: "Language"
+            allow_add: false
+            widget: list
+            fields:
+              - { label: Code, name: key, widget: string }
+              - { label: Name, name: label, widget: string }
+              - { label: Default, name: default, widget: boolean, default: false}
+  - name: "blogEn"
+    label: "EN - Blog"
     folder: "src/pages/blog"
+    format: "frontmatter"
+    extension: "en.md"
+    #filter:
+    #  field: langKey
+    #  value: en
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
+      #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+      #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+      - {label: "Language Key", name: "langKey", widget: "hidden", default: "en"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "blogPt"
+    label: "PT - Blog"
+    folder: "src/pages/blog"
+    format: "frontmatter"
+    extension: "pt.md"
+    #filter:
+    #  field: langKey
+    #  value: en
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+      #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+      - {label: "Language Key", name: "langKey", widget: "hidden", default: "pt"}
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -26,7 +71,8 @@ collections:
         label: "About"
         name: "about"
         fields:
-          - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
@@ -34,7 +80,8 @@ collections:
         label: "Products Page"
         name: "products"
         fields:
-          - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
