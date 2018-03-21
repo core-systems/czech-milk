@@ -1,6 +1,47 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+exports.createPages = ({ graphql, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+  return new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                templateKey
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      result.data.allMarkdownRemark.edges.forEach((edge) => {
+        const templateKey = edge.node.frontmatter.templateKey || 'blog-post'
+        createPage({
+          path: edge.node.fields.slug,
+          //component: path.resolve(`./src/templates/blog-post.js`),
+          component: path.resolve(
+            `src/templates/${String(templateKey)}.js`
+          ),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            id: edge.node.id,
+            slug: edge.node.fields.slug,
+          },
+        })
+      })
+      resolve()
+    })
+  })
+};
+
+/*
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
@@ -27,7 +68,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(edge => {
-      const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve(
@@ -35,13 +75,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
-          id,
+          //id: edge.node.id,
+          slug: node.fields.slug,
         },
       })
     })
   })
 }
-
+*/
+/*
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
@@ -54,3 +96,4 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+*/
