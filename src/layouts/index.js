@@ -16,7 +16,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-
+console.log(langs, defaultLangKey, langsMenu)
   return (
     <IntlProvider
       locale={langKey}

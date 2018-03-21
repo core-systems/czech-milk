@@ -13,9 +13,25 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
     /*
     {
@@ -27,8 +43,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false,
+        langKeyForNull: 'any',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
         markdownRemark: {
           postPage: 'src/templates/blog-post.js',
           query: `
@@ -49,73 +66,6 @@ module.exports = {
         }
       }
     },
-    /*
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/layouts`,
-        name: 'layouts',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/templates`,
-        name: 'templates',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    `gatsby-transformer-remark`,
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false,
-        markdownRemark: {
-          postPage: 'src/templates/blog-post.js',
-          query: `
-          {
-              allMarkdownRemark {
-                  edges {
-                  node {
-                      fields {
-                      slug,
-                      langKey
-                      }
-                  }
-                  }
-              }
-          }
-          `
-        }
-      }
-    },
-    */
 
     {
       resolve: 'gatsby-plugin-netlify-cms',
