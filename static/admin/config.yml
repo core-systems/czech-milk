@@ -12,6 +12,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -25,6 +26,7 @@ collections:
         label: "About"
         name: "about"
         fields:
+          - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
@@ -32,6 +34,7 @@ collections:
         label: "Products Page"
         name: "products"
         fields:
+          - {label: "Language Key", name: "langKey", widget: list, fields: [{label: Arabic, name: ar, widget: string}, {label: Chinese, name: zh, widget: string}, {label: Czech, name: cs, widget: string}, {label: English, name: en, widget: string}, {label: Vietnamese, name: vi, widget: string}], default: "any"}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
