@@ -17,6 +17,7 @@
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-remark": "^1.7.33",
     "gatsby-transformer-sharp": "^1.6.21",
+    "include-media": "^1.4.9",
     "intl": "^1.2.5",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
