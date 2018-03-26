@@ -14,23 +14,23 @@ const SelectLanguage = (props) => {
   //<FormattedMessage id="selectLanguage" />
   console.log(props.intl)
   return (
-    <div class="navbar-item has-dropdown is-hoverable">
-      <a class="navbar-link" title={props.intl.messages.selectLanguage}>
+    <div className="navbar-item has-dropdown is-hoverable">
+      <a className="navbar-link" title={props.intl.messages.selectLanguage}>
         {props.intl.locale}
       </a>
 
-      <div class="navbar-dropdown is-boxed">
-        <a class="navbar-item">
+      <div className="navbar-dropdown is-boxed">
+        <a className="navbar-item">
           Overview
         </a>
-        <a class="navbar-item">
+        <a className="navbar-item">
           Elements
         </a>
-        <a class="navbar-item">
+        <a className="navbar-item">
           Components
         </a>
-        <hr class="navbar-divider" />
-        <div class="navbar-item">
+        <hr className="navbar-divider" />
+        <div className="navbar-item">
           Version 0.6.2
         </div>
       </div>

@@ -24,9 +24,9 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
       locale={langKey}
       messages={i18nMessages}
     >
-      <div class='is-fullwidth'>
+      <div className='is-fullwidth'>
         <Helmet
-          title="Gatsby Default Starter"
+          title={`${data.site.siteMetadata.title}`}
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
   query Layout {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs

@@ -3,11 +3,11 @@ import graphql from 'graphql';
 import Layout from './index';
 import { addLocaleData } from 'react-intl';
 
-import messages from '../data/messages/pt';
-import pt from 'react-intl/locale-data/pt';
-import 'intl/locale-data/jsonp/pt';
+import messages from '../data/messages/cs';
+import cs from 'react-intl/locale-data/cs';
+import 'intl/locale-data/jsonp/cs';
 
-addLocaleData(pt);
+addLocaleData(cs);
 
 export default (props) => (
   <Layout
@@ -19,6 +19,7 @@ export const pageQuery = graphql`
   query LayoutPt {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs

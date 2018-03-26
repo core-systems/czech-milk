@@ -19,6 +19,7 @@ export const pageQuery = graphql`
   query LayoutEn {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs

@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Footer = (props) => (
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
+  <footer className="footer">
+    <div className="container">
+      <div className="content has-text-centered">
         <p>
           <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
           <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content

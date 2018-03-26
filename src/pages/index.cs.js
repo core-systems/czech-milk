@@ -45,7 +45,7 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexPtQuery {
-    allMarkdownRemark(filter: { fields: { slug: { regex: "/\/pt\/*/" } }}, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "/\/cs\/*/" } }}, sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
