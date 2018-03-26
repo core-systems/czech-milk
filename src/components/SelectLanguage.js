@@ -15,6 +15,21 @@ const SelectLanguage = (props) => {
   console.log(props.intl)
   return (
     <div className="navbar-item has-dropdown is-hoverable">
+      <div className="field">
+        <p className="control has-icons-left">
+          <span className="select">
+            <select>
+              <option selected>Country</option>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </span>
+          <span className="icon is-small is-left">
+            <i className="fas fa-globe"></i>
+          </span>
+        </p>
+      </div>
+
       <a className="navbar-link" title={props.intl.messages.selectLanguage}>
         {props.intl.locale}
       </a>

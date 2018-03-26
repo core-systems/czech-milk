@@ -12,8 +12,10 @@
 body
   background-color: $czech-milk-color-green-light
   background-image: url('/img/header-bg-top.png')
-  background-size: cover
+  //background-size: cover
+  background-size: auto
   background-position: top center
+  background-repeat: no-repeat
   //min-height: 1409px
 
 section.hero
@@ -24,10 +26,26 @@ section.hero
 
 .hero-body .title
   // 384px - 52px
-  margin-top: 100px
+  margin-top: 15rem
 
 .hero-body .subtitle
-  margin-top: 30px
+  margin-top: 3rem !important
+
+.hero-body .subtitle
+  margin-top: 3rem !important
+  font-size: 1.6rem !important
+  color:#888888
+
+.flags-cs-eu
+  margin-left: 54%
+  //position: relative
+  //top: -9rem
+  flex-grow: 0
+  flex-shrink: 0
+  //padding: 3rem 1.5rem
+
+.content-container
+  background-color: white
 
 .footer
 //    background-color: $czech-milk-color-green
