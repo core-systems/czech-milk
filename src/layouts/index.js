@@ -33,7 +33,8 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           ]}
         />
         <Header langs={langsMenu} languages={languages} />
-        <section className="section" role="content">
+        <section className="section section-content" role="content">
+          <div className='content-bg-botttom'></div>
           {/*
             <div className="columns">
               <div className="column">
@@ -41,11 +42,19 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
               </div>
             </div>
           */}
-          {/**/
-            <div className="container content-container">
+          {/*
+            <div className="container content-container0">
               {children()}
             </div>
-          /**/}
+          */}
+          <div className="columns">
+            <div className="column">
+              <div className="container content-container">
+                <div className='content-bg-top'></div>
+                {children()}
+              </div>
+            </div>
+          </div>
         </section>
         <Footer />
       </div>

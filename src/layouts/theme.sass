@@ -34,7 +34,7 @@ section.hero
 .hero-body .subtitle
   margin-top: 3rem !important
   font-size: 1.6rem !important
-  color:#888888
+  color: #888888
 
 .flags-cs-eu
   margin-left: 54%
@@ -44,8 +44,79 @@ section.hero
   flex-shrink: 0
   //padding: 3rem 1.5rem
 
+.section-content
+  position: relative
+  padding-top: 280px
+
+.content-bg-top
+  display: block
+  position: absolute
+  top: -147px
+  left: 0
+  right: 0
+  min-height: 147px
+  max-height: 200px
+  background-image: url('/svg/page-top-cloud.svg')
+  background-size: auto
+  background-position: bottom left
+  background-clip: border-box
+  background-repeat: no-repeat
+  //background-color: red
+
+.content-bg-botttom
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  min-height: 111px
+  max-height: 892px
+  background-color: $czech-milk-color-green-dark
+  &:before
+      content: ' '
+      display: block
+      position: absolute
+      top: -150px
+      left: 0
+      right: 0
+      height: 150px
+      width: 100%
+      background-image: url('/svg/footer-bg-cloud-top-green.svg')
+      background-size: cover
+      background-position: bottom center
+      background-repeat: no-repeat
+
 .content-container
+  position: relative
   background-color: white
+  &:after
+      content: ' '
+      display: block
+      width: 100%
+      //max-width: 1676px
+      height: 146px
+      //max-height: 146px
+      //margin: 0 auto auto 0
+      background-image: url('/svg/footer-bg-cloud-top-green2.svg')
+      //background-image: url('/img/footer-bg-cloud-green.png')
+      background-size: cover
+      //background-position: bottom center
+      background-position: 0 0
+      background-clip: border-box
+      background-repeat: no-repeat
 
 .footer
-//    background-color: $czech-milk-color-green
+  color: $czech-milk-color-green
+  height: 111px
+  width: 100%
+  background-image: url('/svg/footer-bg-cloud-green-dark.svg')
+  background-size: initial
+  background-position: -150px bottom
+  background-repeat: no-repeat
+  padding-top: 0 !important
+
+  .container
+    padding-top: 61px
+
+  .content
+    padding-left: 160px
+    font-size: 0.8rem
