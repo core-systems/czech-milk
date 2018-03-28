@@ -12,9 +12,31 @@ const SelectLanguage = (props) => {
     </Link>
   )
   //<FormattedMessage id="selectLanguage" />
-  console.log(props.intl)
+  //console.log(props.intl)
+  //    {/*<nav class="navbar" role="navigation" aria-label="dropdown navigation">*/}
   return (
-    <div className="navbar-item has-dropdown is-hoverable">
+    <div className="navbar-item has-dropdown is-hoverable0 lang-switcher">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button">
+              <span class="icon">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </span>
+              <span>Tweet</span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary">
+              <span class="icon">
+                <i class="fas fa-download" aria-hidden="true"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </p>
+        </div>
+      </div>
+
       <div className="field">
         <p className="control has-icons-left">
           <span className="select">
@@ -30,11 +52,24 @@ const SelectLanguage = (props) => {
         </p>
       </div>
 
+      <div className="control has-icons-left">
+        <div className="select is-medium">
+          <select>
+            <option selected>Country</option>
+            <option>Select dropdown</option>
+            <option>With options</option>
+          </select>
+        </div>
+        <span className="icon is-medium is-left">
+          <i className="fas fa-globe"></i>
+        </span>
+      </div>
+
       <a className="navbar-link" title={props.intl.messages.selectLanguage}>
         {props.intl.locale}
       </a>
 
-      <div className="navbar-dropdown is-boxed">
+      <div className="navbar-dropdown is-boxed0 is-inverted0 is-outlined0">
         <a className="navbar-item">
           Overview
         </a>

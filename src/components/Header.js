@@ -29,45 +29,13 @@ const MainSubTitle = styled.span`
 const Header = (props) => (
   <section className="hero">
     <div className="hero-head">
-      <nav className="navbar is-transparent0">
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" style={{ position: 'absolute', top: 40, left: 0 }}>
-              <figure className="image">
-                <img src={logo} alt="Kaldi" width="241px" height="150px" style={{ width: '241px', height: '150px', maxHeight: '150px' }} />
-              </figure>
-            </Link>
-            <span className="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" className="navbar-menu">
-            <div className="navbar-end">
-              <a className="navbar-item is-active">
-                Home
-              </a>
-              <a className="navbar-item">
-                Examples
-              </a>
-              <span className="navbar-item">
-                <a className="button is-primary is-inverted is-outlined">
-                  <span className="icon">
-                    <i className="fab fa-github"></i>
-                  </span>
-                  <span>Download</span>
-                </a>
-              </span>
-            </div>
-          </div>
-          <Navbar langs={props.langs} />
-        </div>
-      </nav>
+      <div className="container">
+        <Navbar langs={props.langs} />
+      </div>
     </div>
 
     <div className="hero-body">
-      <div className="columns is-mobile">
+      <div className="columns">
         <div className="column is-three-fifths is-offset-one-fifth has-text-centered">
           <p className="title">
             <MainTitleRed>TO NEJLEPŠÍ</MainTitleRed>

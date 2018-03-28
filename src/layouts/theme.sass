@@ -24,9 +24,51 @@ section.hero
   //background-position: top center
   min-height: 808px
 
+.hero-head
+  > .container
+    //padding-left: 4rem
+  .navbar-brand
+    .navbar-item
+      width: 250px
+      @include media("<desktop")
+        //position: inherit !important
+
+      img
+        position: absolute
+        top: 39px
+        left: 80px
+        width: 241px
+        max-width: 241px
+        //height: 150px
+        max-height: 150px
+        width: 436px
+        max-width: 436px
+        //height: 271px
+        max-height: 271px
+        @include media(">=tablet", "<desktop")
+          width: 150px
+        @include media("<tablet")
+          //width: 241px
+          //max-width: 130px
+          //height: 150px
+          width: 120px
+          //max-height: 150px
+
 .hero-body .title
-  // 384px - 52px
   margin-top: 15rem
+  @include media(">=tablet", "<desktop")
+    margin-top: 11rem
+    font-size: 50pt
+  @include media("<tablet")
+    margin-top: 13rem
+
+.hero-body .column.is-three-fifths
+  @include media(">=tablet", "<desktop")
+    flex: auto
+    margin-left: 0
+  @include media("<tablet")
+    flex: auto
+    margin-left: 0
 
 .hero-body .subtitle
   margin-top: 3rem !important
@@ -37,16 +79,21 @@ section.hero
   color: #888888
 
 .flags-cs-eu
+  display: flex
   margin-left: 54%
-  //position: relative
-  //top: -9rem
   flex-grow: 0
   flex-shrink: 0
-  //padding: 3rem 1.5rem
+  @include media(">=phone", "<desktop")
+    margin: 0 auto
+    justify-content: center
 
 .section-content
   position: relative
   padding-top: 280px
+  @include media(">=tablet", "<desktop")
+    padding-top: 130px
+  @include media("<tablet")
+    padding-top: 100px
 
 .content-bg-top
   display: block
@@ -92,15 +139,11 @@ section.hero
       content: ' '
       display: block
       width: 100%
-      //max-width: 1676px
       height: 146px
-      //max-height: 146px
-      //margin: 0 auto auto 0
       background-image: url('/svg/footer-bg-cloud-top-green2.svg')
       //background-image: url('/img/footer-bg-cloud-green.png')
       background-size: cover
-      //background-position: bottom center
-      background-position: 0 0
+      background-position: 0 1px
       background-clip: border-box
       background-repeat: no-repeat
 
@@ -120,3 +163,8 @@ section.hero
   .content
     padding-left: 160px
     font-size: 0.8rem
+
+.lang-switcher
+  .navbar-link
+    border: 1px solid rgba(16,115,184,1.0)
+    border-radius: 3px
