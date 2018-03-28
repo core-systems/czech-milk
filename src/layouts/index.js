@@ -28,9 +28,17 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         <Helmet
           title={`${data.site.siteMetadata.title}`}
           meta={[
+            { name: 'charset', content: 'UTF-8' },
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          htmlAttributes={{
+              lang: `${langKey}`,
+          }}
+          bodyAttributes={{
+              class: `lang-${langKey}`,
+              lang: `${langKey}`,
+          }}
         />
         <Header langs={langsMenu} languages={languages} />
         <section className="section section-content" role="content">
