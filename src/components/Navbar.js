@@ -21,7 +21,7 @@ const Navbar = (props) => (
     </div>
 
     <div id="navMenu" className="navbar-menu">
-      <div className="navbar-start">
+      <div className="navbar-end">
         <Link className="navbar-item" to="/about">
           About
         </Link>
@@ -32,28 +32,6 @@ const Navbar = (props) => (
 
       <div className="navbar-end">
         <SelectLanguage langs={props.langs} />
-
-        <div className="navbar-item is-hoverable">
-          <div className="field is-grouped">
-            <p className="control">
-              <a className="button">
-                <span className="icon">
-                  <i className="fab fa-twitter" aria-hidden="true"></i>
-                </span>
-                <span>Tweet</span>
-              </a>
-            </p>
-            <p className="control">
-              <a className="button is-primary">
-                <span className="icon">
-                  <i className="fas fa-download" aria-hidden="true"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </p>
-          </div>
-        </div>
-
       </div>
     </div>
   </nav>

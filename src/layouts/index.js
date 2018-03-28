@@ -6,8 +6,8 @@ import { IntlProvider } from 'react-intl'
 import 'intl'
 
 import Header from '../components/Header'
-import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+
 import './all.sass'
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
