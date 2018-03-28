@@ -1,13 +1,13 @@
-import React from 'react'
-import graphql from 'graphql'
-import Layout from './index'
-import { addLocaleData } from 'react-intl'
+import React from 'react';
+import graphql from 'graphql';
+import Layout from './index';
+import { addLocaleData } from 'react-intl';
 
-import messages from '../data/messages/en'
-import en from 'react-intl/locale-data/en'
-import 'intl/locale-data/jsonp/en'
+import messages from '../data/messages/ar';
+import ar from 'react-intl/locale-data/ar';
+import 'intl/locale-data/jsonp/ar';
 
-addLocaleData(en)
+addLocaleData(ar);
 
 export default (props) => (
   <Layout
@@ -17,7 +17,7 @@ export default (props) => (
 )
 
 export const pageQuery = graphql`
-  query LayoutEn {
+  query LayoutAr {
     site {
       siteMetadata {
         title

@@ -3,11 +3,11 @@ import graphql from 'graphql'
 import Layout from './index'
 import { addLocaleData } from 'react-intl'
 
-import messages from '../data/messages/en'
-import en from 'react-intl/locale-data/en'
-import 'intl/locale-data/jsonp/en'
+import messages from '../data/messages/vi'
+import vi from 'react-intl/locale-data/vi'
+import 'intl/locale-data/jsonp/vi'
 
-addLocaleData(en)
+addLocaleData(vi)
 
 export default (props) => (
   <Layout
@@ -17,7 +17,7 @@ export default (props) => (
 )
 
 export const pageQuery = graphql`
-  query LayoutEn {
+  query LayoutVi {
     site {
       siteMetadata {
         title

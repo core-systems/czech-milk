@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langKeys, langKey, getUrlForLang(homeLink, url));
 
-  console.log('data.site.siteMetadata.languages', data.site.siteMetadata.languages)
+  console.log('data.site.siteMetadata', data.site.siteMetadata.languages)
 
   return (
     <IntlProvider
@@ -39,7 +39,8 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
               class: `lang-${langKey}`,
               lang: `${langKey}`,
           }}
-        />
+        >
+        </Helmet>
         <Header langs={langsMenu} languages={languages} />
         <section className="section section-content" role="content">
           <div className='content-bg-botttom'></div>

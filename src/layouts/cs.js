@@ -13,10 +13,11 @@ export default (props) => (
   <Layout
     {...props}
     i18nMessages={messages}
-  />);
+  />
+)
 
 export const pageQuery = graphql`
-  query LayoutPt {
+  query LayoutCs {
     site {
       siteMetadata {
         title
