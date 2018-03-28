@@ -1,3 +1,9 @@
 module.exports = {
-  'selectLanguage': 'Vyberte jazyk'
-};
+  // Languages
+  'selectLanguage': 'Vyberte jazyk',
+  'ar': 'Arabsky',
+  'zh': 'Čínsky',
+  'cs': 'Česky',
+  'en': 'Anglicky',
+  'vi': 'Vietnamsky',
+}
