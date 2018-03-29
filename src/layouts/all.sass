@@ -9,7 +9,13 @@
 @import "~include-media/dist/_include-media.scss"
 
 // Layout
-$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px)
+// on $desktop it will have a maximum width of 960px.
+// on $widescreen it will have a maximum width of 1152px.
+// on $fullhd it will have a maximum width of 1344px.
+// The values 960, 1152 and 1344 have been chosen because they are divisible by both 12 and 16.
+
+//$breakpoints: ('phone': 320px, 'tablet': 768px, 'desktop': 1024px) !default
+//$breakpoints: ('mobile': $tablet - 1, 'tablet': $desktop - 1, 'desktop': $widescreen - 1, 'widescreen': $fullhd - 1, 'fullhd': $fullhd)
 
 // Config vars
 $kaldi-red: #FD461E

@@ -11,17 +11,19 @@ import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
-  const url = location.pathname;
-  const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages;
-  const langKey = getCurrentLangKey(langKeys, defaultLangKey, url);
-  const homeLink = `/${langKey}/`;
-  const langsMenu = getLangs(langKeys, langKey, getUrlForLang(homeLink, url));
+  const url = location.pathname
+  const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages
+  const langKey = getCurrentLangKey(langKeys, defaultLangKey, url)
+  const homeLink = `/${langKey}/`
+  const langsMenu = getLangs(langKeys, langKey, getUrlForLang(homeLink, url))
 
   console.log('data.site.siteMetadata', data.site.siteMetadata.languages)
 
   return (
     <IntlProvider
       locale={langKey}
+      //key={langKey}
+      defaultLocale={defaultLangKey}
       messages={i18nMessages}
     >
       <div className='is-fullwidth'>

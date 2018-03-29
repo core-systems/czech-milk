@@ -1,5 +1,5 @@
 @charset "utf-8"
-//@import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/initial-variables"
 @import "~bulma/sass/utilities/_all"
 //@import "~bulma/sass/base/_all"
 //@import "~bulma/sass/elements/_all"
@@ -17,12 +17,54 @@ body
   background-position: top center
   background-repeat: no-repeat
   //min-height: 1409px
+  +mobile
+    background-color: blue
+    background-position: center -75px
+  +tablet
+    background-color: #14ff67
+  +desktop
+    background-color: red
+  +widescreen
+    background-color: silver
+  +fullhd
+    background-color: yellow
+
+  &:after
+    content: '<n/a>'
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    min-width: 180px
+    min-height: 40px
+    text-align: center
+    font-size: 20pt
+    line-height: 20pt
+    color: black
+
+    +mobile
+      content: '<mobile>'
+      background-color: blue
+    +tablet
+      content: '<tablet>'
+      background-color: #14ff67
+    +desktop
+      content: '<desktop>'
+      background-color: red
+    +widescreen
+      content: '<widescreen>'
+      background-color: silver
+    +fullhd
+      content: '<fullhd>'
+      background-color: yellow
 
 section.hero
   //background-image: url('/img/header-bg-top.png')
   //background-size: cover
   //background-position: top center
   min-height: 808px
+  +mobile
+    min-height: 780px
 
 .hero-head
   > .container
@@ -30,51 +72,100 @@ section.hero
 
   .navbar-end
     margin-top: 50px
-    @include media(">=tablet", "<desktop")
+
+    +media('>=tablet', '<desktop')
       margin-top: 0
 
   .navbar-brand
     .navbar-item
       width: 250px
-      @include media("<desktop")
+      +mobile
         //position: inherit !important
+      &:hover
+        background-color: transparent !important
 
       img
         position: absolute
         top: 39px
         left: 80px
-        width: 241px
-        max-width: 241px
-        //height: 150px
-        max-height: 150px
         width: 436px
         max-width: 436px
         //height: 271px
         max-height: 271px
-        @include media(">=tablet", "<desktop")
-          width: 150px
-        @include media("<tablet")
-          //width: 241px
-          //max-width: 130px
-          //height: 150px
-          width: 120px
-          //max-height: 150px
+        +mobile
+          width: 200px
+          max-width: 241px
+          top: 0
+          left: 0
+        +tablet
+          width: 241px
+          max-width: 241px
+          top: 20px
+          left: 20px
+        +desktop
+          top: 0
+          left: -100px
+          width: 436px
+          max-width: 436px
+        +widescreen
+          top: 0
+          left: -6px
+          width: 436px
+          max-width: 436px
+        +fullhd
+          top: 39px
+          left: 80px
+          width: 436px
+          max-width: 436px
 
 .hero-body .title
   margin-top: 15rem
-  @include media(">=tablet", "<desktop")
-    margin-top: 11rem
-    font-size: 50pt
-  @include media("<tablet")
-    margin-top: 13rem
+  +mobile
+    margin-top: 6rem
+  +media('>=528px')
+    margin-top: 7rem
+  +tablet
+    margin-top: 15rem
+  +desktop
+    margin-top: 15rem
+  +widescreen
+    margin-top: 15rem
 
-.hero-body .column.is-three-fifths
-  @include media(">=tablet", "<desktop")
+  > .title-red
+    color: #df3036
+    font-size: 40pt
+    font-weight: 100 !important
+    +mobile
+      font-size: 30pt
+      //white-space: nowrap
+
+  > .title-blue
+    color: #1070b8
+    font-size: 50pt
+    font-weight: 600 !important
+    +mobile
+      font-size: 37pt
+      //white-space: nowrap
+  br
+    +mobile
+      display: none
+
+.hero-body .column.is-8
+  +media(">=tablet", "<desktop")
     flex: auto
     margin-left: 0
-  @include media("<tablet")
+  +media("<tablet")
     flex: auto
     margin-left: 0
+  +fullhd
+    //margin-left: 25%
+    //width: 50%
+  +media(">=2100px")
+    //margin-left: 30%
+    //width: 40%
+  +media(">=2100px")
+    //margin-left: 30%
+    //width: 40%
 
 .hero-body .subtitle
   margin-top: 3rem !important
@@ -89,16 +180,16 @@ section.hero
   margin-left: 54%
   flex-grow: 0
   flex-shrink: 0
-  @include media(">=phone", "<desktop")
+  +media(">=phone", "<desktop")
     margin: 0 auto
     justify-content: center
 
 .section-content
   position: relative
   padding-top: 280px
-  @include media(">=tablet", "<desktop")
+  +media(">=tablet", "<desktop")
     padding-top: 130px
-  @include media("<tablet")
+  +media("<tablet")
     padding-top: 100px
 
 .content-bg-top
@@ -142,16 +233,16 @@ section.hero
   position: relative
   background-color: white
   &:after
-      content: ' '
-      display: block
-      width: 100%
-      height: 146px
-      background-image: url('/svg/footer-bg-cloud-top-green2.svg')
-      //background-image: url('/img/footer-bg-cloud-green.png')
-      background-size: cover
-      background-position: 0 1px
-      background-clip: border-box
-      background-repeat: no-repeat
+    content: ' '
+    display: block
+    width: 100%
+    height: 146px
+    background-image: url('/svg/footer-bg-cloud-top-green2.svg')
+    //background-image: url('/img/footer-bg-cloud-green.png')
+    background-size: cover
+    background-position: 0 1px
+    background-clip: border-box
+    background-repeat: no-repeat
 
 .footer
   color: $czech-milk-color-green

@@ -28,9 +28,6 @@ const Navbar = (props) => (
         <Link className="navbar-item" to="/products">
           Products
         </Link>
-      </div>
-
-      <div className="navbar-end">
         <SelectLanguage langs={props.langs} />
       </div>
     </div>
