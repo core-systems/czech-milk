@@ -18,16 +18,7 @@ body
   background-repeat: no-repeat
   //min-height: 1409px
   +mobile
-    background-color: blue
     background-position: center -75px
-  +tablet
-    background-color: #14ff67
-  +desktop
-    background-color: red
-  +widescreen
-    background-color: silver
-  +fullhd
-    background-color: yellow
 
   &:after
     content: '<n/a>'
@@ -41,7 +32,6 @@ body
     font-size: 20pt
     line-height: 20pt
     color: black
-
     +mobile
       content: '<mobile>'
       background-color: blue
@@ -248,11 +238,21 @@ section.hero
   color: $czech-milk-color-green
   height: 111px
   width: 100%
-  background-image: url('/svg/footer-bg-cloud-green-dark.svg')
-  background-size: initial
-  background-position: -150px bottom
-  background-repeat: no-repeat
   padding-top: 0 !important
+  &:before
+    content: ' '
+    position: absolute
+    left: -27%
+    right: 0
+    display: block
+    //width: 100%
+    height: inherit
+    background-image: url('/svg/footer-bg-cloud-green-dark.svg')
+    background-size: initial
+    background-position: center bottom
+    background-repeat: no-repeat
+    +fullhd
+      //left: -30%
 
   .container
     padding-top: 61px
@@ -260,6 +260,16 @@ section.hero
   .content
     padding-left: 160px
     font-size: 0.8rem
+    +mobile
+      padding-left: 0
+    +tablet
+      padding-left: 160px
+    +desktop
+      padding-left: 160px
+    +widescreen
+      padding-left: 160px
+    +fullhd
+      padding-left: 220px
 
 .lang-switcher
   .navbar-link
