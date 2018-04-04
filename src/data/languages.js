@@ -1,9 +1,9 @@
 const languages = [
-  { key: 'ar', label: 'Arabic', default: false },
-  { key: 'zh', label: 'Chinese', default: false },
-  { key: 'cs', label: 'Czech', default: false },
-  { key: 'en', label: 'English', default: true },
-  { key: 'vi', label: 'Vietnamese', default: false },
+  { key: 'ar', label: 'Arabic',     dir: 'rtl', default: false },
+  { key: 'zh', label: 'Chinese',    dir: 'ltr', default: false },
+  { key: 'cs', label: 'Czech',      dir: 'ltr', default: false },
+  { key: 'en', label: 'English',    dir: 'ltr', default: true },
+  { key: 'vi', label: 'Vietnamese', dir: 'ltr', default: false },
 ]
 
 const langKeys = languages.map(l => l.key)

@@ -1,6 +1,6 @@
-const languages = require('./src/data/languages');
+const languages = require('./src/data/languages')
 
-console.log('languages', languages)
+console.log('languages>', languages)
 
 module.exports = {
   siteMetadata: {

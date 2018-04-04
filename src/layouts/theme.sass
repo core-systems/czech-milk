@@ -57,6 +57,7 @@ section.hero
     min-height: 780px
 
 .hero-head
+  z-index: 1
   > .container
     //padding-left: 4rem
 
@@ -178,7 +179,7 @@ section.hero
   position: relative
   padding-top: 280px
   +media(">=tablet", "<desktop")
-    padding-top: 130px
+    padding-top: 230px
   +media("<tablet")
     padding-top: 100px
 
@@ -195,7 +196,38 @@ section.hero
   background-position: bottom left
   background-clip: border-box
   background-repeat: no-repeat
-  //background-color: red
+
+.cow
+  position: absolute
+  width: 550px
+  height: 583px
+  top: -128px
+  right: -328px
+  background-image: url('/svg/cow.svg')
+  background-size: cover
+  background-position: 0 0
+  background-repeat: no-repeat
+  //background-color: rgba(255,0,0,.3)
+  +mobile
+    width: 550px
+    height: 583px
+    top: -128px
+    right: -328px
+  +media("<=650px")
+    width: 550px
+    height: 400px
+    top: 18px
+    right: -345px
+  +tablet
+    width: 550px
+    height: 583px
+    top: -128px
+    right: -328px
+  +desktop
+    width: 550px
+    height: 583px
+    top: -128px
+    right: -328px
 
 .content-bg-botttom
   position: absolute

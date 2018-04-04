@@ -14,14 +14,15 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const url = location.pathname
   const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages
   const langKey = getCurrentLangKey(langKeys, defaultLangKey, url)
-  const homeLink = `/${langKey}/`
-  const langsMenu = getLangs(langKeys, langKey, getUrlForLang(homeLink, url))
+  const actualLang = languages.find(x => x.key === langKey)
+  const homeLink = `/${actualLang.key}/`
+  const langsMenu = getLangs(langKeys, actualLang.key, getUrlForLang(homeLink, url))
 
-  console.log('data.site.siteMetadata', data.site.siteMetadata.languages)
+  console.log('actualLang', actualLang)
 
   return (
     <IntlProvider
-      locale={langKey}
+      locale={actualLang.key}
       //key={langKey}
       defaultLocale={defaultLangKey}
       messages={i18nMessages}
@@ -35,34 +36,24 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
             { name: 'keywords', content: 'sample, something' },
           ]}
           htmlAttributes={{
-              lang: `${langKey}`,
+              lang: `${actualLang.key}`,
+              dir: `${actualLang.dir}`,
           }}
           bodyAttributes={{
-              class: `lang-${langKey}`,
-              lang: `${langKey}`,
+              class: `lang-${actualLang.key}`,
           }}
         >
         </Helmet>
         <Header langs={langsMenu} languages={languages} />
         <section className="section section-content" role="content">
           <div className='content-bg-botttom'></div>
-          {/*
-            <div className="columns">
-              <div className="column">
-                {children()}
-              </div>
-            </div>
-          */}
-          {/*
-            <div className="container content-container0">
-              {children()}
-            </div>
-          */}
           <div className="columns">
             <div className="column">
               <div className="container content-container">
-                <div className='content-bg-top'></div>
                 {children()}
+                <div className='content-bg-top'>
+                  <div className='cow'></div>
+                </div>
               </div>
             </div>
           </div>
@@ -92,6 +83,7 @@ export const pageQuery = graphql`
             key
             label
             default
+            dir
           }
         }
       }
