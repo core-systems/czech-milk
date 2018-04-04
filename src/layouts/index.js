@@ -6,6 +6,7 @@ import { IntlProvider } from 'react-intl'
 import 'intl'
 
 import Header from '../components/Header'
+import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 
 import './all.sass'
@@ -23,13 +24,14 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   return (
     <IntlProvider
       locale={actualLang.key}
-      //key={langKey}
+      key={actualLang.key}
       defaultLocale={defaultLangKey}
       messages={i18nMessages}
     >
       <div className='is-fullwidth'>
         <Helmet
-          title={`${data.site.siteMetadata.title}`}
+          defaultTitle={`Products | ${data.site.siteMetadata.title}`}
+          titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
           meta={[
             { name: 'charset', content: 'UTF-8' },
             { name: 'description', content: 'Sample' },
@@ -43,26 +45,26 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
               class: `lang-${actualLang.key}`,
           }}
         >
+            {/*<title itemProp="name" lang={`${actualLang.key}`}>{`${data.site.siteMetadata.title}`}</title>*/}
         </Helmet>
         <Header langs={langsMenu} languages={languages} />
         <section className="section section-content" role="content">
           <div className='content-bg-botttom'></div>
-          <div className="columns">
-            <div className="column">
-              <div className="container content-container">
-                {children()}
-                <div className='content-bg-top'>
-                  <div className='cow'></div>
-                </div>
-              </div>
+          <div className="container content-container">
+            <div className='content-bg-top'>
+              <div className='cow'></div>
+            </div>
+            <div className="container is-fluid">
+              {children()}
             </div>
           </div>
         </section>
+        <Contacts />
         <Footer />
       </div>
     </IntlProvider>
-  );
-};
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

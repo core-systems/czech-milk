@@ -1,23 +1,22 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  helmet,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="section section-about-page section--gradient">
+      {helmet || ''}
+      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+        {title}
+      </h2>
+      <PageContent className="content" content={content} />
     </section>
   )
 }
@@ -30,6 +29,7 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
+      helmet={<Helmet title={`About | ${post.frontmatter.title}`} />}
     />
   )
 }

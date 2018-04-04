@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+//import Link from 'gatsby-link'
 
+import Link from './Link'
 import SelectLanguage from './SelectLanguage';
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'

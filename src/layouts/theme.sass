@@ -56,6 +56,11 @@ section.hero
   +mobile
     min-height: 780px
 
+.navbar-menu.is-active
+  position: absolute
+  left: 0
+  right: 0
+
 .hero-head
   z-index: 1
   > .container
@@ -207,6 +212,7 @@ section.hero
   background-size: cover
   background-position: 0 0
   background-repeat: no-repeat
+  z-index: 10
   //background-color: rgba(255,0,0,.3)
   +mobile
     width: 550px
@@ -228,6 +234,10 @@ section.hero
     height: 583px
     top: -128px
     right: -328px
+
+.section-contact-us
+  color: white
+  background-color: $czech-milk-color-green-dark
 
 .content-bg-botttom
   position: absolute
@@ -265,6 +275,13 @@ section.hero
     background-position: 0 1px
     background-clip: border-box
     background-repeat: no-repeat
+
+//.section-about-page,
+.section-products,
+.section-product-page
+  position: relative
+  top: -150px
+  margin-bottom: -150px
 
 .footer
   color: $czech-milk-color-green
