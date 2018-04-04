@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyForNull: 'en',
+        langKeyForNull: 'any',
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: true,
         markdownRemark: {

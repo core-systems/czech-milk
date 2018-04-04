@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 
 import './all.sass'
 
-const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
+const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => {
   const url = location.pathname
   const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages
   const langKey = getCurrentLangKey(langKeys, defaultLangKey, url)
@@ -24,8 +24,8 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   return (
     <IntlProvider
       locale={actualLang.key}
-      key={actualLang.key}
-      defaultLocale={defaultLangKey}
+      //key={actualLang.key}
+      //defaultLocale={defaultLangKey}
       messages={i18nMessages}
     >
       <div className='is-fullwidth'>

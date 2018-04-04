@@ -7,14 +7,14 @@ const SelectLanguage = (props) => {
   console.log('SelectLanguage', props)
   const links = props.langs.map(lang =>
     <Link to={lang.link} key={lang.langKey} className={`navbar-item ${(props.intl.locale === lang.langKey ? 'is-active' : '')}`}>
-      <FormattedMessage id={lang.langKey} />
+      <FormattedMessage id={lang.langKey} values={{}} defaultMessage='LangName' description='LANG_NAME' />
     </Link>
   )
 
   return (
     <div className="navbar-item has-dropdown is-hoverable lang-switcher">
       <a className="navbar-link" title={props.intl.messages.selectLanguage}>
-        <FormattedMessage id={props.intl.locale} />
+        <FormattedMessage id={props.intl.locale} defaultMessage='CurrentLangName' description='CurrentLangName' />
       </a>
       <div className="navbar-dropdown is-boxed0 is-inverted0 is-outlined0">
         {links}
