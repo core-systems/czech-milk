@@ -1,6 +1,6 @@
-import React from 'react';
-import { getUserLangKey } from 'ptz-i18n';
-import { withPrefix } from "gatsby-link";
+import React from 'react'
+import { getUserLangKey } from 'ptz-i18n'
+import { withPrefix } from "gatsby-link"
 
 class RedirectIndex extends React.PureComponent {
   constructor(args) {
@@ -31,8 +31,8 @@ export default RedirectIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site{
-      siteMetadata{
+    site {
+      siteMetadata {
         languages {
           defaultLangKey
           langs
@@ -40,4 +40,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

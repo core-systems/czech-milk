@@ -21,12 +21,18 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
 
   console.log('actualLang', actualLang)
 
+  function Fragment(props) {
+    console.log('fragment', props)
+    return props.children || <span {...props} /> || <React.Fragment {...props} /> || null
+  }
+
   return (
     <IntlProvider
       locale={actualLang.key}
       //key={actualLang.key}
       defaultLocale={defaultLangKey}
       messages={i18nMessages}
+      //textComponent={React.Fragment}
     >
       <div className='is-fullwidth'>
         <Helmet
@@ -47,7 +53,7 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
         >
             {/*<title itemProp="name" lang={`${actualLang.key}`}>{`${data.site.siteMetadata.title}`}</title>*/}
         </Helmet>
-        <Header langs={langsMenu} languages={languages} />
+        <Header langs={langsMenu} languages={languages} siteTitle={data.site.siteMetadata.title} />
         <section className="section section-content" role="content">
           <div className='content-bg-botttom'></div>
           <div className="container content-container">

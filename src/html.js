@@ -42,13 +42,14 @@ module.exports = class HTML extends React.Component {
           {this.props.postBodyComponents}
           <script src="/js/dynamicListener.min.js" defer="defer" />
           <script src="/js/index.js" defer="defer" />
+          {/*
           <script
             dangerouslySetInnerHTML={{
               __html: `
-                
             `,
             }}
           />
+          */}
         </body>
       </html>
     )

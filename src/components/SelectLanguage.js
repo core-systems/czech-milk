@@ -7,7 +7,7 @@ const SelectLanguage = (props) => {
   console.log('SelectLanguage', props)
   const links = props.langs.map(lang =>
     <Link to={lang.link} key={lang.langKey} className={`navbar-item ${(props.intl.locale === lang.langKey ? 'is-active' : '')}`}>
-      <FormattedMessage id={lang.langKey} values={{}} defaultMessage='LangName' description='LANG_NAME' />
+      <FormattedMessage id={lang.langKey} defaultMessage='LangKey' description='LangKey' />
     </Link>
   )
 
@@ -64,4 +64,4 @@ SelectLanguage.propTypes = {
   intl: intlShape.isRequired,
 }
 
-export default injectIntl(SelectLanguage);
+export default injectIntl(SelectLanguage)

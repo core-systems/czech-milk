@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 import Navbar from './Navbar'
@@ -10,7 +11,7 @@ const Header = (props) => (
   <section className="hero">
     <div className="hero-head">
       <div className="container">
-        <Navbar langs={props.langs} />
+        <Navbar langs={props.langs} siteTitle={props.siteTitle} />
       </div>
     </div>
 
@@ -21,5 +22,9 @@ const Header = (props) => (
     </div>
   </section>
 )
+
+Header.propTypes = {
+  siteTitle: PropTypes.string.isRequired,
+}
 
 export default Header
