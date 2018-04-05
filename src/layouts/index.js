@@ -25,12 +25,12 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
     <IntlProvider
       locale={actualLang.key}
       //key={actualLang.key}
-      //defaultLocale={defaultLangKey}
+      defaultLocale={defaultLangKey}
       messages={i18nMessages}
     >
       <div className='is-fullwidth'>
         <Helmet
-          defaultTitle={`Products | ${data.site.siteMetadata.title}`}
+          defaultTitle={`Home | ${data.site.siteMetadata.title}`}
           titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
           meta={[
             { name: 'charset', content: 'UTF-8' },

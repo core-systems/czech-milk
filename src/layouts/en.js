@@ -12,7 +12,6 @@ addLocaleData(en)
 export default (props) => (
   <Layout
     {...props}
-    //locale="en"
     i18nMessages={messages}
   />
 )
