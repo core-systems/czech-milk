@@ -52,6 +52,12 @@ $footer-background-color: $czech-milk-color-green
 
 .has-dotted-right-border
   border-right: 1px dotted rgba(255,255,255,.7) !important
+  +mobile
+    border-right: 0 dotted rgba(255,255,255,.7) !important
+
+.has-dotted-bottom-border-mobile
+  +mobile
+    border-bottom: 1px dotted rgba(255,255,255,.7) !important
 
 @import "~bulma"
 @import "./theme.sass"

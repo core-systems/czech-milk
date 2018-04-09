@@ -36,7 +36,7 @@ const Contacts = (props) => (
           </div>
 
         </div>
-        <div className="column is-3 has-dotted-right-border">
+        <div className="column is-3 has-dotted-right-border has-dotted-bottom-border-mobile">
           <div className="content has-text-centered">
             <p>
               xxx
