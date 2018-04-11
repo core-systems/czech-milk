@@ -7,6 +7,7 @@
 //@import "~bulma/sass/grid/_all"
 //@import "~bulma/sass/layout/_all"
 //@import "~breakpoints"
+@import "./mixins"
 
 // Theme
 body
@@ -182,11 +183,14 @@ section.hero
 
 .section-content
   position: relative
+  padding-bottom: 0rem
   padding-top: 280px
   +media(">=tablet", "<desktop")
     padding-top: 230px
   +media("<tablet")
     padding-top: 100px
+  +mobile
+    padding-bottom: 4rem
 
 .content-bg-top
   display: block
@@ -238,6 +242,53 @@ section.hero
 .section-contact-us
   color: white
   background-color: $czech-milk-color-green-dark
+  //margin-top: -50px
+  padding-top: 0
+  +desktop
+    margin-top: -30px
+
+  .column
+    +mobile
+      margin-bottom: 2rem
+      &:last-child
+        margin-bottom: 0
+
+  h2
+    //font-size: 1.3em
+    font-weight: 200
+    padding-left: 3rem
+    margin-bottom: 1.25rem
+    color: white
+    +mobile
+      padding-left: 0
+
+  figure
+    min-height: 3rem
+    margin-bottom: .5rem !important
+
+  .input,
+  .textarea
+    background-color: transparent !important
+    color: white !important
+    border-color: #fff !important
+    @include inputPlaceholder()
+      color: white !important
+      opacity: 1 !important
+
+  .control.has-icons-left .input:focus~.icon,
+  .control.has-icons-left .select:focus~.icon,
+  .control.has-icons-right .input:focus~.icon,
+  .control.has-icons-right .select:focus~.icon
+    color: white
+
+  a,
+  a:link
+    color: $contacts-link-color
+    text-decoration: none
+    &:hover,
+    &:active,
+    &:focus
+      text-decoration: underline
 
 .content-bg-botttom
   position: absolute
@@ -319,6 +370,15 @@ section.hero
       padding-left: 160px
     +fullhd
       padding-left: 220px
+
+  a,
+  a:link
+    color: $footer-link-color
+    text-decoration: none
+    &:hover,
+    &:active,
+    &:focus
+      text-decoration: underline
 
 .lang-switcher
   .navbar-link

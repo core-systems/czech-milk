@@ -7,7 +7,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="container">
+      <React.Fragment>
         <div className="content">
           <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
         </div>
@@ -36,7 +36,7 @@ export default class IndexPage extends React.Component {
               </p>
             </div>
           ))}
-      </div>
+      </React.Fragment>
     )
   }
 }

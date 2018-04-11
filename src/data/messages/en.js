@@ -22,4 +22,18 @@ module.exports = {
       ve zpracování mléka. Nabízíme výrobky značky Lipánek, vhodné
       pro děti od 12 měsíců, i kvalitní Jihočeské mléka od lokálních výrobců.
   `,
+
+  //forms
+  'form.send': 'Send',
+  'form.reset': 'Reset',
+
+  'form.contactUs.title': 'Write us',
+  'form.contactUs.name.placeholder': 'Full name...',
+  'form.contactUs.email.placeholder': 'E-mail...',
+  'form.contactUs.message.placeholder': 'Message...',
+
+  // texts
+  'producer': 'Producer',
+  'exporter': 'Exporter',
+
 }

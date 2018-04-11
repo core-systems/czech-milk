@@ -9,7 +9,7 @@ import Header from '../components/Header'
 import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 
-import './all.sass'
+import '../styles/all.sass'
 
 const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => {
   const url = location.pathname
