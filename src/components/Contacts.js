@@ -26,7 +26,7 @@ const Contacts = (props) => (
           <div className="content is-small">
             <h2><FormattedMessage id="form.contactUs.title" /></h2>
 
-            <form action="#form:contact-us" method="post" target="_blank" accept-charset="UTF-8"  autocomplete="off" >
+            <form action="#form:contact-us" method="post" target="_blank" acceptCharset="UTF-8"  autoComplete="off" >
               <div className="field is-grouped">
                 <div className="control has-icons-left has-icons-right is-expanded">
                   <input name="name" className="input" type="name" placeholder={props.intl.formatMessage({ id :'form.contactUs.name.placeholder' })} aria-label="add full name" required />
@@ -55,17 +55,17 @@ const Contacts = (props) => (
                 </div>
               </div>
 
-              <div class="field is-grouped">
-                <p class="control">
-                  <button class="button is-primary">
+              <div className="field is-grouped">
+                <p className="control">
+                  <button className="button is-primary">
                     <FormattedMessage id="form.send" />
                   </button>
                 </p>
-                <p class="control">
-                  <input className="button is-primary" type="submit" value={props.intl.formatMessage({ id :'form.send' })} accesskey="s" disabled />
+                <p className="control">
+                  <input className="button is-primary" type="submit" value={props.intl.formatMessage({ id :'form.send' })} accessKey="s" disabled />
                 </p>
-                <p class="control">
-                  <input className="button is-light" type="reset" value={props.intl.formatMessage({ id :'form.reset' })} accesskey="r" disabled />
+                <p className="control">
+                  <input className="button is-light" type="reset" value={props.intl.formatMessage({ id :'form.reset' })} accessKey="r" disabled />
                 </p>
               </div>
 

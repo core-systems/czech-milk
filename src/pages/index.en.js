@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { FormattedMessage } from 'react-intl'
+
+import Products from '../components/Products'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -8,34 +11,10 @@ export default class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="content">
-          <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-        </div>
-        {posts
-          .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-          .map(({ node: post }) => (
-            <div
-              className="content"
-              style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-              key={post.id}
-            >
-              <p>
-                <Link className="has-text-primary" to={post.fields.slug}>
-                  {post.frontmatter.title}
-                </Link>
-                <span> &bull; </span>
-                <small>{post.frontmatter.date}</small>
-              </p>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button is-small" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
-              </p>
-            </div>
-          ))}
+        <h1 className="is-hidden">
+          <FormattedMessage id="products" />
+        </h1>
+        <Products />
       </React.Fragment>
     )
   }

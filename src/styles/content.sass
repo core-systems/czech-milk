@@ -1,0 +1,45 @@
+@charset "utf-8"
+@import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/_all"
+//@import "~bulma/sass/base/_all"
+//@import "~bulma/sass/elements/_all"
+//@import "~bulma/sass/components/_all"
+//@import "~bulma/sass/grid/_all"
+//@import "~bulma/sass/layout/_all"
+//@import "~breakpoints"
+@import "./mixins"
+
+//.section-about-page,
+.section-products,
+.section-product-page
+  position: relative
+  top: -100px
+  margin-bottom: -150px
+  padding-top: 0
+
+  .image-product
+    margin: -47px 1.1em 0em
+
+.product
+  position: relative
+
+.product-image
+  position: relative
+  &:after
+    content: ' '
+    display: block
+    position: absolute
+    left: -20px
+    bottom: 0px
+    width: 163%
+    min-height: 200px
+    background-image: url('/img/product-1-cloud.png')
+    background-repeat: no-repeat
+    background-position: left bottom
+    background-size: contain
+    background-clip: border-box
+
+.product-description
+    position: absolute
+    padding-right: 2em
+    z-index: 15
