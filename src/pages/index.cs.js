@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className="is-invisible">
+        <h1 className="is-hidden">
           <FormattedMessage id="products" />
         </h1>
         <Products />

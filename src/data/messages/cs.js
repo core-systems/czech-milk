@@ -35,4 +35,13 @@ module.exports = {
   // texts
   'producer': 'Výrobce',
   'exporter': 'Exportér',
+  'property': 'Vlastnost',
+  'value': 'Hodnota',
+
+  // Products
+   'product.name': 'Název produktu',
+   'product.expire': 'Minimální trvanlivost',
+   'product.packageWeight': 'Hmotnost',
+   'product.packageSize': 'Skupinové balení',
+   'product.code': 'Čárový kód',
 }
