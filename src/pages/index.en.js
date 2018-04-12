@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { FormattedMessage } from 'react-intl'
 
 import Products from '../components/Products'
@@ -11,7 +10,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className="is-hidden">
+        <h1 className="is-invisible">
           <FormattedMessage id="products" />
         </h1>
         <Products />
