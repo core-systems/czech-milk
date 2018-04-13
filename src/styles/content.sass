@@ -23,15 +23,14 @@
   margin-bottom: 1rem
   .column
     position: relative
-  &:last-child .product-image
-    figure
-      //margin-top: 0
+  &:last-child
+    margin-bottom: 3rem
 
 .product-cloud
   //content: ' '
   display: block
   position: absolute
-  bottom: 0px
+  bottom: -60px
   width: 163%
   min-height: 200px
   //background-image: attr(data-image-src)
@@ -41,14 +40,33 @@
   background-position: left bottom
   background-size: contain
   background-clip: border-box
+  +mobile
+    left: 0 !important
+    right: 0 !important
+    width: 100% !important
+
+.product:nth-of-type(3) .product-cloud
+  left: 0
+  width: 100%
+  bottom: -10px
+
+.product:nth-of-type(4) .product-cloud
+  right: 25px
+  width: 140%
+  bottom: -26px
 
 .left .product-info
   padding-left: 0.5rem
   padding-right: 4rem
+  +mobile
+    padding-right: 1rem
 
 .right .product-info
-  padding-left: 0rem
+  padding-left: 2rem
   padding-right: 2rem
+  +mobile
+    padding-left: 0.5rem
+    padding-right: 0.5rem
 
 .left .product-cloud
   left: -20px
@@ -58,18 +76,22 @@
     left: -20px
 
 .right .product-cloud
-  right: 10px
+  right: 15px
   width: 120%
+  bottom: -26px
 
 .product-image
   position: relative
   +mobile
     overflow-x: hidden
 
+  .content
+    position: relative
+
   figure
     margin: -47px 1.5rem 0
     +mobile
-      margin: 100px 4.5rem 0
+      margin: 20px 5.5rem 0
     +tablet
       margin: -47px 1.5rem 0
     +desktop
@@ -80,7 +102,7 @@
 .right .product-image figure
   margin: -47px 6.0rem 0 2rem
   +mobile
-    margin: 100px 4.5rem 0
+    margin: 20px 5.5rem 0
   +tablet
     margin: -47px 4.2rem 0 0rem
   +desktop
@@ -98,18 +120,44 @@
 
 .product:first-of-type .left .product-description
   padding-right: 5rem
+  +mobile
+    padding-right: 1rem
+
+.product:first-of-type .product-image figure
+  +mobile
+    margin: 100px 5.5rem 0 !important
 
 .product-table
+  color: #888888
   padding-right: 2rem
   +mobile
     padding-right: 0
 
+  table
+    th, td
+      //border-top: 2px solid #dee8f0 !important
+      border-color: transparent
+    tr:hover
+      background-color: transparent
+    tr:nth-child(odd)
+      //background-color: #dee8f0
+    tr:nth-child(even)
+      background-color: #dee8f0
+      td:first-of-type,
+        border-radius: 5px 0 0 5px
+      td:last-of-type
+        border-radius: 0 5px 5px 0
+    tr:first-child
+      td
+        border-top: 2px solid #dee8f0 !important
+    tr:last-child
+      td
+        border-bottom: 2px solid #dee8f0 !important
+
 .break-line-cloud
   position: relative
   //width: 100vw
-  margin: 0 -10px
+  margin: 2rem -10px 2rem
   display: flex
   justify-content: center
   align-items: center
-  margin-bottom: 2rem
-  //margin: 0 0 30px

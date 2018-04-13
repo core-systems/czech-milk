@@ -24,11 +24,11 @@ const Product = ({
       <div className={`columns ${isRight ? 'reverse-rows right' : 'left'}`}>
         <div className="column is-4 product-image">
           <div className="content">
-            <figure className="image is-2by3">
+            <figure className="image">
               <img src={productImg} alt={`[product, image, ${productName}]`} width={268} />
             </figure>
+            <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
           </div>
-          <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
         </div>
         <div className="column product-info">
           <div className="columns">

@@ -8,7 +8,7 @@ const Products = (props) => (
     <Product id={1} name='Lipánek' description='' />
     <Product id={2} name='Milk' description='' />
     <Product id={3} name='Lipánek' description='' />
-    <Product id={4} name='Milk Full Fat' isLast={true} />
+    <Product id={4} name='Milk Full Fat' description='' isLast={true} />
   </section>
 )
 

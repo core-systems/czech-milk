@@ -39,9 +39,10 @@ module.exports = {
   'value': 'Hodnota',
 
   // Products
-   'product.name': 'Název produktu',
-   'product.expire': 'Minimální trvanlivost',
-   'product.packageWeight': 'Hmotnost',
-   'product.packageSize': 'Skupinové balení',
-   'product.code': 'Čárový kód',
+  'products': 'Produkty',
+  'product.name': 'Název produktu',
+  'product.expire': 'Minimální trvanlivost',
+  'product.packageWeight': 'Hmotnost',
+  'product.packageSize': 'Skupinové balení',
+  'product.code': 'Čárový kód',
 }

@@ -11,10 +11,10 @@ const ProductInfo = ({
   isRight,
 }) => (
   <div className="columns product-table">
-    <div className={`column is-8 ${isRight ? '' : 'is-offset-4-widescreen'}`}>
-      <div className="content is-medium">
+    <div className={`column is-12 is-10-widescreen is-8-fullhd ${isRight ? '' : 'is-offset-2-widescreen is-offset-4-fullhd'}`}>
+      <div className="content is-medium0">
         <table>
-          <thead className="is-invisible">
+          <thead className="is-hidden">
             <tr>
               <th><FormattedMessage id='property' /></th>
               <th><FormattedMessage id='value' /></th>
