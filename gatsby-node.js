@@ -106,12 +106,13 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 }
 */
-
+/*
 exports.modifyWebpackConfig = ({config, env, stage}, options) => {
-  console.log('env, stage', env, stage)
-  console.log('modifyWebpackConfig', config)
-  console.log('modifyWebpackConfig.loaders', config.loaders)
+  //console.log('env, stage', env, stage)
+  //console.log('modifyWebpackConfig', config)
+  //console.log('modifyWebpackConfig.loaders', config.loaders)
   return config;
+
   const sassFiles = /.s[ac]ss$/
   const sassModulesFiles = /.module.s[ac]ss$/
   const sassLoader = 'sass?${JSON.stringify(options)}'
@@ -130,7 +131,7 @@ exports.modifyWebpackConfig = ({config, env, stage}, options) => {
     }
   }
 }
-
+*/
 /*
   config.loader('url-loader', {
     test: /\.(jpg|jpeg|png|gif|mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,

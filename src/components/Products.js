@@ -57,7 +57,7 @@ const products = [
 
 const Products = (props) => (
   <section className="section section-products" role="products">
-    {products.map((product, i) => <Product {...product} isLast={++i === products.length} />)}
+    {products.map((product, i) => <Product key={`product-${product.id}`} {...product} isLast={++i === products.length} />)}
   </section>
 )
 

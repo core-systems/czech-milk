@@ -33,6 +33,23 @@ const Product = ({
             </figure>
             <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
           </div>
+          <div className="content is-text-centered">
+            <p className="field">
+              <a className="button is-large">
+                <span>Detail</span>
+                <span className="icon is-large">
+                  <i className="fas fa-caret-down"></i>
+                </span>
+              </a>
+              <a className="button is-large is-active">
+                <span>Detail</span>
+                <span className="icon is-large">
+                  <i className="fas fa-caret-up"></i>
+                </span>
+              </a>
+              <a className="button">Odeslat</a>
+            </p>
+          </div>
         </div>
         <div className="column product-info">
           <div className="columns">
@@ -47,10 +64,10 @@ const Product = ({
           </div>
           <ProductInfo
             productName={name}
-            productExpire="120 dní"
-            productPackageWeight="cca 1 Kg"
-            productPackageSize="12 ks"
-            productCode="8593803224206"
+            productExpire={expire}
+            productPackageWeight={packageWeight}
+            productPackageSize={packageSize}
+            productCode={code}
             isRight={isRight}
           />
         </div>
