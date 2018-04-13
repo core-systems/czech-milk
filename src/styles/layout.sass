@@ -186,14 +186,14 @@ section.hero
 
 .section-content
   position: relative
-  padding-bottom: 0rem
-  padding-top: 280px
+  padding-bottom: 0rem !important
+  padding-top: 280px  !important
   +media(">=tablet", "<desktop")
-    padding-top: 230px
+    padding-top: 230px  !important
   +media("<tablet")
-    padding-top: 100px
+    padding-top: 100px  !important
   +mobile
-    padding-bottom: 4rem
+    padding-bottom: 4rem  !important
 
 .content-bg-top
   display: block
@@ -246,7 +246,7 @@ section.hero
   color: white
   background-color: $czech-milk-color-green-dark
   //margin-top: -50px
-  padding-top: 0
+  padding-top: 0 !important
   +desktop
     margin-top: -30px
 
@@ -261,7 +261,7 @@ section.hero
     font-weight: 200
     padding-left: 3rem
     margin-bottom: 1.25rem
-    color: white
+    color: #fff !important
     +mobile
       padding-left: 0
 
