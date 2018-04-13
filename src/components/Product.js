@@ -9,6 +9,10 @@ const Product = ({
   id,
   name,
   description,
+  expire,
+  packageWeight,
+  packageSize,
+  code,
   isLast,
 }) => {
   const isRight = id % 2 === 0
@@ -25,7 +29,7 @@ const Product = ({
         <div className="column is-4 product-image">
           <div className="content">
             <figure className="image">
-              <img src={productImg} alt={`[product, image, ${productName}]`} width={268} />
+              <img src={productImg} alt={`[product, image, ${name}]`} width={268} />
             </figure>
             <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
           </div>
@@ -34,20 +38,15 @@ const Product = ({
           <div className="columns">
             <div className="column is-4">
               <figure className="has-text-centered-mobile">
-                <img src={productLogo} alt={`[product, logo, ${productName}]`} />
+                <img src={productLogo} alt={`[product, logo, ${name}]`} />
               </figure>
             </div>
           </div>
           <div className="content product-description is-medium">
-              Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti
-              pro svůj zdravý růst potřebují. Je významným zdrojem plnohodnotných
-              bílkovin a vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno
-              z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
-              zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
-              bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
+              {description}
           </div>
           <ProductInfo
-            productName="trvanlivé mléko polotučné"
+            productName={name}
             productExpire="120 dní"
             productPackageWeight="cca 1 Kg"
             productPackageSize="12 ks"
@@ -71,6 +70,10 @@ Product.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  expire: PropTypes.string.isRequired,
+  packageWeight: PropTypes.string.isRequired,
+  packageSize: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
   isLast: PropTypes.bool,
 }
 
