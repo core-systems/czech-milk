@@ -11,6 +11,7 @@ import Footer from '../components/Footer'
 
 // Load Roboto typeface
 import 'typeface-roboto'
+//import "font-awesome/css/font-awesome.css"
 // All styles
 import '../styles/all.sass'
 
@@ -37,7 +38,7 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
       messages={i18nMessages}
       //textComponent={React.Fragment}
     >
-      <div className='is-fullwidth'>
+      <div id="main-wrapper" className='is-fullwidth'>
         <Helmet
           defaultTitle={`Home | ${data.site.siteMetadata.title}`}
           titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
