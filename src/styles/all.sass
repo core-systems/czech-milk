@@ -105,5 +105,15 @@ $button-static-border-color: $grey-lighter !default
   +mobile
     border-bottom: 1px dotted rgba(255,255,255,.7) !important
 
+// Toggle
+.toggle-checkbox
+  display: none !important
+
+input.toggle-checkbox[type="checkbox"] + .toggle-item
+  display: none !important
+
+input.toggle-checkbox[type="checkbox"]:checked + .toggle-item
+  display: flex !important
+
 @import "~bulma"
 @import "./theme.sass"
