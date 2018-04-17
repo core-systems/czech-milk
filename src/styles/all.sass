@@ -35,7 +35,6 @@ $footer-background-color: $czech-milk-color-green
 
 $button-color: #df3036 !default
 $button-background-color: $white !default
-
 $button-border-color: $grey-lighter !default
 $button-border-width: 0.1rem !default
 
@@ -109,11 +108,28 @@ $button-static-border-color: $grey-lighter !default
 .toggle-checkbox
   display: none !important
 
-input.toggle-checkbox[type="checkbox"] + .toggle-item
-  display: none !important
+input.toggle-checkbox[type="checkbox"]:not(:checked) + .toggle-item
+  display: block !important
+  -moz-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -ms-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -o-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -webkit-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  font-size: 0
+  margin: 0
+  opacity: 0
+  padding: 0
+  height: 0
+  overflow: hidden
 
 input.toggle-checkbox[type="checkbox"]:checked + .toggle-item
-  display: flex !important
+  @extend .section
+  height: auto
+  -moz-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -ms-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
 
 @import "~bulma"
 @import "./theme.sass"

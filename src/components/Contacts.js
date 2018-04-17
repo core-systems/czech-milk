@@ -2,6 +2,7 @@ import React from 'react'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 
 import Link from './Link'
+import ContactForm from './ContactForm'
 
 import madeta from '../img/madeta-logo.png'
 import core from '../img/core-logo.png'
@@ -25,51 +26,7 @@ const Contacts = (props) => (
         <div className="column is-6-tablet is-5-desktop is-4-widescreen is-offset-1-desktop">
           <div className="content is-small">
             <h2><FormattedMessage id="form.contactUs.title" /></h2>
-
-            <form action="#form:contact-us" method="post" target="_blank" acceptCharset="UTF-8"  autoComplete="off" >
-              <div className="field is-grouped">
-                <div className="control has-icons-left has-icons-right is-expanded">
-                  <input name="name" className="input" type="name" placeholder={props.intl.formatMessage({ id :'form.contactUs.name.placeholder' })} aria-label="add full name" required />
-                  <span className="icon is-left">
-                    <i className="fas fa-user"></i>
-                  </span>
-                  <span className="icon is-right">
-                    <i className="fas fa-check"></i>
-                  </span>
-                </div>
-
-                <div className="control has-icons-left has-icons-right is-expanded">
-                  <input name="email" className="input" type="email" placeholder={props.intl.formatMessage({ id :'form.contactUs.email.placeholder' })} aria-label="add e-mail" required />
-                  <span className="icon is-left">
-                    <i className="fas fa-envelope"></i>
-                  </span>
-                  <span className="icon is-right">
-                    <i className="fas fa-check"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div className="field has-addons">
-                <div className="control is-expanded">
-                  <textarea name="message" className="textarea" placeholder={props.intl.formatMessage({ id :'form.contactUs.message.placeholder' })} aria-label="add messagee" required></textarea>
-                </div>
-              </div>
-
-              <div className="field is-grouped">
-                <p className="control">
-                  <button className="button is-primary">
-                    <FormattedMessage id="form.send" />
-                  </button>
-                </p>
-                <p className="control">
-                  <input className="button is-primary" type="submit" value={props.intl.formatMessage({ id :'form.send' })} accessKey="s" disabled />
-                </p>
-                <p className="control">
-                  <input className="button is-light" type="reset" value={props.intl.formatMessage({ id :'form.reset' })} accessKey="r" disabled />
-                </p>
-              </div>
-
-            </form>
+            <ContactForm topic="Contact - footer" />
           </div>
         </div>
         <div className="column is-3-tablet is-3-desktop is-2-fullhd has-dotted-right-border has-dotted-bottom-border-mobile">
@@ -121,7 +78,8 @@ const Contacts = (props) => (
 )
 
 Contacts.propTypes = {
-  intl: intlShape.isRequired,
+  //intl: intlShape.isRequired,
 }
 
-export default injectIntl(Contacts)
+export default Contacts
+//export default injectIntl(Contacts)

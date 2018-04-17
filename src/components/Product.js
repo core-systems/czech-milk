@@ -4,6 +4,7 @@ import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'reac
 
 import Link from './Link'
 import ProductInfo from './ProductInfo'
+import ContactForm from './ContactForm'
 
 const MoreBtn = ({ isActive }) => (
   <a className={`button is-large ${isActive ? 'is-active' : ''}`}>
@@ -74,7 +75,7 @@ class Product extends React.PureComponent {
               </figure>
               <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
             </div>
-            <div className="content is-text-centered">
+            <div className="content has-text-centered">
               <p className="field">
                 <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
                   {
@@ -110,9 +111,11 @@ class Product extends React.PureComponent {
         </div>
         <div className="content product-more is-medium">
             <input type="checkbox" id={`toggle-product-${id}-more`} className="toggle-checkbox" />
-            <div className="toggle-item section is-flex">
-              {description}
-              <a className="button">Odeslat</a>
+            <div className="toggle-item">
+              <div className="content" dangerouslySetInnerHTML={{ __html: description }} />
+              <div className="content">
+                <ContactForm topic={`${name} (${code})`} />
+              </div>
             </div>
         </div>
         { !isLast &&

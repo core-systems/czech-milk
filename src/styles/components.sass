@@ -18,13 +18,21 @@ $product-button-padding-horizontal-large: calc(#{$button-padding-horizontal} + .
   letter-spacing: .1rem
   font-weight: 500
   font-size: 1.25rem
-  margin: 0.4rem 1rem 0.4rem 0
+  margin: .3rem
   border-radius: 3px
-  box-shadow: 0 0 0 0.4rem rgba(0,0,0,.15)
+  background-color: #1070b8
+  box-shadow: 0 0 0 .3rem #dee8f0
   border-color: transparent
   color: #fff
   padding-left: $product-button-padding-horizontal
   padding-right: $product-button-padding-horizontal
+  &:focus,
+  &:focus:not(:active),
+  &:hover,
+  &:active
+    color: #fff
+    background-color: #0d5a93
+    box-shadow: 0 0 0 .3rem #dee8f0
 
 %button-large
   @extend %button
@@ -33,58 +41,62 @@ $product-button-padding-horizontal-large: calc(#{$button-padding-horizontal} + .
   letter-spacing: .2rem
   font-weight: 500
   font-size: 2.0rem
-  margin: 0.6rem 1.2rem 0.7rem 0
+  margin: .6rem
   border-radius: 5px
-  box-shadow: 0 0 0 0.6rem rgba(0,0,0,.15)
+  box-shadow: 0 0 0 .6rem #efddde
+  background-color: #df3036
+  &:focus,
+  &:focus:not(:active),
+  &:hover,
+  &:active
+    background-color: #b2262b
+  &.is-active
+    background-color: #1070b8
+    box-shadow: 0 0 0 .6rem #dee8f0
+    &:focus,
+    &:hover,
+    &:active
+      background-color: #0d5a93
 
 .button
   @extend %button
 
 .product .button
   @extend %button
-  background-color: #1070b8
-  box-shadow: 0 0 0 0.3rem #dee8f0
-  &:focus,
-  &:hover
-    background-color: #0d5a93
 
 .product .button.is-large
   @extend %button-large
-  box-shadow: 0 0 0 0.6rem #efddde
-  background-color: #df3036
-  &:focus,
-  &:hover
-    background-color: #b2262b
-  &.is-active
-    background-color: #1070b8
-    box-shadow: 0 0 0 0.6rem #dee8f0
-    &:focus,
-    &:hover
-      background-color: #0d5a93
 
-form .button
+.section-contact-us .button
   @extend %button
   background-color: #99ca48
-  box-shadow: 0 0 0 0.3rem #21833c
+  box-shadow: 0 0 0 .3rem #21833c
   color: #278f43
   &:focus,
-  &:hover
+  &:focus:not(:active),
+  &:hover,
+  &:active
     color: #278f43
     background-color: #82be47
+    box-shadow: 0 0 0 0.3rem #21833c
   &.is-primary
     color: #278f43
     background-color: #99ca48
     box-shadow: 0 0 0 0.3rem #21833c
     &:focus,
-    &:hover
+    &:hover,
+    &:active
       color: #278f43
       background-color: #82be47
+      box-shadow: 0 0 0 0.3rem #21833c
   &.is-primary[disabled]
     opacity: .5
     color: #278f43
     background-color: #99ca48
     box-shadow: 0 0 0 0.3rem #21833c
     &:focus,
-    &:hover
+    &:hover,
+    &:active
       color: #278f43
       background-color: #82be47
+      box-shadow: 0 0 0 0.3rem #21833c
