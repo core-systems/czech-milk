@@ -131,12 +131,59 @@ section.hero
 
 .navbar-item.lang-switcher
   .navbar-link
-    width: 150px
+    width: 165px
+    +mobile
+      width: auto
+      border-color: transparent
+    +tablet
+      width: auto
+      border-color: transparent
+    +desktop
+      width: 165px
+      border-color: rgba(16,115,184,1.0)
     &:hover
       background-color: transparent !important
     &.is-active
       color: #3273dc !important
 
+.lang-switcher
+  .navbar-link
+    display: block
+    width: 165px
+    border: 1px solid rgba(16,115,184,1.0)
+    border-radius: 3px
+    +mobile
+      width: auto
+      border-color: transparent
+      &:before
+        content: attr(title)
+        display: inline
+        width: 100%
+    +tablet
+      width: auto
+      border-color: transparent
+      &:before
+        content: attr(title)
+        display: block
+        width: 100%
+    +desktop
+      width: 165px
+      border-color: rgba(16,115,184,1.0)
+      &:before
+        display: none
+
+    > span
+      +mobile
+        display: none
+      +tablet
+        display: none
+      +desktop
+        display: inline-block
+
+  .navbar-link,
+  .navbar-item
+    .flag-icon
+      margin-right: .5rem
 
 .hero-body .title
   margin-top: 15rem
@@ -405,13 +452,3 @@ section.hero
     &:active,
     &:focus
       text-decoration: underline
-
-.lang-switcher
-  .navbar-link
-    border: 1px solid rgba(16,115,184,1.0)
-    border-radius: 3px
-
-  .navbar-link,
-  .navbar-item
-    .flag-icon
-      margin-right: .5rem
