@@ -82,8 +82,6 @@ section.hero
   .navbar-brand
     .navbar-item
       width: 250px
-      +mobile
-        //position: inherit !important
       &:hover
         background-color: transparent !important
 
@@ -120,6 +118,25 @@ section.hero
           left: 80px
           width: 436px
           max-width: 436px
+
+.navbar-item
+  &.is-active
+    color: #3273dc !important
+
+.navbar-link
+  &:hover
+    //background-color: transparent !important
+  &.is-active
+    color: #3273dc !important
+
+.navbar-item.lang-switcher
+  .navbar-link
+    width: 150px
+    &:hover
+      background-color: transparent !important
+    &.is-active
+      color: #3273dc !important
+
 
 .hero-body .title
   margin-top: 15rem
@@ -393,3 +410,8 @@ section.hero
   .navbar-link
     border: 1px solid rgba(16,115,184,1.0)
     border-radius: 3px
+
+  .navbar-link,
+  .navbar-item
+    .flag-icon
+      margin-right: .5rem

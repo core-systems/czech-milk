@@ -11,7 +11,7 @@ const Header = (props) => (
   <section className="hero">
     <div className="hero-head">
       <div className="container">
-        <Navbar langs={props.langs} siteTitle={props.siteTitle} />
+        <Navbar langs={props.langs} languages={props.languages} siteTitle={props.siteTitle} />
       </div>
     </div>
 
@@ -25,6 +25,8 @@ const Header = (props) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,
+  languages: PropTypes.array.isRequired,
+  langs: PropTypes.array.isRequired,
 }
 
 export default Header

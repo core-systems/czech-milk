@@ -14,6 +14,7 @@ import 'typeface-roboto'
 //import "font-awesome/css/font-awesome.css"
 // All styles
 import '../styles/all.sass'
+import "flag-icon-css/sass/flag-icon.scss"
 
 const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => {
   const url = location.pathname
@@ -96,6 +97,7 @@ export const pageQuery = graphql`
             label
             default
             dir
+            flagIconCode
           }
         }
       }

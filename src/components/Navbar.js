@@ -25,13 +25,13 @@ const Navbar = (props) => (
 
     <div id="navMenu" className="navbar-menu">
       <div className="navbar-end">
-        <Link className="navbar-item" to="/about">
+        <Link className="navbar-item" activeClassName="is-active" to="/about">
           <FormattedMessage id='nav.about' />
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" activeClassName="is-active" to="/products">
           <FormattedMessage id='nav.products' />
         </Link>
-        <SelectLanguage langs={props.langs} />
+        <SelectLanguage langs={props.langs} languages={props.languages} />
       </div>
     </div>
   </nav>
@@ -39,6 +39,8 @@ const Navbar = (props) => (
 
 Navbar.propTypes = {
   siteTitle: PropTypes.string.isRequired,
+  languages: PropTypes.array.isRequired,
+  langs: PropTypes.array.isRequired,
 }
 
 export default Navbar
@@ -48,6 +50,18 @@ export const navbarFragment = graphql`
     site {
       siteMetadata {
         title
+        languages {
+          defaultLangKey
+          langs
+          langKeys
+          languages {
+            key
+            label
+            default
+            dir
+            flagIconCode
+          }
+        }
       }
     }
   }

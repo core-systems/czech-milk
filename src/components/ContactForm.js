@@ -37,8 +37,8 @@ const ContactForm = ({
       </div>
     </div>
 
-    <div className="field is-grouped0">
-      <p className="control is-pulled-right">
+    <div className="field is-grouped is-grouped-right">
+      <p className="control">
         <button className="button">
           <FormattedMessage id="form.send" />
         </button>

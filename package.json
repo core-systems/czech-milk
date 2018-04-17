@@ -5,6 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
+    "flag-icon-css": "^3.0.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
