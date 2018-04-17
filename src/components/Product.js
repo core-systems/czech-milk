@@ -66,7 +66,7 @@ class Product extends React.PureComponent {
     const lineBreak = require(`../img/break-line-cloud${( isRight ? '2' : '' )}.png`)
 
     return (
-      <div className="product">
+      <div className={`product ${isRight ? 'is-right' : 'is-left'}`}>
         <div className={`columns ${isRight ? 'reverse-rows right' : 'left'}`}>
           <div className="column is-4 product-image">
             <div className="content">
@@ -74,18 +74,6 @@ class Product extends React.PureComponent {
                 <img src={productImg} alt={`[product, image, ${name}]`} width={268} />
               </figure>
               <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
-            </div>
-            <div className="content has-text-centered">
-              <p className="field">
-                <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
-                  {
-                    isActiveMore && <MoreBtn isActive={true} />
-                  }
-                  {
-                    !isActiveMore && <MoreBtn isActive={false} />
-                  }
-                </label>
-              </p>
             </div>
           </div>
           <div className="column product-info">
@@ -108,6 +96,18 @@ class Product extends React.PureComponent {
               isRight={isRight}
             />
           </div>
+        </div>
+        <div className="content0 has-text-centered detail-btn">
+          <p className="field">
+            <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
+              {
+                isActiveMore && <MoreBtn isActive={true} />
+              }
+              {
+                !isActiveMore && <MoreBtn isActive={false} />
+              }
+            </label>
+          </p>
         </div>
         <div className="content product-more is-medium">
             <input type="checkbox" id={`toggle-product-${id}-more`} className="toggle-checkbox" />
