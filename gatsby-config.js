@@ -68,7 +68,7 @@ module.exports = {
         }
       }
     },
-
+    'gatsby-plugin-netlify-lambda',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

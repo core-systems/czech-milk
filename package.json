@@ -12,6 +12,7 @@
     "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-i18n": "^0.4.1",
     "gatsby-plugin-netlify-cms": "^1.0.9",
+    "gatsby-plugin-netlify-lambda": "^0.1.5",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sass": "^1.0.17",
     "gatsby-plugin-sharp": "^1.6.34",
@@ -34,6 +35,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "start:lambda": "netlify-lambda serve src/services",
+    "build:lambda": "netlify-lambda build src/services",
+    "dev:start-all": "concurrently \"yarn run develop\" \"yarn run start:lambda\"",
+    "dev": "SET NODE_ENV=development && yarn run dev:start-all",
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -44,5 +49,13 @@
   "devDependencies": {
     "prettier": "^1.7.4",
     "resolve-url-loader": "^2.3.0"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
   }
 }
