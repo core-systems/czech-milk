@@ -8,3 +8,15 @@ addDynamicEventListener(document.body, 'click', '.navbar-burger', function (e) {
     $el.classList.toggle('is-active');
     $target.classList.toggle('is-active');
 });
+
+addDynamicEventListener(document.body, 'submit', 'form[netlify]', function (e) {
+  e.preventDefault()
+  console.log('FORM submited', e.target, e.target.dataset.target)
+  var $el = e.target
+/*
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+*/
+});
