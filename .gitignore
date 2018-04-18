@@ -9,5 +9,4 @@ static/admin/*.bundle.*
 yarn-error.log
 
 #Builded Lamda Functions
-./services/
-#services/
+/services/

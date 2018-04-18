@@ -47,6 +47,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "prettier": "^1.7.4",
     "resolve-url-loader": "^2.3.0"
   },
