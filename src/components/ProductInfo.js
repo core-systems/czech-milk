@@ -3,11 +3,7 @@ import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 
 const ProductInfo = ({
-  productName,
-  productExpire,
-  productPackageWeight,
-  productPackageSize,
-  productCode,
+  info,
   isRight,
 }) => (
   <div className="columns product-table">
@@ -23,23 +19,23 @@ const ProductInfo = ({
           <tbody>
             <tr>
               <td><FormattedMessage id='product.name' /></td>
-              <td>{productName}</td>
+              <td>{info.name}</td>
             </tr>
             <tr>
               <td><FormattedMessage id='product.expire' /></td>
-              <td>{productExpire}</td>
+              <td>{info.expire}</td>
             </tr>
             <tr>
               <td><FormattedMessage id='product.packageWeight' /></td>
-              <td>{productPackageWeight}</td>
+              <td>{info.packageWeight}</td>
             </tr>
             <tr>
               <td><FormattedMessage id='product.packageSize' /></td>
-              <td>{productPackageSize}</td>
+              <td>{info.packageSize}</td>
             </tr>
             <tr>
               <td><FormattedMessage id='product.code' /></td>
-              <td>{productCode}</td>
+              <td>{info.code}</td>
             </tr>
           </tbody>
         </table>
@@ -49,11 +45,13 @@ const ProductInfo = ({
 )
 
 ProductInfo.propTypes = {
-  productName: PropTypes.string.isRequired,
-  productExpire: PropTypes.string.isRequired,
-  productPackageWeight: PropTypes.string.isRequired,
-  productPackageSize: PropTypes.string.isRequired,
-  productCode: PropTypes.string.isRequired,
+  info: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    expire: PropTypes.string.isRequired,
+    packageWeight: PropTypes.string.isRequired,
+    packageSize: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
+  }).isRequired,
   isRight: PropTypes.bool.isRequired
 }
 

@@ -22,21 +22,22 @@ export const AboutPageTemplate = ({
 }
 
 export default ({ data }) => {
-  const { markdownRemark: post } = data
+  console.log('about', data)
+  const { aboutPage: post } = data
 
   return (
     <AboutPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
-      helmet={<Helmet title={`About | ${post.frontmatter.title}`} />}
+      helmet={<Helmet title={`${post.frontmatter.title}`} />}
     />
   )
 }
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    aboutPage: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title

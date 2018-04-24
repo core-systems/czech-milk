@@ -15,26 +15,14 @@ const MoreBtn = ({ isActive }) => (
   </a>
 )
 
-class Product extends React.PureComponent {
+class Product extends React.PureComponent  {
 
   state = {
-    id: 0,
-    name: '',
-    description: '',
-    expire: '',
-    packageWeight: '',
-    packageSize: '',
-    code: '',
-    isLast: false,
     isActiveMore: false,
   }
 
   constructor(props) {
       super(props)
-      console.log('props', props)
-      this.state = {
-        ...props,
-      }
   }
 
   toogle() {
@@ -47,22 +35,26 @@ class Product extends React.PureComponent {
   render() {
     const {
       id,
-      name,
+      title,
       description,
-      expire,
-      packageWeight,
-      packageSize,
-      code,
+      detail,
+      image,
+      logo,
+      cloud,
+      info,
       isLast,
+      isRight,
+    } = this.props
+    const {
       isActiveMore,
     } = this.state
 
-    const isRight = id % 2 === 0
-    const productName = name
-    const productDescription = description
-    const productImg = require(`../img/product-${id}.png`)
-    const productImgCloud = require(`../img/product-${id}-cloud.png`)
-    const productLogo = require(`../img/product-${id}-logo.png`)
+    //const productImg = require(`../${image}`)
+    //const productImgCloud = require(`${logo}`)
+    //const productLogo = require(`${cloud}`)
+    const productImg = `${image}`
+    const productImgCloud = `${cloud}`
+    const productLogo = `${logo}`
     const lineBreak = require(`../img/break-line-cloud${( isRight ? '2' : '' )}.png`)
 
     return (
@@ -71,7 +63,7 @@ class Product extends React.PureComponent {
           <div className="column is-4 product-image">
             <div className="content">
               <figure className="image">
-                <img src={productImg} alt={`[product, image, ${name}]`} width={268} />
+                <img src={productImg} alt={`[product, image, ${title}]`} width={268} />
               </figure>
               <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
             </div>
@@ -80,21 +72,14 @@ class Product extends React.PureComponent {
             <div className="columns">
               <div className="column is-4">
                 <figure className="has-text-centered-mobile">
-                  <img src={productLogo} alt={`[product, logo, ${name}]`} />
+                  <img src={productLogo} alt={`[product, logo, ${title}]`} />
                 </figure>
               </div>
             </div>
             <div className="content product-description is-medium">
               {description}
             </div>
-            <ProductInfo
-              productName={name}
-              productExpire={expire}
-              productPackageWeight={packageWeight}
-              productPackageSize={packageSize}
-              productCode={code}
-              isRight={isRight}
-            />
+            <ProductInfo info={info} isRight={isRight} />
           </div>
         </div>
         <div className="content0 has-text-centered detail-btn">
@@ -114,7 +99,7 @@ class Product extends React.PureComponent {
             <div className="toggle-item">
               <div className="content" dangerouslySetInnerHTML={{ __html: description }} />
               <div className="content">
-                <ContactForm topic={`${name} (${code})`} />
+                <ContactForm topic={`${info.name} (${info.code})`} />
               </div>
             </div>
         </div>
@@ -130,14 +115,15 @@ class Product extends React.PureComponent {
 
 Product.propTypes = {
   intl: intlShape.isRequired,
-
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  expire: PropTypes.string.isRequired,
-  packageWeight: PropTypes.string.isRequired,
-  packageSize: PropTypes.string.isRequired,
-  code: PropTypes.string.isRequired,
+  detail: PropTypes.string.isRequired,
+  info: ProductInfo.propTypes.info,
+  image: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  cloud: PropTypes.string.isRequired,
+  isRight: PropTypes.bool,
   isLast: PropTypes.bool,
 }
 
