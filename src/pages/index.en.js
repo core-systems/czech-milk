@@ -7,7 +7,7 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     //console.log('data', data)
-    const { frontmatter: productsPage } = data.csProducts
+    const { frontmatter: productsPage } = data.enProducts
 
     return (
       <React.Fragment>
@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexEnQuery {
-    csProducts: markdownRemark(frontmatter: { langKey: { eq: "en" }, templateKey: { eq: "product-page" } }) {
+    enProducts: markdownRemark(frontmatter: { langKey: { eq: "en" }, templateKey: { eq: "product-page" } }) {
     	...ProductFragment
     }
   }

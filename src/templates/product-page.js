@@ -19,7 +19,7 @@ export const ProductPageTemplate = ({
 )
 
 export default ({ data }) => {
-  console.log('prodcuts, data', data)
+  //console.log('prodcuts, data', data)
   const { frontmatter } = data.allProducts
 
   return (
