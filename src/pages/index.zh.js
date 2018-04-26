@@ -6,7 +6,7 @@ import Products, { ProductFragment } from '../components/Products'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { frontmatter: productsPage } = data.csProducts
+    const { frontmatter: productsPage } = data.zhProducts
 
     return (
       <React.Fragment>
@@ -20,8 +20,8 @@ export default class IndexPage extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query IndexCsQuery {
-    csProducts: markdownRemark(frontmatter: { langKey: { eq: "cs" }, templateKey: { eq: "product-page" } }) {
+  query IndexZhQuery {
+    zhProducts: markdownRemark(frontmatter: { langKey: { eq: "zh" }, templateKey: { eq: "product-page" } }) {
     	...ProductFragment
     }
   }

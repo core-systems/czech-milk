@@ -49,9 +49,6 @@ class Product extends React.PureComponent  {
       isActiveMore,
     } = this.state
 
-    //const productImg = require(`../${image}`)
-    //const productImgCloud = require(`${logo}`)
-    //const productLogo = require(`${cloud}`)
     const productImg = `${image}`
     const productImgCloud = `${cloud}`
     const productLogo = `${logo}`

@@ -41,9 +41,9 @@ module.exports = {
 
   // Products
   'products': 'Products',
-  'product.name': 'Název produktu',
-  'product.expire': 'Minimální trvanlivost',
-  'product.packageWeight': 'Hmotnost',
-  'product.packageSize': 'Skupinové balení',
-  'product.code': 'Čárový kód',
+  'product.name': 'Name of a product',
+  'product.expire': 'Expire',
+  'product.packageWeight': 'Package Weight',
+  'product.packageSize': 'Package Size',
+  'product.code': 'Code',
 }
