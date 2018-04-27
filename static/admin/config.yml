@@ -67,28 +67,51 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/about/index.en.md"
+        label: "EN - About"
+        name: "about-en"
         fields:
           #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
           #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
+      - file: "src/pages/about/index.cs.md"
+        label: "CS - O nás"
+        name: "about-cs"
+        fields:
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Nadpis", name: "title", widget: "string"}
+          - {label: "Obsah", name: "body", widget: "markdown"}
+      - file: "src/pages/products/index.en.md"
+        label: "EN - Products"
+        name: "products-en"
         fields:
           #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
           #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "en"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products-en"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}

@@ -3,6 +3,8 @@ templateKey: 'product-page'
 langKey: 'cs'
 #path: /products
 title: Produkty
+meta: >
+  Products
 products:
   - id: product-1
     title: Lipánek vanilka
