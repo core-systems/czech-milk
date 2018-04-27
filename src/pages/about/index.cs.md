@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: CS - About our values
+title: CS - About
 ---
 ![test](/img/ztraty-cirkulace-2017.png)
 
