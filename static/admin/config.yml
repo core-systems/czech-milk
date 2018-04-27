@@ -6,24 +6,6 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: meta
-    label: Meta
-    delete: false
-    files:
-      - name: langs
-        label: Languages
-        file: "src/data/languages.yml"
-        extension: "yml"
-        fields:
-          - name: langs
-            label: Languages
-            label_singular: "Language"
-            allow_add: false
-            widget: list
-            fields:
-              - { label: Code, name: key, widget: string }
-              - { label: Name, name: label, widget: string }
-              - { label: Default, name: default, widget: boolean, default: false}
   - name: "blogEn"
     label: "EN - Blog"
     folder: "src/pages/blog"
@@ -76,6 +58,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
       - file: "src/pages/about/index.cs.md"
         label: "CS - O nás"
         name: "about-cs"
@@ -85,6 +68,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Nadpis", name: "title", widget: "string"}
           - {label: "Obsah", name: "body", widget: "markdown"}
+
       - file: "src/pages/products/index.en.md"
         label: "EN - Products"
         name: "products-en"

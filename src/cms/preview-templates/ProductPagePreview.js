@@ -15,6 +15,7 @@ const ProductPagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       meta={entry.getIn(['data', 'meta'])}
       products={products}
+      helmet={''}
     />
   )
 }
