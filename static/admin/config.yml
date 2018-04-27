@@ -69,6 +69,68 @@ collections:
           - {label: "Nadpis", name: "title", widget: "string"}
           - {label: "Obsah", name: "body", widget: "markdown"}
 
+      - file: "src/pages/products/index.cs.md"
+        label: "CS - Products"
+        name: "products-cs"
+        fields:
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "cs"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}
+
+      - file: "src/pages/products/index.ar.md"
+        label: "AR - Products"
+        name: "products-ar"
+        fields:
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "ar"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}
+
       - file: "src/pages/products/index.en.md"
         label: "EN - Products"
         name: "products-en"
@@ -80,7 +142,69 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Meta", name: "meta", widget: "string"}
           - label: "Products"
-            name: "products-en"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}
+
+      - file: "src/pages/products/index.vi.md"
+        label: "VI - Products"
+        name: "products-vi"
+        fields:
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "vi"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}
+
+      - file: "src/pages/products/index.zh.md"
+        label: "ZH - Products"
+        name: "products-zh"
+        fields:
+          #- {label: "Lang", name: "langKey", widget: "relation", collection: "langs", searchFields: ["name", "label"], valueField: "name"}
+          #- {label: "Language", name: "language", widget: "select", options: [{ value: "ar", label: "Arabic" }, { value: "zh", label: "Chinese" }, { value: "cs", label: "Czech" }, { value: "en", label: "English" }, { value: "vi", label: "Vietnamese" }]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "zh"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products"
             widget: "list"
             fields:
               - {label: "Product ID", name: "id", widget: "string"}
