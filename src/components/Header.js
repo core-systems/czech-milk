@@ -14,11 +14,9 @@ const Header = (props) => (
         <Navbar langs={props.langs} languages={props.languages} siteTitle={props.siteTitle} />
       </div>
     </div>
-
     <HeroBody />
-
     <div className="hero-foot">
-        <Flags />
+      <Flags />
     </div>
   </section>
 )

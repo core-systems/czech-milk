@@ -5,6 +5,7 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
 import { IntlProvider } from 'react-intl'
 import 'intl'
 
+import BgImage from '../components/BgImage'
 import Header from '../components/Header'
 import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
@@ -16,7 +17,13 @@ import 'typeface-roboto'
 import '../styles/all.sass'
 import "flag-icon-css/sass/flag-icon.scss"
 
-const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => {
+function Fragment(props) {
+  console.log('fragment', props)
+  return props.children || <span {...props} /> || <React.Fragment {...props} /> || null
+}
+
+const TemplateWrapper = (props) => {
+  const { children, data, location, locale, i18nMessages } = props
   const url = location.pathname
   const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages
   const langKey = getCurrentLangKey(langKeys, defaultLangKey, url)
@@ -24,12 +31,7 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
   const homeLink = `/${actualLang.key}/`
   const langsMenu = getLangs(langKeys, actualLang.key, getUrlForLang(homeLink, url))
 
-  console.log('actualLang', actualLang)
-
-  function Fragment(props) {
-    console.log('fragment', props)
-    return props.children || <span {...props} /> || <React.Fragment {...props} /> || null
-  }
+  console.log('props',props)
 
   return (
     <IntlProvider
@@ -40,6 +42,18 @@ const TemplateWrapper = ({ children, data, location, locale, i18nMessages }) => 
       //textComponent={React.Fragment}
     >
       <div id="main-wrapper" className='is-fullwidth'>
+        <BgImage
+          sizes={data.bgImage.sizes}
+          fit={'contain'}
+          position={'top center'}
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            //height: "100%",
+          }}
+        />
         <Helmet
           defaultTitle={`Home | ${data.site.siteMetadata.title}`}
           titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
@@ -83,8 +97,8 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
-export const pageQuery = graphql`
-  query Layout {
+export const LayoutFragment = graphql`
+  fragment LayoutFragment on RootQueryType {
     site {
       siteMetadata {
         title
@@ -100,6 +114,16 @@ export const pageQuery = graphql`
             flagIconCode
           }
         }
+      }
+    }
+  }
+`
+
+export const BgImageFragment = graphql`
+  fragment BgImageFragment on RootQueryType {
+    bgImage: imageSharp(id: { regex: "/header-bg-top.png/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

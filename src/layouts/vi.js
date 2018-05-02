@@ -1,7 +1,7 @@
 import React from 'react'
 import graphql from 'graphql'
-import Layout from './index'
 import { addLocaleData } from 'react-intl'
+import Layout, { LayoutFragment, BgImageFragment } from './index'
 
 import messages from '../data/messages/vi'
 import vi from 'react-intl/locale-data/vi'
@@ -18,22 +18,7 @@ export default (props) => (
 
 export const pageQuery = graphql`
   query LayoutVi {
-    site {
-      siteMetadata {
-        title
-        languages {
-          defaultLangKey
-          langs
-          langKeys
-          languages {
-            key
-            label
-            default
-            dir
-            flagIconCode
-          }
-        }
-      }
-    }
+    ...BgImageFragment
+    ...LayoutFragment
   }
-`;
+`
