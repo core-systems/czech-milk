@@ -42,6 +42,7 @@ const TemplateWrapper = (props) => {
       //textComponent={React.Fragment}
     >
       <div id="main-wrapper" className='is-fullwidth'>
+        {/*
         <BgImage
           sizes={data.bgImage.sizes}
           fit={'contain'}
@@ -54,6 +55,7 @@ const TemplateWrapper = (props) => {
             //height: "100%",
           }}
         />
+        */}
         <Helmet
           defaultTitle={`Home | ${data.site.siteMetadata.title}`}
           titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
