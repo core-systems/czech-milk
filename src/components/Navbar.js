@@ -4,8 +4,7 @@ import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 
 import Link from './Link'
-import SelectLanguage from './SelectLanguage';
-import github from '../img/github-icon.svg'
+import SelectLanguage from './SelectLanguage'
 import logo from '../img/logo.svg'
 
 const Navbar = (props) => (

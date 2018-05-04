@@ -12,10 +12,10 @@ import Footer from '../components/Footer'
 
 // Load Roboto typeface
 import 'typeface-roboto'
-//import "font-awesome/css/font-awesome.css"
+//import 'font-awesome/css/font-awesome.css'
 // All styles
 import '../styles/all.sass'
-import "flag-icon-css/sass/flag-icon.scss"
+import 'flag-icon-css/sass/flag-icon.scss'
 
 function Fragment(props) {
   console.log('fragment', props)
@@ -31,7 +31,8 @@ const TemplateWrapper = (props) => {
   const homeLink = `/${actualLang.key}/`
   const langsMenu = getLangs(langKeys, actualLang.key, getUrlForLang(homeLink, url))
 
-  console.log('props',props)
+  //console.log('props', props)
+  //console.log('data.bgImage.sizes', data.bgImage.sizes)
 
   return (
     <IntlProvider
@@ -42,38 +43,41 @@ const TemplateWrapper = (props) => {
       //textComponent={React.Fragment}
     >
       <div id="main-wrapper" className='is-fullwidth'>
-        {/*
-        <BgImage
-          sizes={data.bgImage.sizes}
-          fit={'contain'}
-          position={'top center'}
-          style={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            width: "100%",
-            //height: "100%",
-          }}
-        />
-        */}
         <Helmet
           defaultTitle={`Home | ${data.site.siteMetadata.title}`}
           titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
           meta={[
             { name: 'charset', content: 'UTF-8' },
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Czech Milk' },
+            { name: 'keywords', content: 'czech, milk, core systems' },
           ]}
           htmlAttributes={{
               lang: `${actualLang.key}`,
-              dir: `${actualLang.dir}`,
+              //dir: `${actualLang.dir}`,
           }}
           bodyAttributes={{
-              class: `lang-${actualLang.key}`,
+              class: `env-${process.env.NODE_ENV} lang-${actualLang.key}`,
           }}
         >
             {/*<title itemProp="name" lang={`${actualLang.key}`}>{`${data.site.siteMetadata.title}`}</title>*/}
         </Helmet>
+        {/*
+        <BgImage
+          sizes={data.bgImage.sizes}
+          fit={'contain'}
+          position={'top center'}
+          height={'1421px'}
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            //width: "100%",
+            height: "1421px",
+            //minHeight: "1421px",
+            //maxHeight: "1421px",
+          }}
+        />
+        */}
         <Header langs={langsMenu} languages={languages} siteTitle={data.site.siteMetadata.title} />
         <section className="section section-content" role="content">
           <div className='content-bg-botttom'></div>

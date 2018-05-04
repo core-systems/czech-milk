@@ -22,7 +22,7 @@ export const AboutPageTemplate = ({
 }
 
 export default ({ data }) => {
-  console.log('about', data)
+  //console.log('about', data)
   const { aboutPage: post } = data
 
   return (

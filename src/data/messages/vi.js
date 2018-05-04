@@ -46,4 +46,5 @@ module.exports = {
   'product.packageWeight': 'Package Weight',
   'product.packageSize': 'Package Size',
   'product.code': 'Code',
+  'product.moreBtn': 'More',
 }

@@ -8,7 +8,9 @@ import ContactForm from './ContactForm'
 
 const MoreBtn = ({ isActive }) => (
   <a className={`button is-large ${isActive ? 'is-active' : ''}`}>
-    <span>Detail</span>
+    <span>
+      <FormattedMessage id="product.moreBtn" />
+    </span>
     <span className="icon is-large">
       <i className={`fas ${isActive ? 'fa-caret-up' : 'fa-caret-down'}`}></i>
     </span>

@@ -45,4 +45,5 @@ module.exports = {
   'product.packageWeight': 'Hmotnost',
   'product.packageSize': 'Skupinové balení',
   'product.code': 'Čárový kód',
+  'product.moreBtn': 'Více',
 }
