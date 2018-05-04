@@ -5,7 +5,10 @@ import Product from './Product'
 
 const Products = (props) => (
   <section className="section section-products" role="products">
-    {props.items.map((product, i) => <Product key={`key-${product.id}`} {...product} isRight={++i % 2 === 0} isLast={++i === props.items.length} />)}
+    {props.items.map((product, i) => {
+        const index = ++i
+        return (<Product key={`key-${product.id}`} {...product} isRight={index % 2 === 0} isLast={index === props.items.length} />)
+    })}
   </section>
 )
 
