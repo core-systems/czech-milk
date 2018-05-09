@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 
 import Link from './Link'
+import Disclaimer from './Disclaimer'
 
 const ContactForm = ({
   intl,
@@ -61,6 +62,8 @@ const ContactForm = ({
         </div>
       </div>
 
+      <Disclaimer />
+      
       <div className="field is-grouped is-grouped-right">
         <p className="control">
           <button className="button">
