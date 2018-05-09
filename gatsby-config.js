@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Czech Milk',
     languages,
+    ga: `GA-123456`,
   },
   plugins: [
     {
@@ -36,13 +37,14 @@ module.exports = {
         name: 'images',
       },
     },
+    /*
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img`,
         name: 'staticImages',
       },
-    },
+    },*/
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',

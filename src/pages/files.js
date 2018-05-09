@@ -1,7 +1,7 @@
 import React from "react"
 
 export default ({ data }) => {
-  console.log(data)
+  //console.log(data)
   return (
     <div>
       <h1>My Site's Files</h1>
@@ -38,7 +38,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query MyFilesPtQuery {
+  query MyFilesEnQuery {
     allFile {
       edges {
         node {
