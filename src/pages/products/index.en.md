@@ -72,9 +72,9 @@ products:
       z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    image: /img/product-1.png
-    logo: /img/product-1-logo.png
-    cloud: /img/product-1-cloud.png
+    image: /img/product-3.png
+    logo: /img/product-3-logo.png
+    cloud: /img/product-3-cloud.png
     info:
       name: Lipánek
       expire: 120 dní
@@ -97,9 +97,9 @@ products:
       z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    image: /img/product-1.png
-    logo: /img/product-1-logo.png
-    cloud: /img/product-1-cloud.png
+    image: /img/product-4.png
+    logo: /img/product-4-logo.png
+    cloud: /img/product-4-cloud.png
     info:
       name: Milk Full Fat
       expire: 120 dní
