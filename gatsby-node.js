@@ -50,7 +50,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-/*
 exports.onCreateNode = ({
   node,
   getNode,
@@ -59,13 +58,13 @@ exports.onCreateNode = ({
 }) => {
   const { frontmatter } = node
   if (frontmatter) {
-    console.log(' node - markdown - frontmatter - products', frontmatter.products)
+    //console.log(' node - markdown - frontmatter - products', frontmatter.products)
     const { products } = frontmatter
 
     for (const i in products) {
       const product = products[i]
       const { id, image, logo, cloud } = product
-      console.log('product - id, image, logo, cloud', id, image, logo, cloud)
+      //console.log('product - id, image, logo, cloud', id, image, logo, cloud)
 
       if (image) {
         if (image.indexOf('/img') === 0) {
@@ -73,7 +72,6 @@ exports.onCreateNode = ({
             path.dirname(node.fileAbsolutePath),
             path.join(__dirname, '/static/', image)
           )
-          frontmatter.products[i].image = '/public/static/' + image
         }
       }
       if (logo) {
@@ -95,7 +93,36 @@ exports.onCreateNode = ({
     }
   }
 }
+
+/*
+exports.onCreateNode = ({
+  node,
+  getNode,
+  loadNodeContent,
+  boundActionCreators,
+}) => {
+  const { frontmatter } = node
+  if (frontmatter) {
+    const { image } = frontmatter
+    if (image) {
+      if (image.indexOf('/img') === 0) {
+        const { createNodeField } = boundActionCreators;
+        const localFile = path.relative(
+          path.dirname(node.fileAbsolutePath),
+          path.join(__dirname, '/static/', image)
+        )
+        createNodeField({
+          node,
+          name: 'localFile',
+          value: localFile,
+        })
+      }
+    }
+  }
+}
 */
+
+
 /*
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
    const { createNodeField } = boundActionCreators

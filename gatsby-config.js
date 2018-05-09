@@ -37,14 +37,13 @@ module.exports = {
         name: 'images',
       },
     },
-    /*
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img`,
-        name: 'staticImages',
+        name: 'uploads',
       },
-    },*/
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',
@@ -52,7 +51,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          /*
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
@@ -60,12 +58,12 @@ module.exports = {
               // name you set for gatsby-source-filesystem
               name: 'uploads', // default
             },
-          },*/
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 786,
-              backgroundColor: `#ffffff`,
+              //backgroundColor: `#ffffff`,
             },
           },
           {
@@ -121,9 +119,6 @@ module.exports = {
         }
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify-lambda',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
@@ -144,5 +139,8 @@ module.exports = {
           //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
         },
       },
+      'gatsby-transformer-sharp',
+      'gatsby-plugin-sharp',
+      'gatsby-plugin-netlify-lambda',
   ],
 }

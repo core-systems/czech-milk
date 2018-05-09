@@ -20,18 +20,6 @@ Products.propTypes = {
 
 export default Products
 
-/*
-image {
-  childImageSharp {
-    responsiveSizes (maxWidth: 200) {
-      src
-      srcSet
-      sizes
-    }
-  }
-}
-*/
-
 export const ProductFragment = graphql`
   fragment ProductFragment on MarkdownRemark {
     frontmatter {
@@ -43,9 +31,27 @@ export const ProductFragment = graphql`
         title
         description
         detail
-        image
-        logo
-        cloud
+        image {
+          childImageSharp {
+            sizes (maxWidth: 960) {
+              ...GatsbyImageSharpSizes_withWebp
+            }
+          }
+        }
+        logo {
+          childImageSharp {
+            resolutions (width: 250) {
+              ...GatsbyImageSharpResolutions
+            }
+          }
+        }
+        cloud {
+          childImageSharp {
+            sizes (maxWidth: 960) {
+              ...GatsbyImageSharpSizes_withWebp
+            }
+          }
+        }
         info {
           name
           expire

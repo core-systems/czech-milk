@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
+import Image from 'gatsby-image'
 
 import Link from './Link'
 import ProductInfo from './ProductInfo'
@@ -51,9 +52,10 @@ class Product extends React.PureComponent  {
       isActiveMore,
     } = this.state
 
-    const productImg = `${image}`
-    const productImgCloud = `${cloud}`
-    const productLogo = `${logo}`
+    //const productImg = `${image}`
+    //const productImgCloud = `${cloud}`
+    const productImgCloud = ``
+    //const productLogo = `${logo}`
     const lineBreak = require(`../img/break-line-cloud${( isRight ? '2' : '' )}.png`)
 
     return (
@@ -62,16 +64,20 @@ class Product extends React.PureComponent  {
           <div className="column is-4 product-image">
             <div className="content">
               <figure className="image">
-                <img src={productImg} alt={`[product, image, ${title}]`} width={268} />
+                <Image sizes={image.childImageSharp.sizes} alt={`[product, image, ${title}]`} title={`${title}`} />
+                {/*<img src={productImg} alt={`[product, image, ${title}]`} width={268} />*/}
               </figure>
-              <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${productImgCloud})` }}></div>
+              {/*<Image sizes={cloud.childImageSharp.sizes} alt={`[product, image, ${title}]`} title={`${title}]`} />*/}
+              <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${cloud.childImageSharp.sizes.src})` }}></div>
             </div>
           </div>
           <div className="column product-info">
             <div className="columns">
               <div className="column is-4">
-                <figure className="has-text-centered-mobile">
-                  <img src={productLogo} alt={`[product, logo, ${title}]`} />
+                <figure className="has-text-centered-mobile" style={{ position: 'relative'}}>
+                  {/*<Image sizes={logo.childImageSharp.sizes} alt={`[product, logo, ${title}]`} style={{ position: 'relative'}} />*/}
+                  <Image resolutions={logo.childImageSharp.resolutions} alt={`[product, logo, ${title}]`} style={{ position: 'relative'}} />
+                  {/*<img src={productLogo} alt={`[product, logo, ${title}]`} />*/}
                 </figure>
               </div>
             </div>
@@ -119,9 +125,9 @@ Product.propTypes = {
   description: PropTypes.string.isRequired,
   detail: PropTypes.string.isRequired,
   info: ProductInfo.propTypes.info,
-  image: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
-  cloud: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  logo: PropTypes.object.isRequired,
+  cloud: PropTypes.object.isRequired,
   isRight: PropTypes.bool,
   isLast: PropTypes.bool,
 }
