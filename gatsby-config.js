@@ -48,9 +48,46 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          /*
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // Set the name option to the same
+              // name you set for gatsby-source-filesystem
+              name: 'uploads', // default
+            },
+          },*/
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 786,
+              backgroundColor: `#ffffff`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.05rem`,
+            },
+          },
+          //`gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#9D7CBF`,
+        showSpinner: true,
+      },
+    },
     /*
     {
       resolve: `gatsby-plugin-typography`,
@@ -84,6 +121,8 @@ module.exports = {
         }
       }
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-netlify-lambda',
     {
       resolve: 'gatsby-plugin-netlify-cms',

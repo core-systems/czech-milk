@@ -49,3 +49,64 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     })
   })
 }
+
+/*
+exports.onCreateNode = ({
+  node,
+  getNode,
+  loadNodeContent,
+  boundActionCreators,
+}) => {
+  const { frontmatter } = node
+  if (frontmatter) {
+    console.log(' node - markdown - frontmatter - products', frontmatter.products)
+    const { products } = frontmatter
+
+    for (const i in products) {
+      const product = products[i]
+      const { id, image, logo, cloud } = product
+      console.log('product - id, image, logo, cloud', id, image, logo, cloud)
+
+      if (image) {
+        if (image.indexOf('/img') === 0) {
+          frontmatter.products[i].image = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, '/static/', image)
+          )
+          frontmatter.products[i].image = '/public/static/' + image
+        }
+      }
+      if (logo) {
+        if (logo.indexOf('/img') === 0) {
+          frontmatter.products[i].logo = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, '/static/', logo)
+          )
+        }
+      }
+      if (cloud) {
+        if (cloud.indexOf('/img') === 0) {
+          frontmatter.products[i].cloud = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, '/static/', cloud)
+          )
+        }
+      }
+    }
+  }
+}
+*/
+/*
+exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+   const { createNodeField } = boundActionCreators
+
+   if (node.internal.type === `MarkdownRemark`) {
+     const value = createFilePath({ node, getNode })
+     createNodeField({
+       name: `slug`,
+       node,
+       value,
+     })
+   }
+ }
+*/
