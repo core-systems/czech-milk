@@ -49,7 +49,7 @@ const TemplateWrapper = (props) => {
           meta={[
             { name: 'charset', content: 'UTF-8' },
             { name: 'description', content: 'Czech Milk' },
-            { name: 'keywords', content: 'czech, milk, core systems' },
+            { name: 'keywords', content: 'Czech, Milk, Core Systems' },
           ]}
           htmlAttributes={{
               lang: `${actualLang.key}`,
