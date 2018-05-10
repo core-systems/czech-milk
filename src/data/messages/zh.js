@@ -5,6 +5,7 @@ module.exports = {
   'zh': 'Chinese',
   'cs': 'Czech',
   'en': 'English',
+  'fr': 'France',
   'vi': 'Vietnamese',
 
   // navigation

@@ -119,6 +119,43 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
+      - file: "src/pages/products/index.fr.md"
+        label: "FR - Products"
+        name: "fr-products"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Language Key", name: "langKey", widget: "hidden", default: "fr"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta", name: "meta", widget: "string"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Product ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Detail", name: "detail", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image"}
+              - label: "Info"
+                name: "info"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", "string"}
+                  - {label: "Expire", name: "expire", "string"}
+                  - {label: "Package Weight", name: "packageWeight", "string"}
+                  - {label: "Package Size", name: "packageSize", "string"}
+                  - {label: "Code", name: "code", "string"}
+
+      - file: "src/pages/about/index.fr.md"
+        label: "FR - About"
+        name: "fr-about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
       - file: "src/pages/products/index.en.md"
         label: "EN - Products"
         name: "en-products"

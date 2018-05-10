@@ -5,6 +5,7 @@ module.exports = {
   'zh': 'Čínsky',
   'cs': 'Česky',
   'en': 'Anglicky',
+  'fr': 'Francousky',
   'vi': 'Vietnamsky',
 
   // navigation
@@ -18,9 +19,10 @@ module.exports = {
     <span class="title-red"> PRO EXPORT</span>
   `,
   'site.hero.subtitle': `
-      Výrobky společnosti MEDETA jsou známé tou nejvyšší evropskou kvalitou
-      ve zpracování mléka. Nabízíme výrobky značky Lipánek, vhodné
-      pro děti od 12 měsíců, i kvalitní Jihočeské mléka od lokálních výrobců.
+      VVýrobky společnosti MEDETA jsou známé tou nejvyšší evropskou kvalitou
+      ve zpracování mléka. Nabízíme výrobky značky Lipánek, vhodné pro děti
+      od 12 měsíců, i kvalitní Jihočeské mléka značky Czech Milk od lokálních
+      výrobců.
   `,
 
   //forms

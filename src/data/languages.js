@@ -3,6 +3,7 @@ const languages = [
   { key: 'zh', label: 'Chinese',    dir: 'ltr', default: false, flagIconCode: 'cn' },
   { key: 'cs', label: 'Czech',      dir: 'ltr', default: false, flagIconCode: 'cz' },
   { key: 'en', label: 'English',    dir: 'ltr', default: true , flagIconCode: 'gb' },
+  { key: 'fr', label: 'French',     dir: 'ltr', default: false, flagIconCode: 'fr' },
   { key: 'vi', label: 'Vietnamese', dir: 'ltr', default: false, flagIconCode: 'vn' },
 ]
 
