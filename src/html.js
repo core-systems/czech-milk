@@ -31,7 +31,8 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+          <link defer="defer" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+          <script defer="defer" src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

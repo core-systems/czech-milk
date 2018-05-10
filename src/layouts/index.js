@@ -11,10 +11,12 @@ import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 
 // Load Roboto typeface
-import 'typeface-roboto'
+//import 'typeface-roboto'
 //import 'font-awesome/css/font-awesome.css'
+
 // All styles
 import '../styles/all.sass'
+//import 'typeface-roboto'
 import 'flag-icon-css/sass/flag-icon.scss'
 
 function Fragment(props) {

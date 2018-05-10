@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-//import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 
 import Link from './Link'
 import SelectLanguage from './SelectLanguage'
-import logo from '../img/logo.svg'
+//import logo from '../img/logo.svg'
+const logo = withPrefix('/svg/logo.svg')
 
 const Navbar = (props) => (
   <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
