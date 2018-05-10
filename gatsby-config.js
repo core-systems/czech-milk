@@ -9,6 +9,7 @@ module.exports = {
     gtm: `${gtm}`,
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
