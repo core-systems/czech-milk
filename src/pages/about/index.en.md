@@ -2,7 +2,7 @@
 templateKey: about-page
 title: EN - About our values
 ---
-![test](/img/ztraty-cirkulace-2017.png)
+![test](/img/jihoceske-mleko-lahodne-polotucne-500ml.png)
 
 ### Shade-grown coffee
 
