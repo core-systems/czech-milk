@@ -10,7 +10,7 @@ module.exports = {
 
   // navigation
   'nav.products': 'Products',
-  'nav.about': 'About',
+  'nav.about': 'About Us',
 
   // hero
   'site.hero.title': `

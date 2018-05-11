@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
+import ContactForm from '../components/ContactForm'
 
 export const AboutPageTemplate = ({
   title,
@@ -17,6 +18,7 @@ export const AboutPageTemplate = ({
         {title}
       </h2>
       <PageContent className="content" content={content} />
+      <ContactForm topic="Contact - About Us" />
     </section>
   )
 }
