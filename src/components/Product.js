@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
 import Image from 'gatsby-image'
+import remark from 'remark'
+import recommended from 'remark-preset-lint-recommended'
+import remarkHtml from 'remark-html'
 
 import Link from './Link'
 import ProductInfo from './ProductInfo'
@@ -58,6 +61,11 @@ class Product extends React.PureComponent  {
     //const productLogo = `${logo}`
     const lineBreak = require(`../img/break-line-cloud${( isRight ? '2' : '' )}.png`)
 
+    const detailContent = remark()
+          .use(recommended)
+          .use(remarkHtml)
+          .processSync(detail).toString()
+
     return (
       <div className={`product ${isRight ? 'is-right' : 'is-left'}`}>
         <div className={`columns ${isRight ? 'reverse-rows right' : 'left'}`}>
@@ -102,7 +110,7 @@ class Product extends React.PureComponent  {
         <div className="content product-more is-medium">
             <input type="checkbox" id={`toggle-product-${id}-more`} className="toggle-checkbox" />
             <div className="toggle-item">
-              <div className="content" dangerouslySetInnerHTML={{ __html: description }} />
+              <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
               <div className="content">
                 <ContactForm topic={`${info.name} (${info.code})`} />
               </div>

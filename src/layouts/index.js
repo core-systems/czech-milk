@@ -31,7 +31,7 @@ const TemplateWrapper = (props) => {
   const homeLink = `/${actualLang.key}/`
   const langsMenu = getLangs(langKeys, actualLang.key, getUrlForLang(homeLink, url))
 
-  //console.log('props', props)
+  console.log('props', props)
   //console.log('data.bgImage.sizes', data.bgImage.sizes)
 
   return (

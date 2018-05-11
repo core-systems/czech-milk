@@ -1,6 +1,6 @@
 ---
 templateKey: 'product-page'
-langKey: 'en'
+langKey: 'cs'
 title: Products
 meta: >
   Products
@@ -9,25 +9,26 @@ products:
     title: Lipánek mléko trvanlivé polotučné 1.5% 250 ml
     description: >
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro svůj zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin a vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    detail: >
-      Průměrné výžívové hodnoty ve 100ml výrobku:
-      - Energetická hodnota: 192 kJ/ 46 kcal
-      - Tuky: 1.5 g
-        - z toho nasycené kyseliny: 1 g
-      - Sacharidy: 4.8 g
-        - z toho cukry: 4.8 g      
-      - Bílkovny: 3.2 g
-      - Sůl: 0.1 g
-      - Vápnik: 120 mg
+    detail: |
+      | Průměrné výživové hodnoty        | ve 100 ml výrobku |
+      | -------------------------------- | -----------------:|
+      | Energetická hodnota              | 192 kJ/ 46 kcal   |
+      | Tuky                             | 1.5 g             |
+      |  - z toho nasycené kyseliny      | 1.0 g               |
+      | Sacharidy                        | 4.8 g             |
+      |  - z toho cukry                  | 4.8 g             |
+      | Bílkovny                         | 3.2 g             |
+      | Sůl                              | 0.1 g             |
+      | Vápnik                           | 120 mg            |
     image: /img/product-1.png
     logo: /img/product-1-logo.png
     cloud: /img/product-1-cloud.png
     info:
-      name: Lipánek vanilka
+      name: trvanlivé mléko polotučné
       expire: 120 dní
-      packageWeight: cca 1 Kg
-      packageSize: 	12 ks
-      code: '8593803224206'
+      packageWeight: 0.250 Kg
+      packageSize: 12 ks
+      code: '8593803224275'
   - id: product-2
     title: Milk
     description: >
@@ -37,7 +38,7 @@ products:
       z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    detail: >
+    detail: |
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro
       svůj zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin
       a vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno
@@ -62,7 +63,7 @@ products:
       z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    detail: >
+    detail: |
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro
       svůj zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin
       a vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno
@@ -87,7 +88,7 @@ products:
       z nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    detail: >
+    detail: |
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro
       svůj zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin
       a vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno

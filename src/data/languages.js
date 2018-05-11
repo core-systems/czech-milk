@@ -1,18 +1,20 @@
 const languages = [
-  { key: 'ar', label: 'Arabic',     dir: 'rtl', default: false, flagIconCode: 'ly' },
-  { key: 'zh', label: 'Chinese',    dir: 'ltr', default: false, flagIconCode: 'cn' },
+  { key: 'ar', label: 'Arabic',     dir: 'rtl', default: false, flagIconCode: 'ly', disabled: true },
+  { key: 'zh', label: 'Chinese',    dir: 'ltr', default: false, flagIconCode: 'cn', disabled: true },
   { key: 'cs', label: 'Czech',      dir: 'ltr', default: false, flagIconCode: 'cz' },
   { key: 'en', label: 'English',    dir: 'ltr', default: true , flagIconCode: 'gb' },
-  { key: 'fr', label: 'French',     dir: 'ltr', default: false, flagIconCode: 'fr' },
-  { key: 'vi', label: 'Vietnamese', dir: 'ltr', default: false, flagIconCode: 'vn' },
+  { key: 'fr', label: 'French',     dir: 'ltr', default: false, flagIconCode: 'fr', disabled: true },
+  { key: 'vi', label: 'Vietnamese', dir: 'ltr', default: false, flagIconCode: 'vn', disabled: true },
 ]
 
-const langKeys = languages.map(l => l.key)
-const defaultLangKey = languages.filter(x => x.default).map(l => l.key)
+const enableLanguages = languages.filter(x => !x.disabled)
+
+const langKeys = enableLanguages.map(l => l.key)
+const defaultLangKey = enableLanguages.filter(x => x.default).map(l => l.key)
 
 module.exports = {
   langKeys: langKeys,
-  languages: languages,
+  languages: enableLanguages,
   langs: langKeys,
   defaultLangKey: `${defaultLangKey}`,
 }
