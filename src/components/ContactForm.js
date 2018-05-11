@@ -16,24 +16,13 @@ const ContactForm = ({
       action="thank-you"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      hidden
+      acceptCharset="UTF-8"
+      autoComplete="off"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <p className="is-hidden0">
+      <p className="is-hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
-      <p>
-        <label>Email: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
-    <div id="root"></div>
-    <form action="#form:contact-us" method="post" target="_blank" acceptCharset="UTF-8"  autoComplete="off" >
       <div className="field is-grouped">
         <div className="control has-icons-left has-icons-right is-expanded">
           <input name="name" className="input" type="name" placeholder={intl.formatMessage({ id :'form.contactUs.name.placeholder' })} aria-label="add full name" required />
@@ -63,7 +52,7 @@ const ContactForm = ({
       </div>
 
       <Disclaimer />
-      
+
       <div className="field is-grouped is-grouped-right">
         <p className="control">
           <button className="button">

@@ -1,7 +1,6 @@
 ---
 templateKey: 'product-page'
 langKey: 'fr'
-#path: /products
 title: Products
 meta: >
   Products
