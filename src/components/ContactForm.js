@@ -19,7 +19,7 @@ const ContactForm = ({
       acceptCharset="UTF-8"
       autoComplete="off"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value={`${topic}`} />
       <p className="is-hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
