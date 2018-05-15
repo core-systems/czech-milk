@@ -39,6 +39,9 @@ module.exports = {
   'exporter': 'Exportér',
   'property': 'Vlastnost',
   'value': 'Hodnota',
+  'czech.country': 'Česká Republika',
+  'All Rights Reserved': 'Všechna práva vyhrazena',
+  'Certification': 'Certifikace',
 
   // Products
   'products': 'Produkty',

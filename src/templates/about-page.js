@@ -1,13 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { injectIntl, intlShape, } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
 import ContactForm from '../components/ContactForm'
 
-export const AboutPageTemplate = ({
+export const AboutPageTemplate = injectIntl(({
   title,
   content,
   contentComponent,
   helmet,
+  intl,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -18,10 +20,10 @@ export const AboutPageTemplate = ({
         {title}
       </h2>
       <PageContent className="content" content={content} />
-      <ContactForm topic="Contact - About Us" />
+      <ContactForm topic={`[${intl.locale.toUpperCase()}] Contact - About Us`} />
     </section>
   )
-}
+})
 
 export default ({ data }) => {
   //console.log('about', data)

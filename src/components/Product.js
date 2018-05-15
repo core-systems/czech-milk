@@ -40,6 +40,7 @@ class Product extends React.PureComponent  {
 
   render() {
     const {
+      intl,
       id,
       title,
       description,
@@ -55,6 +56,7 @@ class Product extends React.PureComponent  {
       isActiveMore,
     } = this.state
 
+    console.log('intl', intl)
     //const productImg = `${image}`
     //const productImgCloud = `${cloud}`
     const productImgCloud = ``
@@ -112,7 +114,7 @@ class Product extends React.PureComponent  {
             <div className="toggle-item">
               <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
               <div className="content">
-                <ContactForm topic={`${info.name} (${info.code})`} />
+                <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
               </div>
             </div>
         </div>

@@ -8,13 +8,13 @@ import madeta from '../img/madeta-logo.png'
 import core from '../img/core-logo.png'
 
 const MadetaLogo = () => (
-  <figure className="image0">
+  <figure>
     <img src={madeta} alt={'Madeta'} width={99} height={36} />
   </figure>
 )
 
 const CoreLogo = () => (
-  <figure className="image0">
+  <figure>
     <img src={core} alt={'Core Systems'} width={66} height={42} />
   </figure>
 )
@@ -26,7 +26,7 @@ const Contacts = (props) => (
         <div className="column is-6-tablet is-5-desktop is-4-widescreen is-offset-1-desktop">
           <div className="content is-small">
             <h2><FormattedMessage id="form.contactUs.title" /></h2>
-            <ContactForm topic="Contact - footer" />
+            <ContactForm topic={`[${props.intl.locale.toUpperCase()}] Contact - Footer`} />
           </div>
         </div>
         <div className="column is-3-tablet is-3-desktop is-2-fullhd has-dotted-right-border has-dotted-bottom-border-mobile">
@@ -43,7 +43,7 @@ const Contacts = (props) => (
               MADETA a.s.<br />
               Rudolfovská 246/83<br />
               370 50 České Budějovice<br />
-              Česká Republika
+              <FormattedMessage id="czech.country" />
             </p>
             <p>
               <a href="https://www.madeta.cz/">www.madeta.cz</a>
@@ -64,7 +64,7 @@ const Contacts = (props) => (
               CORE SYSTEMS s.r.o.<br />
               Bechlinská 705/2<br />
               190 00 Praha 9<br />
-              Česká Republika
+              <FormattedMessage id="czech.country" />
             </p>
             <p>
               <a href="https://www.czechmilk.com/">www.czechmilk.com</a>
@@ -78,8 +78,7 @@ const Contacts = (props) => (
 )
 
 Contacts.propTypes = {
-  //intl: intlShape.isRequired,
+  intl: intlShape.isRequired,
 }
 
-export default Contacts
-//export default injectIntl(Contacts)
+export default injectIntl(Contacts)
