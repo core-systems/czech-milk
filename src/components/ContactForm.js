@@ -11,7 +11,7 @@ const ContactForm = ({
 }) => (
   <React.Fragment>
     <form
-      name="contact"
+      name={`${topic}`}
       method="post"
       action="thank-you"
       data-netlify="true"
