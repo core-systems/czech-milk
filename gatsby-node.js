@@ -25,15 +25,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach((edge) => {
+        //console.log(`edge - ${edge.node.fields.slug}`, edge)
         const templateKey = edge.node.frontmatter.templateKey || 'blog-post'
         const id = edge.node.id
-        const cid = edge.node.contentfulid
         const locale = edge.node.node_locale
         createPage({
           //path: `/${locale}/blog/posts/${id}`,
           layout: edge.node.fields.langKey,
           path: edge.node.fields.slug,
-          //component: path.resolve(`./src/templates/blog-post.js`),
           component: path.resolve(
             `src/templates/${String(templateKey)}.js`
           ),
