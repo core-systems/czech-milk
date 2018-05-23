@@ -14,7 +14,7 @@ export const AboutPageTemplate = injectIntl(({
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section-about-page section--gradient">
+    <section className="section section-about-page section--gradient" id="us">
       {helmet || ''}
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {title}

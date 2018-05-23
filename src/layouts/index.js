@@ -5,6 +5,9 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
 import { IntlProvider } from 'react-intl'
 import 'intl'
 
+import scroll from 'smooth-scroll'
+import HashChangeHandler from '../components/HashChangeHandler'
+
 import BgImage from '../components/BgImage'
 import Header from '../components/Header'
 import Contacts from '../components/Contacts'
@@ -16,6 +19,37 @@ import 'flag-icon-css/sass/flag-icon.scss'
 // Load Roboto typeface
 //import 'typeface-roboto'
 //import 'font-awesome/css/font-awesome.css'
+
+
+//import 'smooth-scroll'
+//const scroll = require('smooth-scroll')
+
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  //const scroll = require('smooth-scroll')
+  const scrollInstance = scroll('a[href*="#"],[data-scroll]', { })
+  window.scrollInstance = scrollInstance
+
+  // Log scroll events
+  var logScrollEvent = function (event) {
+
+  	// The event type
+  	console.log('type:', event.type);
+
+  	// The anchor element being scrolled to
+  	console.log('anchor:', event.detail.anchor);
+
+  	// The anchor link that triggered the scroll
+  	console.log('toggle:', event.detail.toggle);
+    //scroll.animateScroll(anchor)
+  };
+
+  // Listen for scroll events
+  document.addEventListener('scrollStart', logScrollEvent, false);
+  document.addEventListener('scrollStop', logScrollEvent, false);
+  document.addEventListener('scrollCancel', logScrollEvent, false);
+}
 
 function Fragment(props) {
   console.log('fragment', props)
@@ -92,6 +126,7 @@ const TemplateWrapper = (props) => {
         </section>
         <Contacts />
         <Footer />
+        { /* <HashChangeHandler /> */}
       </div>
     </IntlProvider>
   )

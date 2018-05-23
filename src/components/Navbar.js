@@ -25,10 +25,10 @@ const Navbar = (props) => (
 
     <div id="navMenu" className="navbar-menu">
       <div className="navbar-end">
-        <Link className="navbar-item" activeClassName="is-active" to="/about">
+        <Link className="navbar-item" activeClassName="is-active" to="/about#us" data-scroll>
           <FormattedMessage id='nav.about' />
         </Link>
-        <Link className="navbar-item" activeClassName="is-active" to="/products">
+        <Link className="navbar-item" activeClassName="is-active" to="/products#all" data-scroll>
           <FormattedMessage id='nav.products' />
         </Link>
         <SelectLanguage langs={props.langs} languages={props.languages} />
