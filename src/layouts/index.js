@@ -5,9 +5,6 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n'
 import { IntlProvider } from 'react-intl'
 import 'intl'
 
-import scroll from 'smooth-scroll'
-import HashChangeHandler from '../components/HashChangeHandler'
-
 import BgImage from '../components/BgImage'
 import Header from '../components/Header'
 import Contacts from '../components/Contacts'
@@ -22,12 +19,12 @@ import 'flag-icon-css/sass/flag-icon.scss'
 
 
 //import 'smooth-scroll'
-//const scroll = require('smooth-scroll')
+//import scroll from 'smooth-scroll'
 
 if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
   // eslint-disable-next-line global-require
-  //const scroll = require('smooth-scroll')
+  const scroll = require('smooth-scroll')
   const scrollInstance = scroll('a[href*="#"],[data-scroll]', { })
   window.scrollInstance = scrollInstance
 
