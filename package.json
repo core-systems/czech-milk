@@ -1,7 +1,7 @@
 {
   "name": "czech-milk",
   "description": "Czech Milk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
