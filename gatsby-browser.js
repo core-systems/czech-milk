@@ -22,6 +22,15 @@ exports.onRouteUpdate = args => {
 }
 
 exports.shouldUpdateScroll = args => {
+  if (typeof window !== 'undefined') {
+    if(location.pathname.indexOf("/thank-you") !== -1) {
+      setTimeout(() => {
+        const anchor = document.querySelector('#thank-you')
+        window.scrollInstance.animateScroll(anchor)
+      }, 100)
+    }
+  }
+
   // Force updae scroll
   return true
   //  scroll on < back, forward >, refresh, but not link clicks

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { injectIntl, intlShape, } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
 
-export const OtherPageTemplate = injectIntl(({
+const OtherPageTemplate = injectIntl(({
   title,
   content,
   contentComponent,
@@ -13,7 +13,7 @@ export const OtherPageTemplate = injectIntl(({
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section-about-page section--gradient">
+    <section className="section section-about-page" id="thank-you">
       {helmet || ''}
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {title}
