@@ -25,7 +25,7 @@ if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
   // eslint-disable-next-line global-require
   const scroll = require('smooth-scroll')
-  const scrollInstance = scroll('a[href*="#"],[data-scroll]', { })
+  const scrollInstance = scroll('a[href*="#"],[data-scroll]')
   window.scrollInstance = scrollInstance
 
   // Log scroll events

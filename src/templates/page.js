@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { injectIntl, intlShape, } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
 
-const OtherPageTemplate = injectIntl(({
+export const OtherPageTemplate = injectIntl(({
   title,
   content,
   contentComponent,
