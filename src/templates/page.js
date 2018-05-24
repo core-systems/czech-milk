@@ -2,9 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { injectIntl, intlShape, } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
-import ContactForm from '../components/ContactForm'
 
-export const AboutPageTemplate = injectIntl(({
+export const OtherPageTemplate = injectIntl(({
   title,
   content,
   contentComponent,
@@ -14,34 +13,33 @@ export const AboutPageTemplate = injectIntl(({
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section-about-page section--gradient" id="us">
+    <section className="section section-about-page" id="thank-you">
       {helmet || ''}
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {title}
       </h2>
       <PageContent className="content" content={content} />
-      <ContactForm topic={`[${intl.locale.toUpperCase()}] Contact - About Us`} />
     </section>
   )
 })
 
 export default ({ data }) => {
   //console.log('about', data)
-  const { aboutPage: post } = data
+  const { otherPage: page } = data
 
   return (
-    <AboutPageTemplate
+    <OtherPageTemplate
       contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      content={post.html}
-      helmet={<Helmet title={`${post.frontmatter.title}`} />}
+      title={page.frontmatter.title}
+      content={page.html}
+      helmet={<Helmet title={`${page.frontmatter.title}`} />}
     />
   )
 }
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    aboutPage: markdownRemark(id: { eq: $id }) {
+export const otherPageQuery = graphql`
+  query OtherPage($id: String!) {
+    otherPage: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title

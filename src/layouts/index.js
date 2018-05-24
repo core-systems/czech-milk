@@ -18,7 +18,7 @@ import 'flag-icon-css/sass/flag-icon.scss'
 //import 'font-awesome/css/font-awesome.css'
 
 function Fragment(props) {
-  console.log('fragment', props)
+  //console.log('fragment', props)
   return props.children || <span {...props} /> || <React.Fragment {...props} /> || null
 }
 

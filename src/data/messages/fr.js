@@ -2,53 +2,54 @@ module.exports = {
   // Languages
   'selectLanguage': 'Select your language',
   'ar': 'Arabic',
-  'zh': 'Chinese',
-  'cs': 'Czech',
-  'en': 'English',
-  'fr': 'France',
-  'vi': 'Vietnamese',
+  'zh': 'Chinois',
+  'cs': 'Tchèque',
+  'en': 'Anglais',
+  'fr': 'Français',
+  'vi': 'Vietnamien',
 
   // navigation
-  'nav.products': 'Products',
-  'nav.about': 'About Us',
+  'nav.products': 'Des produits',
+  'nav.about': 'À propos de nous',
 
   // hero
   'site.hero.title': `
-    <span class="title-red">THE BEST</span>
-    <span class="title-blue"> FROM&nbsp;CZECH<br /> MILK</span>
-    <span class="title-red"> FOR EXPORT</span>
+    <span class="title-red">LE&nbsp;MEILLEUR</span>
+    <span class="title-blue"> DU&nbsp;LAIT<br /> TCHÈQUE POUR</span>
+    <span class="title-red"> L'EXPORTATION</span>
   `,
   'site.hero.subtitle': `
-      Products manufactured by MADETA company are known for the highest European
-      quality in milk processing. We offer brands like Lipánek, suitable
-      for children 12+ months old, and also locally sourced high quality
-      Southern Bohemia milk.
+      Les produits fabriqués par MADETA sont connus pour la plus haute qualité
+      européenne dans le traitement du lait. Nous offrons des marques comme
+      Lipánek, un lait adapte  aux enfants 12+ mois, et également du lait
+      de Bohême du Sud portant la marque Czech Milk de haute qualité
+      et d'origine locale.
   `,
 
   //forms
-  'form.send': 'Send',
-  'form.reset': 'Reset',
-  'form.disclaimer.GDPR' : 'The provided personal data will be used by CORE SYSTEMS s. r. o. only for the purpose of contacting and will be erased after the request has been processed.',
-  'form.contactUs.title': 'Write us',
-  'form.contactUs.name.placeholder': 'Full name...',
-  'form.contactUs.email.placeholder': 'E-mail...',
+  'form.send': 'Envoyer',
+  'form.reset': 'Remettre',
+  'form.disclaimer.GDPR' : "Les données personnelles fournies seront utilisées par CORE SYSTEMS s. r. o. uniquement dans le but d'entrer en contact et seront effacées après que la demande a été traitée.",
+  'form.contactUs.title': 'Écrivez-nous',
+  'form.contactUs.name.placeholder': 'Nom complet...',
+  'form.contactUs.email.placeholder': 'Email...',
   'form.contactUs.message.placeholder': 'Message...',
 
   // texts
-  'producer': 'Producer',
-  'exporter': 'Exporter',
-  'property': 'Property',
-  'value': 'Value',
-  'czech.country': 'Czech Republic',
-  'All Rights Reserved': 'All Rights Reserved',
+  'producer': 'Producteur',
+  'exporter': 'Exportateur',
+  'property': 'Propriété',
+  'value': 'Valeur',
+  'czech.country': 'République Tchèque',
+  'All Rights Reserved': 'Tous droits réservés',
   'Certification': 'Certification',
 
   // Products
   'products': 'Products',
-  'product.name': 'Product name',
-  'product.expire': 'Shelf life',
-  'product.packageWeight': 'Weight',
-  'product.packageSize': 'Group packaging',
-  'product.code': 'Barcode',
-  'product.moreBtn': 'More',
+  'product.name': 'Nom du produit',
+  'product.expire': 'Dureé de conservation',
+  'product.packageWeight': 'Poids',
+  'product.packageSize': 'Emballage de groupe',
+  'product.code': 'Code a barre',
+  'product.moreBtn': 'Encore',
 }

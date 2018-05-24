@@ -56,7 +56,6 @@ class Product extends React.PureComponent  {
       isActiveMore,
     } = this.state
 
-    console.log('intl', intl)
     //const productImg = `${image}`
     //const productImgCloud = `${cloud}`
     const productImgCloud = ``

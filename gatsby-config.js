@@ -46,7 +46,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-catch-links',
+    //'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-transformer-remark`,
