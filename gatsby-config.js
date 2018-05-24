@@ -46,7 +46,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    //'gatsby-plugin-catch-links',
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-transformer-remark`,
@@ -75,7 +75,7 @@ module.exports = {
           },
           //`gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-autolink-headers`,
+          //`gatsby-remark-autolink-headers`,
           `gatsby-remark-smartypants`,
         ],
       },
