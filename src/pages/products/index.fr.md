@@ -30,11 +30,11 @@ products:
     info:
       code: '8593803224015'
       expire: 120 days
-      name: full fat longlife milk
+      name: lait entier longue vie
       packageSize: 12 pcs.
       packageWeight: 1 kg
     logo: /img/product-4-logo.png
-    title: Czech long-life full fat milk 3.5% 1 l
+    title: Lait entier longue vie
   - cloud: /img/product-2-cloud.png
     description: >
       Ce lait délicieux saturé avec le soleil et les fleurs des prés de Bohême
@@ -61,11 +61,11 @@ products:
     info:
       code: '8593803222318'
       expire: 14 days
-      name: low fat milk
+      name: lait réduit en gras
       packageSize: 10 pcs.
       packageWeight: cca 0.5 Kg
     logo: /img/product-2-logo.png
-    title: Delicious low fat Czech Milk 1.5% 0.5 l
+    title: Lait Longlife à faible teneur en matières grasses
   - cloud: /img/product-3-cloud.png
     description: >
       Ce lait délicieux saturé avec le soleil et les fleurs des prés de Bohême
