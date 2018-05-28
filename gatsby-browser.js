@@ -11,5 +11,5 @@ exports.onRouteUpdate = (args) => {
 }
 
 exports.shouldUpdateScroll = args => {
-  return 
+  return true
 }
