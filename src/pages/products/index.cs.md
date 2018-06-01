@@ -58,7 +58,7 @@ products:
       name: trvanlivé mléko polotučné
       packageSize: 12 ks
       packageWeight: cca 1 Kg
-    logo: /img/product-4-logo.png
+    logo: /img/product-2-logo.png
     title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
   - cloud: /img/product-3-cloud.png
     description: >-
