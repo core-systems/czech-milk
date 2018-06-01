@@ -97,26 +97,26 @@ products:
       nejkvalitnějšího českého mléka a díky tomu si ho Vy i Vaše dítě
       zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
       bezlepkové diety. Vápník ve 100 ml 120 mg = 15% DDD
-    detail: |
-      | Průměrné výživové hodnoty        | ve 100 ml výrobku |
-      | -------------------------------- | -----------------:|
-      | Energetická hodnota              | 192 kJ/ 46 kcal   |
-      | Tuky                             | 1.5 g             |
-      |  - z toho nasycené kyseliny      | 1.0 g             |
-      | Sacharidy                        | 4.8 g             |
-      |  - z toho cukry                  | 4.8 g             |
-      | Bílkovny                         | 3.2 g             |
-      | Sůl                              | 0.1 g             |
-      | Vápnik                           | 120 mg            |
+    detail: |-
+      | Průměrné výživové hodnoty   | ve 100 ml výrobku |
+      | --------------------------- | ----------------- |
+      | Energetická hodnota         | 237 kJ/ 57 kcal   |
+      | Tuky                        | 1.3 g             |
+      | \- z toho nasycené kyseliny | 0.9 g             |
+      | Sacharidy                   | 8 g               |
+      | \- z toho cukry             | 7.7 g             |
+      | Bílkovny                    | 3.1 g             |
+      | Sůl                         | 0.09 g            |
+      | Vápnik                      | 160 mg            |
     id: product-1
     image: /img/product-1.png
     info:
-      code: '8593803224275'
+      code: '8593803223346'
       expire: 120 dní
-      name: trvanlivé mléko polotučné
-      packageSize: 12 ks
+      name: trvanlivé mléko polotučné - vanilka
+      packageSize: 27 ks
       packageWeight: 0.250 kg
     logo: /img/product-1-logo.png
-    title: Lipánek mléko trvanlivé polotučné 1.5% 250 ml
+    title: '16262 Lipánek mléko trvanlivé vanilka 1,3% 250 ml'
 ---
 
