@@ -29,11 +29,11 @@ body
   //background-color: $czech-milk-color-green-light
   background-image: url('../img/header-bg-top.png')
   background-size: auto
-  background-position: top center
+  background-position: center -80px
   background-repeat: no-repeat
   //min-height: 1409px
   +mobile
-    background-position: center -75px
+    //background-position: center -75px
 
   //&:before
       content: ' '
@@ -81,7 +81,7 @@ section.hero
   //background-image: url('/img/header-bg-top.png')
   //background-size: cover
   //background-position: top center
-  min-height: 808px
+  min-height: 750px
   +mobile
     min-height: 780px
 
@@ -96,7 +96,7 @@ section.hero
     //padding-left: 4rem
 
   .navbar-end
-    margin-top: 50px
+    margin-top: 10px
 
     +media('>=tablet', '<desktop')
       margin-top: 0
@@ -111,8 +111,8 @@ section.hero
         position: absolute
         top: 39px
         left: 80px
-        width: 436px
-        max-width: 436px
+        width: 350px
+        max-width: 350px
         //height: 271px
         max-height: 271px
         +mobile
@@ -128,18 +128,18 @@ section.hero
         +desktop
           top: 0
           left: -100px
-          width: 436px
-          max-width: 436px
+          width: 350px
+          max-width: 350px
         +widescreen
           top: 0
           left: -6px
-          width: 436px
-          max-width: 436px
+          width: 350px
+          max-width: 350px
         +fullhd
           top: 39px
           left: 80px
-          width: 436px
-          max-width: 436px
+          width: 350px
+          max-width: 350px
 
 .navbar-item
   &.is-active
@@ -208,7 +208,7 @@ section.hero
       margin-right: .5rem
 
 .hero-body .title
-  margin-top: 15rem
+  margin-top: 12rem
   +mobile
     margin-top: 6rem
   +media('>=528px')
@@ -216,9 +216,9 @@ section.hero
   +tablet
     margin-top: 15rem
   +desktop
-    margin-top: 15rem
+    margin-top: 12rem
   +widescreen
-    margin-top: 15rem
+    margin-top: 12rem
 
   > .title-red
     color: #df3036
