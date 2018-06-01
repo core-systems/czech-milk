@@ -1,9 +1,8 @@
 ---
 templateKey: product-page
 langKey: cs
-title: Products
-meta: |
-  Products
+title: Produkty
+meta: Kvalitní produkty z Českého mléka
 products:
   - cloud: /img/product-1-cloud.png
     description: >
@@ -28,20 +27,18 @@ products:
     info:
       code: '8593803224015'
       expire: 120 dní
-      name: trvanlivé mléko plnotučné
+      name: mléko plnotučné trvanlivé
       packageSize: 12 ks
       packageWeight: cca 1 Kg
     logo: /img/product-4-logo.png
-    title: Jihoceske mléko trvanlivé plnotučné 3.5% 1 l
+    title: Jihočeské mléko trvanlivé plnotučné 3.5% 1 l
   - cloud: /img/product-2-cloud.png
-    description: >
-      Lahodné mléko provoněné sluncem a květy jihočeských luk pozná po prvním
-      doušku každý. Jihočeské mléko si svou výtečnou chuť zachová po celou dobu
-      trvanlivosti - 2 týdny, neboť obal s praktickým šroubovacím uzávěrem ho
-      dokonale ochrání před působením světla. Výrobek je vyroben z prvotřídního
-      jihočeského mléka s obsahem tuku 1,5 % a jak jeho název napovídá, je
-      opravdu LAHODNÉ. Splňuje požadavky bezlepkové diety. Vápník ve 100 ml 120
-      mg = 15 % DDD.
+    description: >-
+      Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
+      dobu 4 měsíců i při skladování při pokojové teplotě - ideální jako vaše
+      mléčná zásoba na cesty. Výrobek je vyroben z prvotřídního jihočeského
+      mléka s obsahem tuku 1,5 % a jak jeho název napovídá, je opravdu LAHODNÉ.
+      Splňuje požadavky bezlepkové diety. Vápník ve 100 ml 120 mg = 15 % DDD.
     detail: |
       | Průměrné výživové hodnoty        | ve 100 ml výrobku |
       | -------------------------------- | -----------------:|
@@ -56,20 +53,21 @@ products:
     id: product-4
     image: /img/product-en-milk-low-1000ml.png
     info:
-      code: '8593803222318'
-      expire: 14 dní
-      name: mléko polotučné
-      packageSize: 10 ks
-      packageWeight: cca 0.5 Kg
+      code: '8593803224206'
+      expire: 120 dní
+      name: trvanlivé mléko polotučné
+      packageSize: 12 ks
+      packageWeight: cca 1 Kg
     logo: /img/product-4-logo.png
     title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
   - cloud: /img/product-3-cloud.png
-    description: >
-      Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
-      dobu 4 měsíců i při skladování při pokojové teplotě - ideální jako Vaše
-      mléčná zásoba na cesty. Výrobek je vyroben z prvotřídního jihočeského
-      mléka s obsahem tuku 1,5%. Splňuje požadavky bezlepkové diety. Vápník ve
-      100 ml 120 mg = 15% DDD
+    description: >-
+      Mléko určené zejména těm nejmenším je přesně to pravé, co děti pro svůj
+      zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin a
+      vápníku důležitého pro zdravý vývoj zubů a kostí. Je vyrobeno z
+      nejkvalitnějšího českého mléka a díky tomu si ho vy i vaše dítě
+      zamilujete. Navíc je v praktickém balení s brčkem. Splňuje požadavky
+      bezlepkové diety. Vápník ve 100 ml 120 mg = 15 % DDD.
     detail: |
       | Průměrné výživové hodnoty        | ve 100 ml výrobku |
       | -------------------------------- | -----------------:|
@@ -84,13 +82,13 @@ products:
     id: product-2
     image: /img/product-3.png
     info:
-      code: '8593803224206'
+      code: '8593803224275'
       expire: 120 dní
       name: trvanlivé mléko polotučné
-      packageSize: 12 ks
-      packageWeight: cca 1 kg
+      packageSize: 27 ks
+      packageWeight: cca 0.250 Kg
     logo: /img/product-3-logo.png
-    title: Jihoceske mléko trvanlivé polotučné 1.5% 1 l
+    title: '16125 Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
   - cloud: /img/product-4-cloud.png
     description: >
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro
