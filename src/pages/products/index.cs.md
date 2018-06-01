@@ -88,7 +88,7 @@ products:
       packageSize: 27 ks
       packageWeight: cca 0.250 Kg
     logo: /img/product-3-logo.png
-    title: '16125 Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
+    title: 'Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
   - cloud: /img/product-4-cloud.png
     description: >
       Toto mléko určené zejména těm nejmenším, je přesně to pravé, co děti pro
@@ -103,7 +103,7 @@ products:
       | Energetická hodnota         | 237 kJ/ 57 kcal   |
       | Tuky                        | 1.3 g             |
       | \- z toho nasycené kyseliny | 0.9 g             |
-      | Sacharidy                   | 8 g               |
+      | Sacharidy                   | 8.0 g             |
       | \- z toho cukry             | 7.7 g             |
       | Bílkovny                    | 3.1 g             |
       | Sůl                         | 0.09 g            |
@@ -117,6 +117,6 @@ products:
       packageSize: 27 ks
       packageWeight: 0.250 kg
     logo: /img/product-1-logo.png
-    title: '16262 Lipánek mléko trvanlivé vanilka 1,3% 250 ml'
+    title: 'Lipánek mléko trvanlivé vanilka 1,3% 250 ml'
 ---
 
