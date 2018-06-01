@@ -91,7 +91,7 @@ products:
       expire: 120 jours
       name: lait réduit en gras
       packageSize: 27 morceaux
-      packageWeight: 1 kg
+      packageWeight: 0.250 kg
     logo: /img/product-1-logo.png
     title: Lipánek lait réduit en gras
   - cloud: /img/product-4-cloud.png
