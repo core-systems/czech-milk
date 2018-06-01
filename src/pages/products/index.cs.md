@@ -27,7 +27,7 @@ products:
     info:
       code: '8593803224015'
       expire: 120 dní
-      name: mléko plnotučné trvanlivé
+      name: trvanlivé mléko plnotučné
       packageSize: 12 ks
       packageWeight: cca 1 Kg
     logo: /img/product-4-logo.png
