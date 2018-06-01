@@ -2,8 +2,7 @@
 templateKey: product-page
 langKey: en
 title: Products
-meta: |
-  Products
+meta: Czech Milk Products
 products:
   - cloud: /img/product-1-cloud.png
     description: >
@@ -57,11 +56,11 @@ products:
     id: product-4
     image: /img/product-en-milk-low-1000ml.png
     info:
-      code: '8593803222318'
-      expire: 14 days
-      name: low fat milk
-      packageSize: 10 pcs.
-      packageWeight: cca 0.5 Kg
+      code: '8593803224206'
+      expire: 120 days
+      name: smi-skimmed long life milk
+      packageSize: 12 pcs.
+      packageWeight: cca 1 Kg
     logo: /img/product-2-logo.png
     title: Delicious low fat Czech Milk 1.5% 0.5 l
   - cloud: /img/product-3-cloud.png
