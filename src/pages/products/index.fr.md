@@ -118,9 +118,9 @@ products:
     image: /img/product-1.png
     info:
       code: '8593803223346'
-      expire: 120 days
+      expire: 120 jours
       name: lait vanille
-      packageSize: 27 pcs.
+      packageSize: 27 morceaux
       packageWeight: 0.250 kg
     logo: /img/product-1-logo.png
     title: Lipanek lait - vanille 250 ml
