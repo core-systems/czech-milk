@@ -24,6 +24,7 @@ module.exports = {
       od 12 měsíců, i kvalitní Jihočeské mléka značky Czech Milk od lokálních
       výrobců.
   `,
+  'site.hero.more': 'K produktům',
 
   //forms
   'form.send': 'Odeslat',

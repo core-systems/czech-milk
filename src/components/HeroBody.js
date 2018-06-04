@@ -28,6 +28,16 @@ const HeroBody = (props) => (
               </p>
             )}
           </FormattedMessage>
+          <div className="hero-more">
+            <a href="#all" className="button is-large is-inverted is-outlined is-rounded" data-scroll>
+              <span>
+                <span><FormattedMessage id="site.hero.more" /></span>
+              </span>
+              <span className="icon is-large">
+                <i className="fas fa-arrow-down"></i>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

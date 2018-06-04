@@ -24,6 +24,7 @@ module.exports = {
       for children 12+ months old, and also locally sourced high quality
       Southern Bohemia milk.
   `,
+  'site.hero.more': 'Show Products',
 
   //forms
   'form.send': 'Send',

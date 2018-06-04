@@ -17,6 +17,13 @@ import 'flag-icon-css/sass/flag-icon.scss'
 //import 'typeface-roboto'
 //import 'font-awesome/css/font-awesome.css'
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  require('smooth-scroll')('a[href*="#"]', {
+    offset: (anchor, toggle) => 100,
+  });
+}
+
 function Fragment(props) {
   //console.log('fragment', props)
   return props.children || <span {...props} /> || <React.Fragment {...props} /> || null

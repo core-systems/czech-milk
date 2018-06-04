@@ -25,6 +25,7 @@ module.exports = {
       de Bohême du Sud portant la marque Czech Milk de haute qualité
       et d'origine locale.
   `,
+  'site.hero.more': 'Afficher les produits',
 
   //forms
   'form.send': 'Envoyer',
