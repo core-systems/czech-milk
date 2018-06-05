@@ -94,35 +94,5 @@ products:
       packageWeight: 0.250 kg
     logo: /img/product-1-logo.png
     title: Lipánek lait réduit en gras
-  - cloud: /img/product-4-cloud.png
-    description: >
-      Ce lait, destiné aux plus petits surtout, est précisément ce dont le corps
-      a besoin pour un développement sain. Il est une source essentielle de
-      protéines à part entière et de calcium pour le développement sain des os
-      et des dents. Il est produit du lait tchèque de la plus haute qualité,
-      grâce à quoi vous et votre enfant en tomberez amoureux instantanément. De
-      plus, il est livré dans un emballage pratique, avec une paille. Il est
-      100% sans gluten. Calcium par 100 ml = 120 mg à part entière = 15% DRI.
-    detail: |-
-      | Valeur nutritive par          | par 100 ml      |
-      | ----------------------------- | --------------- |
-      | Calories                      | 237 kJ/ 57 kcal |
-      | Lipides                       | 1.3 g           |
-      | \- dont acides grases saturés | 0.9 g           |
-      | Glucides                      | 8.0 g           |
-      | \- dont sucres                | 7.7 g           |
-      | Protéins                      | 3.1 g           |
-      | Sodium                        | 0.1 g           |
-      | Calcium                       | 160 mg          |
-    id: product-1
-    image: /img/product-1.png
-    info:
-      code: '8593803223346'
-      expire: 120 jours
-      name: lait vanille
-      packageSize: 27 morceaux
-      packageWeight: 0.250 kg
-    logo: /img/product-1-logo.png
-    title: Lipanek lait - vanille 250 ml
 ---
 
