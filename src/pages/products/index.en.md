@@ -93,35 +93,5 @@ products:
       packageWeight: 0.250 kg
     logo: /img/product-3-logo.png
     title: Lipánek long-life semi-skimmed milk 1.5% 250 ml
-  - cloud: /img/product-4-cloud.png
-    description: >
-      This milk, intended for the smallest ones primarily, is exactly what the
-      body needs for helathy development. It is a vital source of full-fledged
-      protein and calcium for the healthy development of bones and teeth.
-      Produced from the highest quality Czech milk, thanks to that you and your
-      child will fall in love with it instantly. Furthermore, it comes in a
-      practical packaging, together with a straw. It is 100% gluten free.
-      Calcium per 100 ml = 120 mg = 15% DRI
-    detail: |-
-      | Nutritional value                 | per 100 ml of product |
-      | --------------------------------- | --------------------- |
-      | Energy                            | 237 kJ/ 57 kcal       |
-      | Fat                               | 1.3 g                 |
-      | \- of which saturated fatty acids | 0.9 g                 |
-      | Carbohydrates                     | 8.0 g                 |
-      | \- of which sugars                | 7.7 g                 |
-      | Proteins                          | 3.1 g                 |
-      | Salt                              | 0.09 g                |
-      | Calcium                           | 160 mg                |
-    id: product-1
-    image: /img/product-1.png
-    info:
-      code: '8593803223346'
-      expire: 120 days
-      name: longlife milk - vanilla
-      packageSize: 27 pcs.
-      packageWeight: 0.250 kg
-    logo: /img/product-1-logo.png
-    title: Lipanek long life milk - vanilla
 ---
 
