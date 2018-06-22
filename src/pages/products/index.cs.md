@@ -30,7 +30,7 @@ products:
       name: trvanlivé mléko plnotučné
       packageSize: 12 ks
       packageWeight: cca 1 Kg
-    logo: /img/product-4-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Jihočeské mléko trvanlivé plnotučné 3.5% 1 l
   - cloud: /img/product-2-cloud.png
     description: >-
@@ -58,7 +58,7 @@ products:
       name: trvanlivé mléko polotučné
       packageSize: 12 ks
       packageWeight: cca 1 Kg
-    logo: /img/product-2-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
   - cloud: /img/product-3-cloud.png
     description: >-
@@ -88,7 +88,7 @@ products:
       name: trvanlivé mléko polotučné
       packageSize: 27 ks
       packageWeight: cca 0.250 Kg
-    logo: /img/product-3-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: 'Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
 ---
 
