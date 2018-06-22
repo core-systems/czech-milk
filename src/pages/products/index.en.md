@@ -84,7 +84,7 @@ products:
       | Salt                              | 0.1 g                 |
       | Calcium                           | 120 mg                |
     id: product-2
-    image: /img/product-3.png
+    image: /img/coresystems.cz-czechmilk.com-small-milk-box-en-blue-3d-ver.1.0.png
     info:
       code: '8593803224275'
       expire: 120 days
