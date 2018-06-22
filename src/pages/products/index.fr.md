@@ -62,7 +62,7 @@ products:
       name: lait réduit en gras
       packageSize: 12 morceaux
       packageWeight: 1 Kg
-    logo: /img/product-2-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Lait Tchèque réduit en gras 1.5% 1l
   - cloud: /img/product-3-cloud.png
     description: >-
@@ -93,7 +93,7 @@ products:
       name: lait réduit en gras
       packageSize: 27 morceaux
       packageWeight: 0.250 kg
-    logo: /img/product-1-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Lipánek lait réduit en gras
 ---
 
