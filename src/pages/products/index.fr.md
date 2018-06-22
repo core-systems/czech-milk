@@ -33,7 +33,7 @@ products:
       name: lait entier longue vie
       packageSize: 12 morceaux
       packageWeight: 1 kg
-    logo: /img/product-4-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Lait Tchèque  entier longue vie 3.5% 1 l
   - cloud: /img/product-2-cloud.png
     description: >-
