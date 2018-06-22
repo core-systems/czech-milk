@@ -31,7 +31,7 @@ products:
       name: full fat longlife milk
       packageSize: 12 pcs.
       packageWeight: 1 kg
-    logo: /img/product-4-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Czech long-life full fat milk 3.5% 1 l
   - cloud: /img/product-2-cloud.png
     description: >
@@ -61,7 +61,7 @@ products:
       name: semi-skimmed long-life milk
       packageSize: 12 pcs.
       packageWeight: cca 1 Kg
-    logo: /img/product-2-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Czech long-life semi-skimmed milk 1.5% 1l
   - cloud: /img/product-3-cloud.png
     description: >-
@@ -92,7 +92,7 @@ products:
       name: long-life semi-skimmed milk
       packageSize: 27 pcs.
       packageWeight: 0.250 kg
-    logo: /img/product-3-logo.png
+    logo: /img/logo-czech-milk-1-.png
     title: Lipánek long-life semi-skimmed milk 1.5% 250 ml
 ---
 
