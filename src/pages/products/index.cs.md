@@ -90,5 +90,30 @@ products:
       packageWeight: cca 0.250 Kg
     logo: /img/logo-czech-milk-1-.png
     title: 'Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
+  - cloud: /img/product-4-cloud.png
+    description: >-
+      Nejkvalitnější sušené mléko, vyrobené z tekutého mléka disperzní metodou.
+      Vhodné jako náhrada za klasické mléko. Vhodné pro děti od 2 let. Skladujte
+      v suchu při teplotě do 24°C
+    detail: |-
+      | Průměrné výživové hodnoty   | ve 100 ml výrobku |
+      | --------------------------- | ----------------- |
+      | Energetická hodnota         | 2090 kJ/ 500 kcal |
+      | Tuky                        | 27 g              |
+      | \- z toho nasycené kyseliny | 17.80 g           |
+      | Sacharidy                   | 37.50 g           |
+      | \- z toho cukry             | 37.50 g           |
+      | Bílkovny                    | 26.70 g           |
+      | Sůl                         | 0.35 g            |
+    id: product-5
+    image: /img/imageedit_5_9747359037.png
+    info:
+      code: '8593803224015'
+      expire: N/A
+      name: sušené mléko
+      packageSize: 1 pytel
+      packageWeight: 25 kg
+    logo: /img/logo-czech-milk-1-.png
+    title: Sušené Mléko 26%
 ---
 
