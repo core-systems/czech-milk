@@ -106,7 +106,8 @@ products:
       | Bílkovny                    | 26.70 g           |
       | Sůl                         | 0.35 g            |
     id: product-5
-    image: /img/imageedit_5_9747359037.png
+    image: >-
+      /img/coresystems.cz-czechmilk.com-paper-milk-bag-en-red-3d-transparent-ver.1.1-1-.png
     info:
       code: '8593803224015'
       expire: N/A
