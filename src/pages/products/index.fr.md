@@ -94,5 +94,28 @@ products:
       packageWeight: 0.250 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lipánek lait réduit en gras
+  - cloud: /img/product-1-cloud.png
+    description: >-
+      Ce lait, destiné aux plus petits surtout, est précisément ce dont le corps
+      a besoin pour un développement sain. Il est une source essentielle de
+      protéines à part entière et de calcium pour le développement sain des os
+      et des dents. Il est produit du lait tchèque de la plus haute qualité,
+      grâce à quoi vous et votre enfant en tomberez amoureux instantanément. De
+      plus, il est livré dans un emballage pratique, avec une paille. Il est
+      100% sans gluten. Calcium par 100 ml = 120 mg à part entière = 15% DRI.
+    detail: |-
+      | Valeur nutritive par          | par 100 ml        |
+      | ----------------------------- | ----------------- |
+      | Calories                      | 2090 kJ/ 500 kcal |
+      | Lipides                       | 27 g              |
+      | \- dont acides grases saturés | 17.80 g           |
+      | Glucides                      | 37.50 g           |
+      | \- dont sucres                | 37.50 g           |
+      | Protéins                      | 26.70 g           |
+      | Sodium                        | 0.35 g            |
+    id: product-5
+    image: /img/imageedit_5_9747359037.png
+    logo: /img/logo-czech-milk-1-.png
+    title: Lait en Poudre
 ---
 
