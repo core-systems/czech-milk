@@ -115,6 +115,12 @@ products:
       | Sodium                        | 0.35 g            |
     id: product-5
     image: /img/imageedit_5_9747359037.png
+    info:
+      code: N/A
+      expire: N/A
+      name: laiet en poudre
+      packageSize: 1 sac
+      packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lait en Poudre
 ---
