@@ -108,7 +108,7 @@ products:
     id: product-5
     image: /img/imageedit_9_6435607790.png
     info:
-      code: '8593803224015'
+      code: N/A
       expire: N/A
       name: sušené mléko
       packageSize: 1 pytel
