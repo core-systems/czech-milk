@@ -94,7 +94,8 @@ products:
       packageWeight: 0.250 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lipánek long-life semi-skimmed milk 1.5% 250 ml
-  - description: >-
+  - cloud: /img/product-1-cloud.png
+    description: >-
       High quality powdered milk, made from liquid milk using the method of
       dispersion. Suitable as a substitute for classic milk. Suitable for
       children 2 years and older. Store in a dry place with temperatures up to
