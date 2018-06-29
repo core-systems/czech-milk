@@ -113,7 +113,7 @@ products:
     id: product-5
     image: /img/imageedit_9_6435607790.png
     info:
-      code: '8593803224015'
+      code: N//A
       expire: N/A
       name: powdered milk
       packageSize: 1 bag
