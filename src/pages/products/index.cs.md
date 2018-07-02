@@ -108,10 +108,10 @@ products:
     id: product-5
     image: /img/imageedit_9_6435607790.png
     info:
-      code: N/A
-      expire: N/A
+      code: '8593803725116'
+      expire: 365 dní
       name: sušené mléko
-      packageSize: 1 pytel
+      packageSize: 1 ks
       packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
     title: Sušené Mléko 26%
