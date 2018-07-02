@@ -116,8 +116,8 @@ products:
     id: product-5
     image: /img/imageedit_10_3775655098.png
     info:
-      code: N/A
-      expire: N/A
+      code: '8593803725116'
+      expire: 365 jours
       name: laiet en poudre
       packageSize: 1 sac
       packageWeight: 25 kg
