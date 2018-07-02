@@ -113,10 +113,10 @@ products:
     id: product-5
     image: /img/imageedit_9_6435607790.png
     info:
-      code: N//A
-      expire: N/A
+      code: '8593803725116'
+      expire: 365 days
       name: powdered milk
-      packageSize: 1 bag
+      packageSize: 1 piece
       packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
     title: Powdered Milk 26%
