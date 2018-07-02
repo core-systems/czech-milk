@@ -99,7 +99,7 @@ products:
       High quality powdered milk, made from liquid milk using the method of
       dispersion. Suitable as a substitute for classic milk. Suitable for
       children 2 years and older. Store in a dry place with temperatures up to
-      24°C.
+      24°C. Suitable for a gluten free diet.
     detail: |-
       | Nutritional value                 | per 100 ml of product |
       | --------------------------------- | --------------------- |
