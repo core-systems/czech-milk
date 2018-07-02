@@ -94,7 +94,7 @@ products:
     description: >-
       Nejkvalitnější sušené mléko, vyrobené z tekutého mléka disperzní metodou.
       Vhodné jako náhrada za klasické mléko. Vhodné pro děti od 2 let. Skladujte
-      v suchu při teplotě do 24°C
+      v suchu při teplotě do 24°C. Splňuje požadavky bezlepkové diety.
     detail: |-
       | Průměrné výživové hodnoty   | ve 100 ml výrobku |
       | --------------------------- | ----------------- |
