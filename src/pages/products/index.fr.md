@@ -96,13 +96,11 @@ products:
     title: Lipánek lait réduit en gras
   - cloud: /img/product-1-cloud.png
     description: >-
-      Ce lait, destiné aux plus petits surtout, est précisément ce dont le corps
-      a besoin pour un développement sain. Il est une source essentielle de
-      protéines à part entière et de calcium pour le développement sain des os
-      et des dents. Il est produit du lait tchèque de la plus haute qualité,
-      grâce à quoi vous et votre enfant en tomberez amoureux instantanément. De
-      plus, il est livré dans un emballage pratique, avec une paille. Il est
-      100% sans gluten. Calcium par 100 ml = 120 mg à part entière = 15% DRI.
+      Lait séché de qualité supérieure, fabriqué à partir de lait liquide en
+      utilisant la méthode de dispersion. Approprié comme un substitut au lait
+      classique. Convient aux enfants à partir de deux ans. Conserver dans un
+      endroit sec à une température maximale de 24 degrés. Répond aux exigences
+      d'un régime sans gluten.
     detail: |-
       | Valeur nutritive par          | par 100 ml        |
       | ----------------------------- | ----------------- |
