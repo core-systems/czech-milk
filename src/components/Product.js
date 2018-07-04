@@ -105,12 +105,25 @@ class Product extends React.PureComponent  {
         </div>
         <div className="content product-more is-medium">
             <input type="checkbox" id={`toggle-product-${id}-more`} className="toggle-checkbox" />
-            <div className="toggle-item">
-              <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
-              <div className="content">
-                <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
-              </div>
-            </div>
+            {
+               isActiveMore
+               ? (
+                 <div className="item-active">
+                   <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
+                   <div className="content">
+                     <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
+                   </div>
+                 </div>
+               )
+               : (
+                 <div className="item-inactive">
+                   <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
+                   <div className="content">
+                     <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
+                   </div>
+                 </div>
+               )
+            }
         </div>
         { !isLast &&
           <figure className="image break-line-cloud">
