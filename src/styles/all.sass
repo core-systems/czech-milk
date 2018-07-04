@@ -127,12 +127,35 @@ input.toggle-checkbox[type="checkbox"]:not(:checked) + .toggle-item
 
 input.toggle-checkbox[type="checkbox"]:checked + .toggle-item
   @extend .section
-  height: auto
+  height: auto !important
   -moz-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
   -ms-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
   -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
   -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
   transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
 
+.item-active
+  @extend .section
+  height: auto !important
+  -moz-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -ms-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+  transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s, height .25s
+
+.item-inactive
+  display: block !important
+  -moz-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -ms-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -o-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  -webkit-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s, height .25s
+  font-size: 0
+  margin: 0
+  opacity: 0
+  padding: 0
+  height: 0
+  overflow: hidden
+  
 @import "~bulma"
 @import "./theme.sass"
