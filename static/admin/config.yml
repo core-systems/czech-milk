@@ -63,7 +63,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"
@@ -100,7 +100,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"
@@ -137,7 +137,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"
@@ -174,7 +174,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"
@@ -211,7 +211,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"
@@ -248,7 +248,7 @@ collections:
               - {label: "Detail", name: "detail", widget: "markdown"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Logo", name: "logo", widget: "image"}
-              - {label: "Cloud", name: "cloud", widget: "image"}
+              - {label: "Cloud", name: "cloud", widget: "image", required: false}
               - label: "Info"
                 name: "info"
                 widget: "object"

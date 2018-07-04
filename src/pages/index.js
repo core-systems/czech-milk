@@ -1,3 +1,4 @@
+import "babel-polyfill"
 import React from 'react'
 import { getUserLangKey } from 'ptz-i18n'
 import { withPrefix } from "gatsby-link"
@@ -10,6 +11,7 @@ class RedirectIndex extends React.PureComponent {
     if (typeof window !== 'undefined') {
       const { langs, defaultLangKey } = args.data.site.siteMetadata.languages
       const langKey = getUserLangKey(langs, defaultLangKey)
+      const title = args.data.site.title
       const homeUrl = withPrefix(`/${langKey}/`)
 
       // I don`t think this is the best solution
@@ -23,7 +25,7 @@ class RedirectIndex extends React.PureComponent {
   }
 
   render() {
-    return (<div />)
+    return (<div/>)
   }
 }
 
@@ -33,6 +35,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs

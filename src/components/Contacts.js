@@ -46,7 +46,7 @@ const Contacts = (props) => (
               <FormattedMessage id="czech.country" />
             </p>
             <p>
-              <a href="https://www.madeta.cz/">www.madeta.cz</a>
+              <a href="http://www.madeta.cz/" target="_blank">www.madeta.cz</a>
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Contacts = (props) => (
               <FormattedMessage id="czech.country" />
             </p>
             <p>
-              <a href="https://www.czechmilk.com/">www.czechmilk.com</a>
+              <a href="http://www.czechmilk.com/" target="_blank">www.czechmilk.com</a>
             </p>
           </div>
         </div>

@@ -15,6 +15,7 @@ const MainTitleBlue = styled.span`
 `
 */
 
+
 const HeroBody = (props) => (
   <div className="hero-body">
     <div className="container">

@@ -13,7 +13,7 @@ const Navbar = (props) => (
     <div className="navbar-brand">
       <Link to="/" className="navbar-item">
         <figure className="image">
-          <img src={logo} alt={props.siteTitle} />
+          <img src={logo} alt={props.siteTitle} style={{width: 870.1, height: 541.8}}/>
         </figure>
       </Link>
       <div className="navbar-burger" data-target="navMenu">
@@ -25,11 +25,11 @@ const Navbar = (props) => (
 
     <div id="navMenu" className="navbar-menu">
       <div className="navbar-end">
-        <Link className="navbar-item" activeClassName="is-active" to="/about#us" data-scroll>
-          <FormattedMessage id='nav.about' />
-        </Link>
         <Link className="navbar-item" activeClassName="is-active" to="/products#all" data-scroll>
           <FormattedMessage id='nav.products' />
+        </Link>
+        <Link className="navbar-item" activeClassName="is-active" to="/about#us" data-scroll>
+          <FormattedMessage id='nav.about' />
         </Link>
         <SelectLanguage langs={props.langs} languages={props.languages} />
       </div>

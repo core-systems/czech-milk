@@ -100,10 +100,7 @@ class Product extends React.PureComponent  {
           <p className="field">
             <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
               {
-                isActiveMore && <MoreBtn isActive={true} />
-              }
-              {
-                !isActiveMore && <MoreBtn isActive={false} />
+                <MoreBtn isActive={isActiveMore} />
               }
             </label>
           </p>
