@@ -99,9 +99,7 @@ class Product extends React.PureComponent  {
         <div className="content0 has-text-centered detail-btn">
           <p className="field">
             <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
-              {
-                <MoreBtn isActive={isActiveMore} />
-              }
+              <MoreBtn isActive={isActiveMore} />
             </label>
           </p>
         </div>
