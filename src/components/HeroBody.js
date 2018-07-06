@@ -15,47 +15,41 @@ const MainTitleBlue = styled.span`
 `
 */
 
-function isAboutPage() {
-    return
-        (typeof window !== 'undefined' && window.location.href.includes('about'))
-        ? true
-        : false
-}
-
-const HeroBody = (props) => (
-  <div className="hero-body">
-    <div className="container">
-      <div className="columns">
-        <div className="column is-8 is-offset-2 is-10-tablet is-offset-1-tablet has-text-centered">
-          <p className="title" dangerouslySetInnerHTML={{__html: props.intl.formatHTMLMessage({ id: 'site.hero.title'}) }} />
-          <FormattedMessage id="site.hero.subtitle">
-            {(txt) => (
-              <p className="subtitle">
-                {txt}
-              </p>
-            )}
-          </FormattedMessage>
-          {
-            !isAboutPage()
-            ? (
-              <div className="hero-more">
-                <a href="#all" className="button is-large is-inverted is-outlined is-rounded" data-scroll>
-                  <span>
-                    <span><FormattedMessage id="site.hero.more" /></span>
-                  </span>
-                  <span className="icon is-large">
-                    <i className="fas fa-arrow-down"></i>
-                  </span>
-                </a>
-              </div>
-            )
-            : null
-          }
+const HeroBody = (props) => {
+  render() {
+    const renderMoreBtn = (typeof window !== 'undefined' && window.location.href.includes('about'))
+    return (
+      <div className="hero-body">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-8 is-offset-2 is-10-tablet is-offset-1-tablet has-text-centered">
+              <p className="title" dangerouslySetInnerHTML={{__html: props.intl.formatHTMLMessage({ id: 'site.hero.title'}) }} />
+              <FormattedMessage id="site.hero.subtitle">
+                {(txt) => (
+                  <p className="subtitle">
+                    {txt}
+                  </p>
+                )}
+              </FormattedMessage>
+              { renderMoreBtn &&
+                  (<div className="hero-more">
+                    <a href="#all" className="button is-large is-inverted is-outlined is-rounded" data-scroll>
+                      <span>
+                        <span><FormattedMessage id="site.hero.more" /></span>
+                      </span>
+                      <span className="icon is-large">
+                        <i className="fas fa-arrow-down"></i>
+                      </span>
+                    </a>
+                  </div>)
+              }
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-)
+    )
+  }
+}
 
 HeroBody.propTypes = {
   intl: intlShape.isRequired,
