@@ -1,5 +1,10 @@
 import React from 'react'
-import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
+import {
+  FormattedMessage,
+  injectIntl,
+  intlShape,
+  FormattedRelative,
+} from 'react-intl'
 
 import Link from './Link'
 import ContactForm from './ContactForm'
@@ -19,25 +24,25 @@ const CoreLogo = () => (
   </figure>
 )
 
-const Contacts = (props) => (
+const Contacts = props => (
   <section className="section section-contact-us" role="contacts-us">
     <div className="container ">
       <div className="columns">
         <div className="column is-6-tablet is-5-desktop is-4-widescreen is-offset-1-desktop">
           <div className="content is-small">
-            <h2><FormattedMessage id="form.contactUs.title" /></h2>
-            <ContactForm topic={`[${props.intl.locale.toUpperCase()}] Contact - Footer`} />
+            <h2>
+              <FormattedMessage id="form.contactUs.title" />
+            </h2>
+            <ContactForm
+              topic={`[${props.intl.locale.toUpperCase()}] Contact - Footer`}
+            />
           </div>
         </div>
         <div className="column is-3-tablet is-3-desktop is-2-fullhd has-dotted-right-border has-dotted-bottom-border-mobile">
           <div className="content has-text-centered">
             <MadetaLogo />
             <FormattedMessage id="producer">
-              {(txt) => (
-                <p className="is-size-5">
-                  {txt}
-                </p>
-              )}
+              {txt => <p className="is-size-5">{txt}</p>}
             </FormattedMessage>
             <p className="is-size-6">
               MADETA a.s.<br />
@@ -46,7 +51,9 @@ const Contacts = (props) => (
               <FormattedMessage id="czech.country" />
             </p>
             <p>
-              <a href="http://www.madeta.cz/" target="_blank">www.madeta.cz</a>
+              <a href="http://www.madeta.cz/" target="_blank">
+                www.madeta.cz
+              </a>
             </p>
           </div>
         </div>
@@ -54,11 +61,7 @@ const Contacts = (props) => (
           <div className="content has-text-centered">
             <CoreLogo />
             <FormattedMessage id="exporter">
-              {(txt) => (
-                <p className="is-size-5">
-                  {txt}
-                </p>
-              )}
+              {txt => <p className="is-size-5">{txt}</p>}
             </FormattedMessage>
             <p className="is-size-6">
               CORE SYSTEMS s.r.o.<br />
@@ -67,11 +70,13 @@ const Contacts = (props) => (
               <FormattedMessage id="czech.country" />
             </p>
             <p>
-              <a href="http://www.czechmilk.com/" target="_blank">www.czechmilk.com</a>
+              <a href="http://www.czechmilk.com/" target="_blank">
+                www.czechmilk.com
+              </a>
             </p>
           </div>
         </div>
-        <div className="column"></div>
+        <div className="column" />
       </div>
     </div>
   </section>

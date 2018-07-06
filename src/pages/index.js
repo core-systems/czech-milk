@@ -1,7 +1,7 @@
-import "babel-polyfill"
+import 'babel-polyfill'
 import React from 'react'
 import { getUserLangKey } from 'ptz-i18n'
-import { withPrefix } from "gatsby-link"
+import { withPrefix } from 'gatsby-link'
 
 class RedirectIndex extends React.PureComponent {
   constructor(args) {
@@ -25,11 +25,11 @@ class RedirectIndex extends React.PureComponent {
   }
 
   render() {
-    return (<div/>)
+    return <div />
   }
 }
 
-export default RedirectIndex;
+export default RedirectIndex
 
 export const pageQuery = graphql`
   query IndexQuery {

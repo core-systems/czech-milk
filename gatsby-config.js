@@ -116,9 +116,9 @@ module.exports = {
                   }
               }
           }
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
@@ -127,21 +127,21 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-plugin-google-tagmanager`,
-        options: {
-          id: `${gtm}`,
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: `${gtm}`,
 
-          // Include GTM in development.
-          // Defaults to false meaning GTM will only be loaded in production.
-          includeInDevelopment: false,
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
 
-          // Specify optional GTM environment details.
-          //gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_AUTH_STRING",
-          //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
-        },
+        // Specify optional GTM environment details.
+        //gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_AUTH_STRING",
+        //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
       },
-      'gatsby-transformer-sharp',
-      'gatsby-plugin-sharp',
-      'gatsby-plugin-netlify-lambda',
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-lambda',
   ],
 }

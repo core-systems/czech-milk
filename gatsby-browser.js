@@ -6,7 +6,7 @@ exports.onInitialClientRender = () => {
   objectFitImages()
 }
 
-exports.onRouteUpdate = (args) => {
+exports.onRouteUpdate = args => {
   //console.log('new pathname', location.pathname)
 }
 

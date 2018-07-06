@@ -1,4 +1,3 @@
-
 test('Render layout', () => {
-    console.log('Implement this test!');
-});
+  console.log('Implement this test!')
+})

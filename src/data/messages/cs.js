@@ -1,12 +1,12 @@
 module.exports = {
   // Languages
-  'selectLanguage': 'Vyberte jazyk',
-  'ar': 'Arabsky',
-  'zh': 'Čínsky',
-  'cs': 'Česky',
-  'en': 'Anglicky',
-  'fr': 'Francouzsky',
-  'vi': 'Vietnamsky',
+  selectLanguage: 'Vyberte jazyk',
+  ar: 'Arabsky',
+  zh: 'Čínsky',
+  cs: 'Česky',
+  en: 'Anglicky',
+  fr: 'Francouzsky',
+  vi: 'Vietnamsky',
 
   // navigation
   'nav.products': 'Produkty',
@@ -29,23 +29,24 @@ module.exports = {
   //forms
   'form.send': 'Odeslat',
   'form.reset': 'Smazat',
-  'form.disclaimer.GDPR' : 'Poskytnuté osobní údaje budou společností CORE SYSTEMS s. r. o. použity pouze za účelem kontaktování a budou vymazány po vyřízení požadavku.',
+  'form.disclaimer.GDPR':
+    'Poskytnuté osobní údaje budou společností CORE SYSTEMS s. r. o. použity pouze za účelem kontaktování a budou vymazány po vyřízení požadavku.',
   'form.contactUs.title': 'Napište nám',
   'form.contactUs.name.placeholder': 'Celé jméno...',
   'form.contactUs.email.placeholder': 'E-mail...',
   'form.contactUs.message.placeholder': 'Zpráva...',
 
   // texts
-  'producer': 'Výrobce',
-  'exporter': 'Exportér',
-  'property': 'Vlastnost',
-  'value': 'Hodnota',
+  producer: 'Výrobce',
+  exporter: 'Exportér',
+  property: 'Vlastnost',
+  value: 'Hodnota',
   'czech.country': 'Česká Republika',
   'All Rights Reserved': 'Všechna práva vyhrazena',
-  'Certification': 'Certifikace',
+  Certification: 'Certifikace',
 
   // Products
-  'products': 'Produkty',
+  products: 'Produkty',
   'product.name': 'Název produktu',
   'product.expire': 'Minimální trvanlivost',
   'product.packageWeight': 'Hmotnost',

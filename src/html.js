@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -31,8 +31,19 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <link defer="defer" href="https://fonts.googleapis.com/css?family=Roboto" crossOrigin="anonymous" rel="stylesheet" />
-          <link defer="defer" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossOrigin="anonymous" rel="stylesheet" />
+          <link
+            defer="defer"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            crossOrigin="anonymous"
+            rel="stylesheet"
+          />
+          <link
+            defer="defer"
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossOrigin="anonymous"
+            rel="stylesheet"
+          />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
