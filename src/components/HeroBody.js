@@ -16,6 +16,7 @@ const MainTitleBlue = styled.span`
 */
 
 function isAboutPage() {
+    if (typeof window === 'undefined') return false;
     if (window.location.href.includes('about')) return true;
     return false;
 }
