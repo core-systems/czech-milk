@@ -4,7 +4,7 @@ langKey: cs
 title: Produkty
 meta: Kvalitní produkty z Českého mléka
 products:
-  - cloud: /img/imageedit_15_9051361367.png
+  - cloud: /img/oblak-transparernt.png
     description: >
       Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
       dobu 4 měsíců i při skladování při pokojové teplotě - ideální jako Vaše
