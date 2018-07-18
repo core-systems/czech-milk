@@ -67,7 +67,9 @@ const Contacts = (props) => (
               <FormattedMessage id="czech.country" />
             </p>
             <p>
-              <a href="http://www.czechmilk.com/" target="_blank">www.czechmilk.com</a>
+              {
+                props.intl.locale == 'cs' ? <a href="http://www.core.cz/" target="_blank">www.core.cz</a> : <a href="http://www.core.cz/en" target="_blank">www.core.cz/en</a>
+              }
             </p>
           </div>
         </div>

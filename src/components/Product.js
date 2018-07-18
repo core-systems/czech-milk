@@ -90,7 +90,7 @@ class Product extends React.PureComponent  {
                 </figure>
               </div>
             </div>
-            <div className="content product-description is-medium">
+            <div className="content product-description is-medium" style={{ minHeight: '220px' }}>
               {description}
             </div>
             <ProductInfo info={info} isRight={isRight} />

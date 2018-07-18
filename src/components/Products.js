@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Product from './Product'
 
 const Products = (props) => (
-  <section className="section section-products" role="products" id="all">
+  <section className="section section-products" role="products" id="all" name="all">
     {props.items.map((product, i) => {
         const index = ++i
         return (<Product key={`key-${product.id}`} {...product} isRight={index % 2 === 0} isLast={index === props.items.length} />)

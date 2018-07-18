@@ -30,7 +30,7 @@ module.exports = {
   'form.send': 'Send',
   'form.reset': 'Reset',
   'form.disclaimer.GDPR' : 'The provided personal data will be used by CORE SYSTEMS s. r. o. only for the purpose of contacting and will be erased after the request has been processed.',
-  'form.contactUs.title': 'Write us',
+  'form.contactUs.title': 'Connect with us',
   'form.contactUs.name.placeholder': 'Full name...',
   'form.contactUs.email.placeholder': 'E-mail...',
   'form.contactUs.message.placeholder': 'Message...',

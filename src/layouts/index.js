@@ -42,7 +42,6 @@ const TemplateWrapper = (props) => {
 
   //console.log('props', props)
   //console.log('data.bgImage.sizes', data.bgImage.sizes)
-
   return (
     <IntlProvider
       locale={actualLang.key}
