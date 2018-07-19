@@ -1,29 +1,27 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { injectIntl, intlShape, } from 'react-intl'
+import { injectIntl, intlShape } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
 import ContactForm from '../components/ContactForm'
 
-export const AboutPageTemplate = injectIntl(({
-  title,
-  content,
-  contentComponent,
-  helmet,
-  intl,
-}) => {
-  const PageContent = contentComponent || Content
+export const AboutPageTemplate = injectIntl(
+  ({ title, content, contentComponent, helmet, intl }) => {
+    const PageContent = contentComponent || Content
 
-  return (
-    <section className="section section-about-page section--gradient" id="us">
-      {helmet || ''}
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {title}
-      </h2>
-      <PageContent className="content" content={content} />
-      <ContactForm topic={`[${intl.locale.toUpperCase()}] Contact - About Us`} />
-    </section>
-  )
-})
+    return (
+      <section className="section section-about-page section--gradient" id="us">
+        {helmet || ''}
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          {title}
+        </h2>
+        <PageContent className="content" content={content} />
+        <ContactForm
+          topic={`[${intl.locale.toUpperCase()}] Contact - About Us`}
+        />
+      </section>
+    )
+  }
+)
 
 export default ({ data }) => {
   //console.log('about', data)

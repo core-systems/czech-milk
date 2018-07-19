@@ -11,12 +11,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               id
               fields {
-                slug,
+                slug
                 langKey
               }
               frontmatter {
-                templateKey,
-                date,
+                templateKey
+                date
                 title
               }
             }
@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach((edge) => {
+      result.data.allMarkdownRemark.edges.forEach(edge => {
         const templateKey = edge.node.frontmatter.templateKey || 'blog-post'
         const id = edge.node.id
         const cid = edge.node.contentfulid
@@ -34,9 +34,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           layout: edge.node.fields.langKey,
           path: edge.node.fields.slug,
           //component: path.resolve(`./src/templates/blog-post.js`),
-          component: path.resolve(
-            `src/templates/${String(templateKey)}.js`
-          ),
+          component: path.resolve(`src/templates/${String(templateKey)}.js`),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             id: edge.node.id,
@@ -121,7 +119,6 @@ exports.onCreateNode = ({
   }
 }
 */
-
 
 /*
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {

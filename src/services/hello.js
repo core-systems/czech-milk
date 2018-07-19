@@ -6,11 +6,11 @@ console.log('process.env', process.env)
 
 const statusCode = 200
 const headers = {
-  "Access-Control-Allow-Origin" : "*",
-  "Access-Control-Allow-Headers": "Content-Type",
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Content-Type',
 }
 const result = {
-  msg: "Hello, World",
+  msg: 'Hello, World',
   env: process.env,
 }
 

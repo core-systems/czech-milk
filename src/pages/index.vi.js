@@ -21,8 +21,13 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexViQuery {
-    viProducts: markdownRemark(frontmatter: { langKey: { eq: "vi" }, templateKey: { eq: "product-page" } }) {
-    	...ProductFragment
+    viProducts: markdownRemark(
+      frontmatter: {
+        langKey: { eq: "vi" }
+        templateKey: { eq: "product-page" }
+      }
+    ) {
+      ...ProductFragment
     }
   }
 `

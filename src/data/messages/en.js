@@ -1,12 +1,12 @@
 module.exports = {
   // Languages
-  'selectLanguage': 'Select your language',
-  'ar': 'Arabic',
-  'zh': 'Chinese',
-  'cs': 'Czech',
-  'en': 'English',
-  'fr': 'French',
-  'vi': 'Vietnamese',
+  selectLanguage: 'Select your language',
+  ar: 'Arabic',
+  zh: 'Chinese',
+  cs: 'Czech',
+  en: 'English',
+  fr: 'French',
+  vi: 'Vietnamese',
 
   // navigation
   'nav.products': 'Products',
@@ -29,23 +29,24 @@ module.exports = {
   //forms
   'form.send': 'Send',
   'form.reset': 'Reset',
-  'form.disclaimer.GDPR' : 'The provided personal data will be used by CORE SYSTEMS s. r. o. only for the purpose of contacting and will be erased after the request has been processed.',
+  'form.disclaimer.GDPR':
+    'The provided personal data will be used by CORE SYSTEMS s. r. o. only for the purpose of contacting and will be erased after the request has been processed.',
   'form.contactUs.title': 'Connect with us',
   'form.contactUs.name.placeholder': 'Full name...',
   'form.contactUs.email.placeholder': 'E-mail...',
   'form.contactUs.message.placeholder': 'Message...',
 
   // texts
-  'producer': 'Producer',
-  'exporter': 'Exporter',
-  'property': 'Property',
-  'value': 'Value',
+  producer: 'Producer',
+  exporter: 'Exporter',
+  property: 'Property',
+  value: 'Value',
   'czech.country': 'Czech Republic',
   'All Rights Reserved': 'All Rights Reserved',
-  'Certification': 'Certification',
+  Certification: 'Certification',
 
   // Products
-  'products': 'Products',
+  products: 'Products',
   'product.name': 'Product name',
   'product.expire': 'Shelf life',
   'product.packageWeight': 'Weight',

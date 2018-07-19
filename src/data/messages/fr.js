@@ -1,12 +1,12 @@
 module.exports = {
   // Languages
-  'selectLanguage': 'Select your language',
-  'ar': 'Arabic',
-  'zh': 'Chinois',
-  'cs': 'Tchèque',
-  'en': 'Anglais',
-  'fr': 'Français',
-  'vi': 'Vietnamien',
+  selectLanguage: 'Select your language',
+  ar: 'Arabic',
+  zh: 'Chinois',
+  cs: 'Tchèque',
+  en: 'Anglais',
+  fr: 'Français',
+  vi: 'Vietnamien',
 
   // navigation
   'nav.products': 'Des produits',
@@ -30,23 +30,24 @@ module.exports = {
   //forms
   'form.send': 'Envoyer',
   'form.reset': 'Remettre',
-  'form.disclaimer.GDPR' : "Les données personnelles fournies seront utilisées par CORE SYSTEMS s. r. o. uniquement dans le but d'entrer en contact et seront effacées après que la demande a été traitée.",
+  'form.disclaimer.GDPR':
+    "Les données personnelles fournies seront utilisées par CORE SYSTEMS s. r. o. uniquement dans le but d'entrer en contact et seront effacées après que la demande a été traitée.",
   'form.contactUs.title': 'Écrivez-nous',
   'form.contactUs.name.placeholder': 'Nom complet...',
   'form.contactUs.email.placeholder': 'Email...',
   'form.contactUs.message.placeholder': 'Message...',
 
   // texts
-  'producer': 'Producteur',
-  'exporter': 'Exportateur',
-  'property': 'Propriété',
-  'value': 'Valeur',
+  producer: 'Producteur',
+  exporter: 'Exportateur',
+  property: 'Propriété',
+  value: 'Valeur',
   'czech.country': 'République Tchèque',
   'All Rights Reserved': 'Tous droits réservés',
-  'Certification': 'Certification',
+  Certification: 'Certification',
 
   // Products
-  'products': 'Products',
+  products: 'Products',
   'product.name': 'Nom du produit',
   'product.expire': 'Dureé de conservation',
   'product.packageWeight': 'Poids',

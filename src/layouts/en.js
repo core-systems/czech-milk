@@ -9,12 +9,7 @@ import 'intl/locale-data/jsonp/en'
 
 addLocaleData(en)
 
-export default (props) => (
-  <Layout
-    {...props}
-    i18nMessages={messages}
-  />
-)
+export default props => <Layout {...props} i18nMessages={messages} />
 
 export const pageQuery = graphql`
   query LayoutEn {

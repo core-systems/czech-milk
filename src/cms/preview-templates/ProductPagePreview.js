@@ -2,8 +2,7 @@ import React from 'react'
 import { ProductPageTemplate } from '../../templates/product-page'
 
 const ProductPagePreview = ({ entry, getAsset }) => {
-
-  const entryProducts= entry.getIn(['data', 'products'])
+  const entryProducts = entry.getIn(['data', 'products'])
   const products = entryProducts ? entryProducts.toJS() : []
 
   return (

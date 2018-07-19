@@ -21,8 +21,13 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexCsQuery {
-    csProducts: markdownRemark(frontmatter: { langKey: { eq: "cs" }, templateKey: { eq: "product-page" } }) {
-    	...ProductFragment
+    csProducts: markdownRemark(
+      frontmatter: {
+        langKey: { eq: "cs" }
+        templateKey: { eq: "product-page" }
+      }
+    ) {
+      ...ProductFragment
     }
   }
 `

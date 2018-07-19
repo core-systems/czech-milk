@@ -1,27 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { injectIntl, intlShape, } from 'react-intl'
+import { injectIntl, intlShape } from 'react-intl'
 import Content, { HTMLContent } from '../components/Content'
 
-export const OtherPageTemplate = injectIntl(({
-  title,
-  content,
-  contentComponent,
-  helmet,
-  intl,
-}) => {
-  const PageContent = contentComponent || Content
+export const OtherPageTemplate = injectIntl(
+  ({ title, content, contentComponent, helmet, intl }) => {
+    const PageContent = contentComponent || Content
 
-  return (
-    <section className="section section-about-page" id="thank-you">
-      {helmet || ''}
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {title}
-      </h2>
-      <PageContent className="content" content={content} />
-    </section>
-  )
-})
+    return (
+      <section className="section section-about-page" id="thank-you">
+        {helmet || ''}
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          {title}
+        </h2>
+        <PageContent className="content" content={content} />
+      </section>
+    )
+  }
+)
 
 export default ({ data }) => {
   //console.log('about', data)

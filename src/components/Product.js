@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormattedMessage, injectIntl, intlShape, FormattedRelative } from 'react-intl'
+import {
+  FormattedMessage,
+  injectIntl,
+  intlShape,
+  FormattedRelative,
+} from 'react-intl'
 import Image from 'gatsby-image'
 import remark from 'remark'
 import recommended from 'remark-preset-lint-recommended'
@@ -16,23 +21,22 @@ const MoreBtn = ({ isActive }) => (
       <FormattedMessage id="product.moreBtn" />
     </span>
     <span className="icon is-large">
-      <i className={`fas ${isActive ? 'fa-caret-up' : 'fa-caret-down'}`}></i>
+      <i className={`fas ${isActive ? 'fa-caret-up' : 'fa-caret-down'}`} />
     </span>
   </a>
 )
 
-class Product extends React.PureComponent  {
-
+class Product extends React.PureComponent {
   state = {
     isActiveMore: false,
   }
 
   constructor(props) {
-      super(props)
+    super(props)
   }
 
   toogle() {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       ...prevState,
       isActiveMore: !prevState.isActiveMore,
     }))
@@ -52,20 +56,21 @@ class Product extends React.PureComponent  {
       isLast,
       isRight,
     } = this.props
-    const {
-      isActiveMore,
-    } = this.state
+    const { isActiveMore } = this.state
 
     //const productImg = `${image}`
     //const productImgCloud = `${cloud}`
     const productImgCloud = ``
     //const productLogo = `${logo}`
-    const lineBreak = require(`../img/break-line-cloud${( isRight ? '2' : '' )}.png`)
+    const lineBreak = require(`../img/break-line-cloud${
+      isRight ? '2' : ''
+    }.png`)
 
     const detailContent = remark()
-          .use(recommended)
-          .use(remarkHtml)
-          .processSync(detail).toString()
+      .use(recommended)
+      .use(remarkHtml)
+      .processSync(detail)
+      .toString()
 
     return (
       <div className={`product ${isRight ? 'is-right' : 'is-left'}`}>
@@ -73,19 +78,35 @@ class Product extends React.PureComponent  {
           <div className="column is-4 product-image">
             <div className="content">
               <figure className="image">
-                <Image sizes={image.childImageSharp.sizes} alt={`[product, image, ${title}]`} title={`${title}`} />
+                <Image
+                  sizes={image.childImageSharp.sizes}
+                  alt={`[product, image, ${title}]`}
+                  title={`${title}`}
+                />
                 {/*<img src={productImg} alt={`[product, image, ${title}]`} width={268} />*/}
               </figure>
               {/*<Image sizes={cloud.childImageSharp.sizes} alt={`[product, image, ${title}]`} title={`${title}]`} />*/}
-              <div className={`product-cloud ${isRight ? 'reverse' : ''}`} style={{ backgroundImage: `url(${cloud.childImageSharp.sizes.src})` }}></div>
+              <div
+                className={`product-cloud ${isRight ? 'reverse' : ''}`}
+                style={{
+                  backgroundImage: `url(${cloud.childImageSharp.sizes.src})`,
+                }}
+              />
             </div>
           </div>
           <div className="column product-info">
             <div className="columns">
               <div className="column is-4">
-                <figure className="has-text-centered-mobile" style={{ position: 'relative'}}>
+                <figure
+                  className="has-text-centered-mobile"
+                  style={{ position: 'relative' }}
+                >
                   {/*<Image sizes={logo.childImageSharp.sizes} alt={`[product, logo, ${title}]`} style={{ position: 'relative'}} />*/}
-                  <Image resolutions={logo.childImageSharp.resolutions} alt={`[product, logo, ${title}]`} style={{ position: 'relative'}} />
+                  <Image
+                    resolutions={logo.childImageSharp.resolutions}
+                    alt={`[product, logo, ${title}]`}
+                    style={{ position: 'relative' }}
+                  />
                   {/*<img src={productLogo} alt={`[product, logo, ${title}]`} />*/}
                 </figure>
               </div>
@@ -98,38 +119,55 @@ class Product extends React.PureComponent  {
         </div>
         <div className="content0 has-text-centered detail-btn">
           <p className="field">
-            <label htmlFor={`toggle-product-${id}-more`} onClick={() => this.toogle()}>
+            <label
+              htmlFor={`toggle-product-${id}-more`}
+              onClick={() => this.toogle()}
+            >
               <MoreBtn isActive={isActiveMore} />
             </label>
           </p>
         </div>
         <div className="content product-more is-medium">
-            <input type="checkbox" id={`toggle-product-${id}-more`} className="toggle-checkbox" />
-            {
-               isActiveMore
-               ? (
-                 <div className="item-active">
-                   <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
-                   <div className="content">
-                     <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
-                   </div>
-                 </div>
-               )
-               : (
-                 <div className="item-inactive">
-                   <div className="content" dangerouslySetInnerHTML={{ __html: detailContent }} />
-                   <div className="content">
-                     <ContactForm topic={`[${intl.locale.toUpperCase()}] Product - ${info.name} (${info.code})`} />
-                   </div>
-                 </div>
-               )
-            }
+          <input
+            type="checkbox"
+            id={`toggle-product-${id}-more`}
+            className="toggle-checkbox"
+          />
+          {isActiveMore ? (
+            <div className="item-active">
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: detailContent }}
+              />
+              <div className="content">
+                <ContactForm
+                  topic={`[${intl.locale.toUpperCase()}] Product - ${
+                    info.name
+                  } (${info.code})`}
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="item-inactive">
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: detailContent }}
+              />
+              <div className="content">
+                <ContactForm
+                  topic={`[${intl.locale.toUpperCase()}] Product - ${
+                    info.name
+                  } (${info.code})`}
+                />
+              </div>
+            </div>
+          )}
         </div>
-        { !isLast &&
+        {!isLast && (
           <figure className="image break-line-cloud">
-            <img src={lineBreak} alt='' width='100%' />
+            <img src={lineBreak} alt="" width="100%" />
           </figure>
-        }
+        )}
       </div>
     )
   }

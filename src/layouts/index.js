@@ -1,4 +1,4 @@
-import "babel-polyfill"
+import 'babel-polyfill'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -30,17 +30,29 @@ if (typeof window !== 'undefined') {
 */
 function Fragment(props) {
   //console.log('fragment', props)
-  return props.children || <span {...props} /> || <React.Fragment {...props} /> || null
+  return (
+    props.children || <span {...props} /> || <React.Fragment {...props} /> ||
+    null
+  )
 }
 
-const TemplateWrapper = (props) => {
+const TemplateWrapper = props => {
   const { children, data, location, locale, i18nMessages } = props
   const url = location.pathname
-  const { langs, defaultLangKey, languages, langKeys } = data.site.siteMetadata.languages
+  const {
+    langs,
+    defaultLangKey,
+    languages,
+    langKeys,
+  } = data.site.siteMetadata.languages
   const langKey = getCurrentLangKey(langKeys, defaultLangKey, url)
   const actualLang = languages.find(x => x.key === langKey)
   const homeLink = `/${actualLang.key}/`
-  const langsMenu = getLangs(langKeys, actualLang.key, getUrlForLang(homeLink, url))
+  const langsMenu = getLangs(
+    langKeys,
+    actualLang.key,
+    getUrlForLang(homeLink, url)
+  )
 
   //console.log('props', props)
   //console.log('data.bgImage.sizes', data.bgImage.sizes)
@@ -52,25 +64,25 @@ const TemplateWrapper = (props) => {
       messages={i18nMessages}
       //textComponent={React.Fragment}
     >
-      <div id="main-wrapper" className='is-fullwidth'>
+      <div id="main-wrapper" className="is-fullwidth">
         <Favicon url="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3dGB/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOzqzP//////7OrM/+zqzP8AAAAAAAAAAAAAAADd0YH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7OrM/7hwEP+4cBD/uHAQ/7hwEP+4cBD/uHAQ/7hwEP+4cBD/uHAQ/+zqzP8AAAAAAAAAAAAAAACMi3lo//////////+4cBD///////////+4cBD///////////+4cBD/////////////////BwcEAgAAAAAAAAAA7OrM////////////uHAQ////////////uHAQ////////////uHAQ////////////yI9E////////////3dGB/wAAAAD//////////////////////////////////////////////////////////////////////////+zqzP8AAAAAAAAAADYw3///////NjDf/zYw3/82MN//NjDf//////82MN///////zYw3/82MN//////////////////AAAAAAAAAAA2MN//NjDf//////82MN///////zYw3///////NjDf/zYw3/82MN//NjDf////////////AAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/////////////////////f04mLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA/v8AAPDvAADABwAAgAcAAAAAAACAAAAAwAAAAMABAADAAwAA+D8AAP//AAD//wAA//8AAA==" id="favicon" />
         <Helmet
           defaultTitle={`Home | ${data.site.siteMetadata.title}`}
-          titleTemplate={"%s | " + `${data.site.siteMetadata.title}`}
+          titleTemplate={'%s | ' + `${data.site.siteMetadata.title}`}
           meta={[
             { name: 'charset', content: 'UTF-8' },
             { name: 'description', content: 'Czech Milk' },
             { name: 'keywords', content: 'Czech, Milk, Core Systems' },
           ]}
           htmlAttributes={{
-              lang: `${actualLang.key}`,
-              //dir: `${actualLang.dir}`,
+            lang: `${actualLang.key}`,
+            //dir: `${actualLang.dir}`,
           }}
           bodyAttributes={{
-              class: `env-${process.env.NODE_ENV} lang-${actualLang.key}`,
+            class: `env-${process.env.NODE_ENV} lang-${actualLang.key}`,
           }}
         >
-            {/*<title itemProp="name" lang={`${actualLang.key}`}>{`${data.site.siteMetadata.title}`}</title>*/}
+          {/*<title itemProp="name" lang={`${actualLang.key}`}>{`${data.site.siteMetadata.title}`}</title>*/}
         </Helmet>
         {/*
         <BgImage
@@ -89,16 +101,18 @@ const TemplateWrapper = (props) => {
           }}
         />
         */}
-        <Header langs={langsMenu} languages={languages} siteTitle={data.site.siteMetadata.title} />
+        <Header
+          langs={langsMenu}
+          languages={languages}
+          siteTitle={data.site.siteMetadata.title}
+        />
         <section className="section section-content" role="content">
-          <div className='content-bg-botttom'></div>
+          <div className="content-bg-botttom" />
           <div className="container content-container">
-            <div className='content-bg-top'>
-              <div className='cow'></div>
+            <div className="content-bg-top">
+              <div className="cow" />
             </div>
-            <div className="container is-fluid">
-              {children()}
-            </div>
+            <div className="container is-fluid">{children()}</div>
           </div>
         </section>
         <Contacts />

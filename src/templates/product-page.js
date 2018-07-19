@@ -4,11 +4,7 @@ import { FormattedMessage } from 'react-intl'
 
 import Products, { ProductFragment } from '../components/Products'
 
-export const ProductPageTemplate = ({
-  helmet,
-  title,
-  products,
-}) => (
+export const ProductPageTemplate = ({ helmet, title, products }) => (
   <React.Fragment>
     {helmet || ''}
     <h1 className="is-hidden">

@@ -4,7 +4,7 @@ langKey: cs
 title: Produkty
 meta: Kvalitní produkty z Českého mléka
 products:
-  - cloud: /img/product-1-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >
       Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
       dobu 4 měsíců i při skladování při pokojové teplotě - ideální jako Vaše
@@ -32,7 +32,7 @@ products:
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
     title: Jihočeské mléko trvanlivé plnotučné 3.5% 1 l
-  - cloud: /img/product-2-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
       dobu 4 měsíců i při skladování při pokojové teplotě - ideální jako vaše
@@ -60,7 +60,7 @@ products:
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
     title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
-  - cloud: /img/product-3-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Mléko určené zejména těm nejmenším je přesně to pravé, co děti pro svůj
       zdravý růst potřebují. Je významným zdrojem plnohodnotných bílkovin a
@@ -90,7 +90,7 @@ products:
       packageWeight: cca 0.250 Kg
     logo: /img/logo-czech-milk-1-.png
     title: 'Lipánek mléko trvanlivé polotučné 1,5% 250 ml'
-  - cloud: /img/product-4-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Nejkvalitnější sušené mléko, vyrobené z tekutého mléka disperzní metodou.
       Vhodné jako náhrada za klasické mléko. Vhodné pro děti od 2 let. Skladujte

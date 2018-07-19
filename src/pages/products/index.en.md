@@ -4,7 +4,7 @@ langKey: en
 title: Products
 meta: Czech Milk Products
 products:
-  - cloud: /img/product-1-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >
       Southern Bohemian Czech Milk preserves its magnificent taste and quality
       for a period of 4 months, even when storing by room temperature –
@@ -33,7 +33,7 @@ products:
       packageWeight: 1 kg
     logo: /img/logo-czech-milk-1-.png
     title: Czech long-life full fat milk 3.5% 1 l
-  - cloud: /img/product-2-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >
       Delicious milk saturated with the sun and flowers of South Bohemian
       meadows is instantly recognizable by anyone after the first sip. Czech
@@ -63,7 +63,7 @@ products:
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
     title: Czech long-life semi-skimmed milk 1.5% 1l
-  - cloud: /img/product-3-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       This milk, intended for the smallest ones primarily, is exactly what the
       body needs for helathy development. It is a vital source of full-fledged
@@ -94,7 +94,7 @@ products:
       packageWeight: 0.250 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lipánek long-life semi-skimmed milk 1.5% 250 ml
-  - cloud: /img/product-1-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       High quality powdered milk, made from liquid milk using the method of
       dispersion. Suitable as a substitute for classic milk. Suitable for

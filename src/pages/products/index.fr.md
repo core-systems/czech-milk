@@ -5,7 +5,7 @@ title: Des produits
 meta: |
   Des produits
 products:
-  - cloud: /img/product-1-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >
       Le lait de Bohême du Sud conserve son goût et sa qualité magnifiques
       pendant une période de 4 mois, même lorsqu'il est conservé à température
@@ -35,7 +35,7 @@ products:
       packageWeight: 1 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lait Tchèque  entier longue vie 3.5% 1 l
-  - cloud: /img/product-2-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Le lait de longue vie de Bohême du Sud conserve son goût et sa qualité
       magnifiques pendant une période de 4 mois, même lorsqu'il est conserve à
@@ -64,7 +64,7 @@ products:
       packageWeight: 1 Kg
     logo: /img/logo-czech-milk-1-.png
     title: Lait Tchèque réduit en gras 1.5% 1l
-  - cloud: /img/product-3-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Ce lait, destiné aux plus petits surtout, est précisément ce dont le corps
       a besoin pour un développement sain. Il est une source essentielle de
@@ -94,7 +94,7 @@ products:
       packageWeight: 0.250 kg
     logo: /img/logo-czech-milk-1-.png
     title: Lipánek lait réduit en gras
-  - cloud: /img/product-1-cloud.png
+  - cloud: /img/oblak-transparernt.png
     description: >-
       Lait séché de qualité supérieure, fabriqué à partir de lait liquide en
       utilisant la méthode de dispersion. Approprié comme un substitut au lait
