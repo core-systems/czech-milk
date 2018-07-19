@@ -1,4 +1,5 @@
 import React from 'react'
+import favicon from '../static/img/czechmilk-favicon.ico'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -44,6 +45,7 @@ module.exports = class HTML extends React.Component {
             crossOrigin="anonymous"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" type="image/x-icon" href={favicon} />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
