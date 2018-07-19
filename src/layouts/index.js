@@ -52,10 +52,13 @@ const TemplateWrapper = props => {
     actualLang.key,
     getUrlForLang(homeLink, url)
   )
-  let isIE = /*@cc_on!@*/false || !!document.documentMode
-  var contentClasses = "container content-container";
-  if (isIE)
-    contentClasses += ' IEBgFix'
+  var contentClasses = "container content-container"
+  if (typeof document !== 'undefined')
+  {
+    let isIE = /*@cc_on!@*/false || !!document.documentMode
+    if (isIE)
+      contentClasses += ' IEBgFix'
+  }
   //console.log('props', props)
   //console.log('data.bgImage.sizes', data.bgImage.sizes)
   return (
