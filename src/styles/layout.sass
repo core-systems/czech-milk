@@ -342,7 +342,7 @@ section.hero
   //margin-top: -50px
   padding-top: 0 !important
   +desktop
-    margin-top: -30px
+    //margin-top: -30px
 
   .column
     +mobile
@@ -426,9 +426,13 @@ section.hero
     //background-image: url('/img/footer-bg-cloud-green.png')
     background-size: cover
     background-position: 0 1px
-    //background-position: bottom
+    //background-position: bottom right
     background-clip: border-box
     background-repeat: no-repeat
+
+.IEBgFix
+  &::after
+    background-position: 0 15px
 
 .footer
   color: $czech-milk-color-green

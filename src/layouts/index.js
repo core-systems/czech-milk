@@ -52,7 +52,10 @@ const TemplateWrapper = props => {
     actualLang.key,
     getUrlForLang(homeLink, url)
   )
-
+  let isIE = /*@cc_on!@*/false || !!document.documentMode
+  var contentClasses = "container content-container";
+  if (isIE)
+    contentClasses += ' IEBgFix'
   //console.log('props', props)
   //console.log('data.bgImage.sizes', data.bgImage.sizes)
   return (
@@ -106,12 +109,12 @@ const TemplateWrapper = props => {
         />
         <section className="section section-content" role="content">
           <div className="content-bg-botttom" />
-          <div className="container content-container">
-            <div className="content-bg-top">
-              <div className="cow" />
+            <div className={contentClasses}>
+              <div className="content-bg-top">
+                <div className="cow" />
+              </div>
+              <div className="container is-fluid">{children()}</div>
             </div>
-            <div className="container is-fluid">{children()}</div>
-          </div>
         </section>
         <Contacts />
         <Footer />

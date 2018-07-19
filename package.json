@@ -37,7 +37,6 @@
     "object-fit-images": "^3.2.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-favicon": "^0.0.14",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0",
     "remark": "^9.0.0",
