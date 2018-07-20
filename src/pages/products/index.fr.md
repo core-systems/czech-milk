@@ -120,6 +120,6 @@ products:
       packageSize: 1 sac
       packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
-    title: Lait en Poudre
+    title: Lait en Poudre 26%
 ---
 
