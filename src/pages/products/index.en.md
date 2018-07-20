@@ -24,7 +24,7 @@ products:
       | Salt                              | 0.1 g             |
       | Calcium                           | 120 mg            |
     id: product-3
-    image: /img/imageedit_1_4044021528.png
+    image: /img/product-en-milk-full-1000ml.png
     info:
       code: '8593803224015'
       expire: 120 days
