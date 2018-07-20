@@ -28,7 +28,7 @@ products:
       | Sodium                           | 0.1 g             |
       | Calcium                          | 120 mg            |
     id: product-3
-    image: /img/product-fr-milk-full-1000ml.png
+    image: /img/coresystems.cz-czechmilk.com-milk-box-cropped.png
     info:
       code: '8593803224015'
       expire: 120 jours
@@ -57,7 +57,7 @@ products:
       | Sodium                           | 0.1 g             |
       | Calcium                          | 120 mg            |
     id: product-4
-    image: /img/product-fr-milk-low-1000ml.png
+    image: /img/imageedit_1_5513650082.png
     info:
       code: '8593803224206'
       expire: 120 jours
@@ -87,7 +87,7 @@ products:
       | Sodium                        | 0.1 g           |
       | Calcium                       | 120 mg          |
     id: product-2
-    image: /img/imageedit_12_9949104078.png
+    image: /img/milk-for-kids-fra-cropped.png
     info:
       code: '8593803224275'
       expire: 120 jours
@@ -114,7 +114,7 @@ products:
       | Protéins                      | 26.70 g           |
       | Sodium                        | 0.35 g            |
     id: product-5
-    image: /img/imageedit_10_3775655098.png
+    image: /img/imageedit_10_3775655098minified.png
     info:
       code: '8593803725116'
       expire: 365 jours
@@ -122,5 +122,5 @@ products:
       packageSize: 1 sac
       packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
-    title: Lait en Poudre
+    title: Lait en Poudre 26%
 ---

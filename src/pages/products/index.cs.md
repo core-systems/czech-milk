@@ -25,7 +25,7 @@ products:
       | Sůl                              | 0.1 g             |
       | Vápnik                           | 120 mg            |
     id: product-3
-    image: /img/product-en-milk-full-1000ml.png
+    image: /img/transparent-full-fat.png
     info:
       code: '8593803224015'
       expire: 120 dní
@@ -53,7 +53,7 @@ products:
       | Sůl                              | 0.1 g             |
       | Vápnik                           | 120 mg            |
     id: product-4
-    image: /img/product-en-milk-low-1000ml.png
+    image: /img/imageedit_2_7262384232.png
     info:
       code: '8593803224206'
       expire: 120 dní
@@ -61,7 +61,7 @@ products:
       packageSize: 12 ks
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
-    title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
+    title: 'Jihočeské mléko lahodné polotučné 1.5%, 1 l'
   - cloud: /img/oblak-transparernt.png
     description: >-
       Mléko určené zejména těm nejmenším je přesně to pravé, co děti pro svůj
@@ -108,7 +108,7 @@ products:
       | Bílkovny                    | 26.70 g           |
       | Sůl                         | 0.35 g            |
     id: product-5
-    image: /img/imageedit_9_6435607790.png
+    image: /img/imageedit_8_6482874184minified.png
     info:
       code: '8593803725116'
       expire: 365 dní
@@ -118,3 +118,4 @@ products:
     logo: /img/logo-czech-milk-1-.png
     title: Sušené Mléko 26%
 ---
+
