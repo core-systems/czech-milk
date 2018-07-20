@@ -112,7 +112,7 @@ products:
       | Protéins                      | 26.70 g           |
       | Sodium                        | 0.35 g            |
     id: product-5
-    image: /img/imageedit_10_3775655098.png
+    image: /img/imageedit_10_3775655098minified.png
     info:
       code: '8593803725116'
       expire: 365 jours
