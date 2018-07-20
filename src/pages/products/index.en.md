@@ -111,7 +111,7 @@ products:
       | Proteins                          | 26.70 g               |
       | Salt                              | 0.35 g                |
     id: product-5
-    image: /img/imageedit_9_6435607790.png
+    image: /img/imageedit_8_6482874184minified.png
     info:
       code: '8593803725116'
       expire: 365 days
