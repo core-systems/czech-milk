@@ -23,7 +23,7 @@ products:
       | Sůl                              | 0.1 g             |
       | Vápnik                           | 120 mg            |
     id: product-3
-    image: /img/product-en-milk-full-1000ml.png
+    image: /img/webp.net-resizeimage.png
     info:
       code: '8593803224015'
       expire: 120 dní
