@@ -24,7 +24,7 @@ products:
       | Salt                              | 0.1 g             |
       | Calcium                           | 120 mg            |
     id: product-3
-    image: /img/webp.net-resizeimage-3-.png
+    image: /img/transparent-full-fat.png
     info:
       code: '8593803224015'
       expire: 120 days
