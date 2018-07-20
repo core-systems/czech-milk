@@ -26,7 +26,7 @@ products:
       | Sodium                           | 0.1 g             |
       | Calcium                          | 120 mg            |
     id: product-3
-    image: /img/imageedit_1_8277634125.png
+    image: /img/webp.net-resizeimage-1-.png
     info:
       code: '8593803224015'
       expire: 120 jours
