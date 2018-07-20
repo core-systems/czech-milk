@@ -54,7 +54,7 @@ products:
       | Salt                              | 0.1 g             |
       | Calcium                           | 120 mg            |
     id: product-4
-    image: /img/product-en-milk-low-1000ml.png
+    image: /img/imageedit_2_7262384232.png
     info:
       code: '8593803224206'
       expire: 120 days
