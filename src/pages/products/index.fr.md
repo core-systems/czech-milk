@@ -26,7 +26,7 @@ products:
       | Sodium                           | 0.1 g             |
       | Calcium                          | 120 mg            |
     id: product-3
-    image: /img/webp.net-resizeimage-2-.png
+    image: /img/coresystems.cz-czechmilk.com-milk-box-cropped.png
     info:
       code: '8593803224015'
       expire: 120 jours
