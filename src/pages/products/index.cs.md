@@ -59,7 +59,7 @@ products:
       packageSize: 12 ks
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
-    title: 'Jihočeské mléko lahodné polotučné 1.5%, 0.5 l'
+    title: 'Jihočeské mléko lahodné polotučné 1.5%, 1 l'
   - cloud: /img/oblak-transparernt.png
     description: >-
       Mléko určené zejména těm nejmenším je přesně to pravé, co děti pro svůj
@@ -116,3 +116,4 @@ products:
     logo: /img/logo-czech-milk-1-.png
     title: Sušené Mléko 26%
 ---
+
