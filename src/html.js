@@ -21,6 +21,7 @@ module.exports = class HTML extends React.Component {
         />
       )
     }
+    var ieHack = '<!--[if lte IE 6]><link rel="stylesheet" src="/static/styles/ie.css" /><![endif]-->'
     return (
       <html {...this.props.htmlAttributes}>
         <head>

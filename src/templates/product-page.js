@@ -15,14 +15,23 @@ export const ProductPageTemplate = ({ helmet, title, products }) => (
 )
 
 export default ({ data }) => {
-  // /console.log('produts, data', data)
   const { frontmatter } = data.allProducts
+  console.log('frontmatter', frontmatter)
 
   return (
     <ProductPageTemplate
       title={frontmatter.title}
       products={frontmatter.products}
-      helmet={<Helmet title={`${frontmatter.title}`} />}
+      helmet={
+        <Helmet
+          title={`${frontmatter.title}`}
+          meta={[
+            { name: 'charset', content: 'UTF-8' },
+            { name: 'description', content: `${frontmatter.description}` },
+            { name: 'keywords', content: `${frontmatter.keywords}` },
+          ]}
+        />
+      }
     />
   )
 }

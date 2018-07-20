@@ -53,6 +53,7 @@ const TemplateWrapper = props => {
     getUrlForLang(homeLink, url)
   )
   var contentClasses = "container content-container"
+
   if (typeof document !== 'undefined')
   {
     let isIE = /*@cc_on!@*/false || !!document.documentMode

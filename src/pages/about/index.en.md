@@ -1,6 +1,8 @@
 ---
 templateKey: about-page
 title: About Us
+keywords: core, core systems, export, milk, Czech Republic
+description: Introduction of CORE Systems company as an exclusive exporter of dairy products manufactured by MADETA company in North Africa and South-East Asia regions.
 ---
 
 CORE SYSTEMS s.r.o., together with MADETA a.s. have come to realize that there are still many Czech products virtually unknown abroad. Which is, of course a shame, as our products are striving for the highest possible quality, while adhering to the strickest standards of not only The Czech Republic, but also of the European Union as a whole.

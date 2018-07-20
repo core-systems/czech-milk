@@ -203,3 +203,44 @@
   display: flex
   justify-content: center
   align-items: center
+
+.product-title
+  font-size: 20px
+  font-weight: bold
+  text-align: center
+  width: 100%
+  color: #4a4a4a
+  +mobile
+    padding-top: 10px
+    padding-left: 0px
+  +tablet
+    padding-top: 60px
+    padding-left: 80px
+  +desktop
+    padding-top: 60px
+    padding-left: 80px
+  +widescreen
+    padding-top: 80px
+    padding-left: 50px
+  +fullhd
+    padding-top: 80px
+    padding-left: 0px
+
+.product-title.is-first
+  +mobile
+  +tablet
+    padding-top: 70px
+    padding-left: 80px
+    width: 40%
+  +desktop
+    padding-top: 70px
+    padding-left: 84px
+    width: 40%
+  +widescreen
+    padding-top: 80px
+    padding-left: 50px
+    width: 50%
+  +fullhd
+    padding-top: 80px
+    padding-left: 0px
+    width: 50%

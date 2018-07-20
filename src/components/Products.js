@@ -13,6 +13,7 @@ const Products = props => (
           {...product}
           isRight={index % 2 === 0}
           isLast={index === props.items.length}
+          isFirst={index === 1}
         />
       )
     })}
@@ -31,6 +32,8 @@ export const ProductFragment = graphql`
       langKey
       templateKey
       title
+      keywords
+      description
       products {
         id
         title

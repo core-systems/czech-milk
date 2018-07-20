@@ -1,8 +1,10 @@
 ---
 templateKey: product-page
 langKey: en
-title: Products
+title: Products – overview
 meta: Czech Milk Products
+keywords: czech, milk, export, for kids, full fat, semi skimmed, powdered, wholesale
+description: Export of high quality full fat, low fat and powdered milk from the Czech Republic. High quality South Bohemian produce. Manufactured in the EU.
 products:
   - cloud: /img/oblak-transparernt.png
     description: >
@@ -121,4 +123,3 @@ products:
     logo: /img/logo-czech-milk-1-.png
     title: Powdered Milk 26%
 ---
-

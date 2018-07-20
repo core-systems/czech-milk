@@ -55,6 +55,7 @@ class Product extends React.PureComponent {
       info,
       isLast,
       isRight,
+      isFirst,
     } = this.props
     const { isActiveMore } = this.state
 
@@ -105,10 +106,15 @@ class Product extends React.PureComponent {
                   <Image
                     resolutions={logo.childImageSharp.resolutions}
                     alt={`[product, logo, ${title}]`}
+                    title="Logo Czechmilk"
                     style={{ position: 'relative' }}
                   />
                   {/*<img src={productLogo} alt={`[product, logo, ${title}]`} />*/}
                 </figure>
+
+              </div>
+                <h2 className={`product-title ${isFirst ? 'is-first' : ''}`}>{`${title}`}</h2>
+              <div>
               </div>
             </div>
             <div className="content product-description is-medium" style={{ minHeight: '220px' }}>
@@ -185,6 +191,7 @@ Product.propTypes = {
   cloud: PropTypes.object.isRequired,
   isRight: PropTypes.bool,
   isLast: PropTypes.bool,
+  isFirst: PropTypes.bool,
 }
 
 export default injectIntl(Product)

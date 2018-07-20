@@ -14,7 +14,10 @@ const Footer = props => (
       <div className="content has-text-centered0">
         <p>
           <FormattedMessage id="All Rights Reserved" /> &reg;&nbsp;{props.year}{' '}
-          | <a href="https://core.cz/">Core Systems s.r.o.</a> | Certification
+          |
+          {
+              props.intl.locale == 'cs' ? <a href="https://core.cz/" target="_blank">www.core.cz</a> : <a href="https://core.cz/en" target="_blank">www.core.cz</a>
+          } | Certification
           ISO 27001
         </p>
       </div>

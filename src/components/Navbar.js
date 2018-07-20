@@ -25,6 +25,7 @@ const Navbar = props => (
           <img
             src={logo}
             alt={props.siteTitle}
+            title="Logo Czechmilk"
             style={{ width: 870.1, height: 541.8 }}
           />
         </figure>

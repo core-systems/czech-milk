@@ -30,7 +30,7 @@ const HeroBody = props => {
       <div className="container">
         <div className="columns">
           <div className="column is-8 is-offset-2 is-10-tablet is-offset-1-tablet has-text-centered">
-            <p
+            <h1
               className="title"
               dangerouslySetInnerHTML={{
                 __html: props.intl.formatHTMLMessage({ id: 'site.hero.title' }),

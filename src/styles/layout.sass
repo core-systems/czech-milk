@@ -117,7 +117,7 @@ section.hero
         max-height: 271px
         +mobile
           width: 200px
-          max-width: 241px
+          max-width: 120px
           top: 0
           left: 0
         +tablet
@@ -432,7 +432,12 @@ section.hero
 
 .IEBgFix
   &::after
-    background-position: 0 15px
+    +desktop
+      background-position: 0 32px
+    +widescreen
+      background-position: 0 23px
+    +fullhd
+      background-position: 0 15px
 
 .footer
   color: $czech-milk-color-green

@@ -1,5 +1,7 @@
 ---
 templateKey: about-page
+keywords: core, core systems, exporter, mleko, ceska republika
+description: Představení společnosti CORE Systems jako výhradního exportéra mléčných výrobků společnosti MADETA do zemí Severní Afriky a Jihovýchodní Asie.
 title: O nás
 ---
 

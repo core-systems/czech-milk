@@ -1,7 +1,9 @@
 ---
 templateKey: product-page
 langKey: cs
-title: Produkty
+title: Produkty – přehled
+keywords: ceske, mleko, export, pro deti, plnotucne, polotucne, susene, velkoobchod
+description: Export výrobků společnosti Madeta do zahraničí. Kvalitní plnotučné, polotučné a sušené Jihočeské mléko. Vyrobeno v EU.
 meta: Kvalitní produkty z Českého mléka
 products:
   - cloud: /img/oblak-transparernt.png
@@ -31,7 +33,7 @@ products:
       packageSize: 12 ks
       packageWeight: cca 1 Kg
     logo: /img/logo-czech-milk-1-.png
-    title: Jihočeské mléko trvanlivé plnotučné 3.5% 1 l
+    title: Jihočeské mléko plnotučné 3.5% 1 l
   - cloud: /img/oblak-transparernt.png
     description: >-
       Jihočeské trvanlivé mléko si svou výtečnou chuť a kvalitu zachovává po
