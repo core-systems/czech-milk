@@ -55,7 +55,7 @@ products:
       | Sodium                           | 0.1 g             |
       | Calcium                          | 120 mg            |
     id: product-4
-    image: /img/product-fr-milk-low-1000ml.png
+    image: /img/imageedit_1_5513650082.png
     info:
       code: '8593803224206'
       expire: 120 jours
