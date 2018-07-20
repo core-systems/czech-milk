@@ -85,7 +85,7 @@ products:
       | Sodium                        | 0.1 g           |
       | Calcium                       | 120 mg          |
     id: product-2
-    image: /img/imageedit_12_9949104078.png
+    image: /img/milk-for-kids-fra-cropped.png
     info:
       code: '8593803224275'
       expire: 120 jours
