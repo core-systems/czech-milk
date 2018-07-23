@@ -5,7 +5,8 @@ import Product from './Product'
 
 const Products = props => (
   <section className="section section-products" role="products" id="all" name="all">
-    {props.items.map((product, i) => {
+    { props.items != null ?
+      props.items.map((product, i) => {
       const index = ++i
       return (
         <Product
@@ -16,7 +17,9 @@ const Products = props => (
           isFirst={index === 1}
         />
       )
-    })}
+    })
+    : null
+    }
   </section>
 )
 
