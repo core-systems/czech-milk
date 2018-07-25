@@ -1,9 +1,9 @@
 ---
 templateKey: product-page
 langKey: fr
-title: Des produits
-keywords: czech, milk, export, for kids, full fat, semi skimmed, powdered, wholesale
-description: Export of high quality full fat, low fat and powdered milk from the Czech Republic. High quality South Bohemian produce. Manufactured in the EU.
+title: Produits – aperçu
+keywords: tcheque, lait, exportation, pour les enfants, lait entier, demi-ecreme, en poudre, de gros
+description: L’export du lait de haute qualité, lait gras, lait faible en gras et en poudre de la République Tchèque. Fabriqué dans L’UE.
 meta: |
   Des produits
 products:
