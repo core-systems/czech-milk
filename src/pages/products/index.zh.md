@@ -122,5 +122,5 @@ meta: >
         packageSize: 1 piece
         packageWeight: 25 kg
       logo: /img/logo-czech-milk-1-.png
-      title: Powdered Milk 26%
+      title:  Powdered MIlk 26% 25 kg Bag
 ---

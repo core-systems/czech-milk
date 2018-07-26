@@ -113,10 +113,10 @@ class Product extends React.PureComponent {
                 </figure>
 
               </div>
-                <h2 className={`product-title ${isFirst ? 'is-first' : ''}`}>{`${title}`}</h2>
               <div>
               </div>
             </div>
+            <h2 className="product-title">{`${title}`}</h2>
             <div className="content product-description is-medium" style={{ minHeight: '220px' }}>
               {description}
             </div>

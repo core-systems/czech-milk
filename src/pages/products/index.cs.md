@@ -116,6 +116,5 @@ products:
       packageSize: 1 ks
       packageWeight: 25 kg
     logo: /img/logo-czech-milk-1-.png
-    title: Sušené Mléko 26%
+    title: Sušené Mléko 26% 25 kg Pytel
 ---
-
