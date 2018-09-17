@@ -65,7 +65,7 @@ const Contacts = props => (
             </FormattedMessage>
             <p className="is-size-6">
               CORE SYSTEMS s.r.o.<br />
-              Bechlinská 705/2<br />
+              Bechlínská 705/2<br />
               190 00 Praha 9<br />
               <FormattedMessage id="czech.country" />
             </p>

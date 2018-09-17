@@ -30,7 +30,7 @@ module.exports = {
   'form.send': 'Odeslat',
   'form.reset': 'Smazat',
   'form.disclaimer.GDPR':
-    'Poskytnuté osobní údaje budou společností CORE SYSTEMS s. r. o. použity pouze za účelem kontaktování a budou vymazány po vyřízení požadavku.',
+    'Poskytnuté osobní údaje budou společností CORE SYSTEMS s.r.o. použity pouze za účelem kontaktování a budou vymazány po vyřízení požadavku.',
   'form.contactUs.title': 'Napište nám',
   'form.contactUs.name.placeholder': 'Celé jméno...',
   'form.contactUs.email.placeholder': 'E-mail...',

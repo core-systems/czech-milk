@@ -16,7 +16,7 @@ const Footer = props => (
           <FormattedMessage id="All Rights Reserved" /> &reg;&nbsp;{props.year}{' '}
           |
           {
-              props.intl.locale == 'cs' ? <a href="https://core.cz/" target="_blank">www.core.cz</a> : <a href="https://core.cz/en" target="_blank">www.core.cz</a>
+              props.intl.locale == 'cs' ? <a href="https://core.cz/" target="_blank"> www.core.cz</a> : <a href="https://core.cz/en" target="_blank"> www.core.cz</a>
           } | Certification
           ISO 27001
         </p>

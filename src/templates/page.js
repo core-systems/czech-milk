@@ -28,7 +28,16 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       title={page.frontmatter.title}
       content={page.html}
-      helmet={<Helmet title={`${page.frontmatter.title}`} />}
+      helmet={
+        <Helmet
+          title={`${page.frontmatter.title}`}
+          meta={[
+            { name: 'charset', content: 'UTF-8' },
+            { name: 'description', content: `${page.frontmatter.description}` },
+            { name: 'keywords', content: `${page.frontmatter.keywords}` },
+          ]}
+        />
+      }
     />
   )
 }
@@ -39,6 +48,8 @@ export const otherPageQuery = graphql`
       html
       frontmatter {
         title
+        keywords
+        description
       }
     }
   }
